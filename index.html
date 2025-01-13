@@ -417,7 +417,7 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item product">
                                 <div class="product-img">
-                                    <img src="assets/images/fullstackcourse.png" class="img-fluid" alt="product"
+                                    <img src="assets/images/coding7.webp" class="img-fluid" alt="product"
                                         style="max-width: 100%;;">
                                 </div>
                                 <div class="product-body text-center">
@@ -432,7 +432,7 @@
                             </div>
                             <div class="item product">
                                 <div class="product-img">
-                                    <img src="assets/images/c1.jpeg" class="img-fluid" alt="product"
+                                    <img src="assets/images/coding9.webp" class="img-fluid" alt="product"
                                         style="max-width: 100%;;">
                                 </div>
                                 <div class="product-body text-center">
@@ -441,7 +441,7 @@
                                     <P>Online/Offline</P>
                                     <h5>$249</h5>
                                     <div class="mt-4">
-                                        <a href="#" class="btn-main">Enroll now</a>
+                                        <a href="frontendcourse.html" class="btn-main">Enroll now</a>
                                     </div>
                                 </div>
                             </div>
@@ -1171,50 +1171,75 @@
 
     <!-- Start Contact -->
     <section id="contact">
-        <div class="container">
+        <div class="container" style="border-radius: 15px; box-shadow: 0 4px 10px rgb(29, 29, 31); padding: 20px; background: rgb(29, 29, 31); color: #fff;">
             <div class="row">
                 <div class="col-lg-6 contact-information">
-                    <div class="section-head-tag">Contact</div>
-                    <h2 class="section-head-title">Feel Free To Contact Us</h2>
-                    <p class="mb-5 section-head-body">We are always avalible for your service with great support. Lorem
-                        ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="section-head-tag" style="color: #007bff;">Contact</div>
+                    <h2 class="section-head-title" style="color: #fff;">Feel Free To Contact Us</h2>
+                    <p class="mb-5 section-head-body">We are always available for your service with great support. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                   
                     <div class="info mb-3 d-flex align-items-center">
-                        <div class="info-icon">
+                        <div class="info-icon" style="margin-right: 10px; color: #007bff;">
                             <i class="material-icons-round">
                                 location_on
                             </i>
                         </div>
-                        <p>123, MG street, Vadodara, Gujarat, India</p>
+                        <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80%;">Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
                     </div>
                     <div class="info mb-3 d-flex align-items-center">
-                        <div class="info-icon">
+                        <div class="info-icon" style="margin-right: 10px; color: #007bff;">
                             <i class="material-icons-round">
                                 mail
                             </i>
                         </div>
-                        <a href="mailto:abc@123.com">abc12345@123.com</a>
+                        <a href="mailto:info@tech2edge.com" style="color: #007bff;">info@tech2edge.com</a>
                     </div>
                     <div class="info mb-3 d-flex align-items-center">
-                        <div class="info-icon">
+                        <div class="info-icon" style="margin-right: 10px; color: #007bff;">
                             <i class="material-icons-round">
                                 call
                             </i>
                         </div>
-                        <a href="tel:+1234567890">+123 456 7890</a>
+                        <a href="tel:+919930249947" style="color: #007bff;">+91 99302 49947</a>
                     </div>
                 </div>
                 <div class="col-lg-6 contact-form align-self-center">
                     <form>
                         <div class="form-group">
-                            <input type="email" placeholder="Enter email">
+                            <input type="email" placeholder="Enter email" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Enter name">
+                            <input type="text" placeholder="Enter name" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
                         </div>
+    
+                        <!-- Dropdown for Course Selection -->
                         <div class="form-group">
-                            <textarea rows="3" placeholder="Enter message"></textarea>
+                            <select id="course" class="form-control" style="background: #333; color: #fff; border: 1px solid #444; border-radius: 10px; padding: 10px;">
+                                <option value="frontend">Frontend Development</option>
+                                <option value="backend">Backend Development</option>
+                                <option value="fullstack">Full-Stack Development</option>
+                                
+                                <!-- Grouping MERN / MEAN Stack options -->
+                                <optgroup label="MERN / MEAN Stack">
+                                    <option value="mern" selected>MERN Stack</option>
+                                    <option value="mean" selected>MEAN Stack</option>
+                                </optgroup>
+                                
+                                <!-- Grouping TALL, RILT, & VILT Stacks -->
+                                <optgroup label="TALL, RILT, & VILT Stacks">
+                                    <option value="tall" selected>TALL Stack</option>
+                                    <option value="rilt">RILT Stack</option>
+                                    <option value="vilt">VILT Stack</option>
+                                </optgroup>
+                                
+                                <option value="accessibility">Accessibility</option>
+                            </select>
                         </div>
-                        <button type="submit" class="btn btn-main">Submit</button>
+    
+                        <div class="form-group">
+                            <textarea rows="3" placeholder="Enter message" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-main" style="border-radius: 20px; padding: 10px 20px; border: none; background: #007bff; color: #fff; cursor: pointer;">Submit</button>
                     </form>
                 </div>
             </div>

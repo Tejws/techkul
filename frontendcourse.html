@@ -329,7 +329,7 @@ body {
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <!-- <img src="assets/images/logo-c.png" alt="logo" height="20"> -->
-                    <h1 style="font-size: 30px;font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                 <h1 style="font-size: 30px;font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
                 </a>
                 <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -635,7 +635,6 @@ body {
                         </i>
                     </div>
                     <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80%;">Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
-
                 </div>
                 <div class="info mb-3 d-flex align-items-center">
                     <div class="info-icon" style="margin-right: 10px; color: #007bff;">
@@ -669,8 +668,20 @@ body {
                             <option value="frontend">Frontend Development</option>
                             <option value="backend">Backend Development</option>
                             <option value="fullstack">Full-Stack Development</option>
-                            <option value="ui">User Interfaces</option>
-                            <option value="responsive">Responsive Design</option>
+                            
+                            <!-- Grouping MERN / MEAN Stack options -->
+                            <optgroup label="MERN / MEAN Stack">
+                                <option value="mern" selected>MERN Stack</option>
+                                <option value="mean" selected>MEAN Stack</option>
+                            </optgroup>
+                            
+                            <!-- Grouping TALL, RILT, & VILT Stacks -->
+                            <optgroup label="TALL, RILT, & VILT Stacks">
+                                <option value="tall" selected>TALL Stack</option>
+                                <option value="rilt">RILT Stack</option>
+                                <option value="vilt">VILT Stack</option>
+                            </optgroup>
+                            
                             <option value="accessibility">Accessibility</option>
                         </select>
                     </div>
