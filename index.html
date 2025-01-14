@@ -40,7 +40,13 @@
             border: 1px solid var(--color-sec);
             border-radius: 7px;
         }
-
+        .week-label {
+    background-color: rgb(48, 79, 255); /* You can adjust the blue color */
+    color: white; /* Text color should be white to stand out */
+    padding: 5px 10px; /* Add padding for better spacing */
+    border-radius: 7px; /* Optional: rounding corners */
+    font-size: 16px; /* Ensure the text is clear and readable */
+}
         @media only screen and (max-width:600px) {
             .carrer-path-fix{
                
@@ -49,8 +55,8 @@
     </style>
     <!-- Add this style block to your head section or your main CSS file -->
     <style>
-        body, html {
-    margin: 0;
+    body, html {
+  
     padding: 0;
     overflow-x: hidden;
     
@@ -164,6 +170,8 @@
         body{
             overflow-x: hidden;
         }
+       
+
     </style>
 </head>
 
@@ -232,17 +240,15 @@
                     <!-- <img src="assets/images/hero1.svg" class="img-fluid" alt="product"> -->
                 </div>
                 <div class="col-md-6 align-self-center cover-body">
-                    <h1>Welcome to TechKul – Your Tech Learning Center
-                    </h1>
+                    <h1>Welcome to TechKul – Your Tech Learning Center</h1>
                     <p>
                         At TechKul, we're passionate about empowering aspiring developers with the knowledge and skills
-                        to succeed in the ever-evolving tech industry. Our mission is to develop versatile, adaptable
+                        to succeed in the ever-evolving tech industry. Our mission is to develop versatile, adaptable,
                         and confident developers who are ready to tackle real-world challenges.
-
                     </p>
-                    <h5></h5>
                     <a href="#" class="btn-main">Start Learning Now</a>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -326,63 +332,65 @@
         <div class="container">
             <div class="row">
                 <!-- Text Content (Left Side) -->
-                <div class="col-lg-6 useable-body">
-                    <h2 class="section-head-title">Our Mission: Develop Versatile Developers</h2>
-                    <p class="section-head-body">This is not only smart watch, this is thing which fits in your daily life and fill your needs in time</p>
+                <div class="col-lg-6 col-12 useable-body">
+                    <h2 class="section-head-title text-center text-lg-start">Our Mission: Develop Versatile Developers</h2>
+                    <p class="section-head-body text-center text-lg-start">
+                        This is not only a smart watch; it is something that fits into your daily life and fulfills your needs on time.
+                    </p>
                     <div class="useable-abstracts row">
                         <!-- Skillful -->
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="abstract-container">
+                        <div class="col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
                                     <i class="material-icons-round">
                                         sim_card
                                     </i>
                                 </div>
-                                <div class="abstract-text">
+                                <div class="abstract-text mt-2">
                                     <h5>Skillful</h5>
                                     <p>Gain a solid foundation in software development principles.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Adaptable -->
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="abstract-container">
+                        <div class="col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
                                     <i class="material-icons-round">
                                         contactless
                                     </i>
                                 </div>
-                                <div class="abstract-text">
+                                <div class="abstract-text mt-2">
                                     <h5>Adaptable</h5>
                                     <p>Learn to quickly adapt to new technologies.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Confident -->
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="abstract-container">
+                        <div class="col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
                                     <i class="material-icons-round">
                                         wifi
                                     </i>
                                 </div>
-                                <div class="abstract-text">
+                                <div class="abstract-text mt-2">
                                     <h5>Confident</h5>
                                     <p>Build the confidence to push boundaries and innovate.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- AI Ready -->
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="abstract-container">
+                        <div class="col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
                                     <i class="material-icons-round">
                                         notifications_active
                                     </i>
                                 </div>
-                                <div class="abstract-text">
+                                <div class="abstract-text mt-2">
                                     <h5>AI Ready</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p>Be prepared for the AI-driven future with cutting-edge skills.</p>
                                 </div>
                             </div>
                         </div>
@@ -390,10 +398,12 @@
                 </div>
     
                 <!-- Image (Right Side) -->
-                <div class="col-lg-6 useable-image align-self-center text-center">
-                    <!-- Image is now responsive with max-width 70% on large screens -->
-                    <img src="assets/images/educator2.webp" class="img-fluid" style="max-width: 70%;" alt="product">
+                <div class="col-lg-6 col-12 d-none d-md-block useable-image align-self-center text-center mt-4 mt-lg-0">
+                    <img src="assets/images/educator2.webp" class="img-fluid" style="max-width: 80%;" alt="product">
                 </div>
+            </div>
+        </div>
+    </section>   
             </div>
         </div>
     </section>
@@ -607,7 +617,7 @@
 
     <section class="carrer-path-fix">
         <div class="row">
-            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center p-5">
                 <div class="section-head-tag"> Curriculum Breakdown (At a Glance)</div>
                 <h2 class="section-head-title">The Path Of Success.</h2>
                 <p class="section-head-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima incidunt
@@ -637,7 +647,7 @@
                 <div class="col-sm py-2">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <div class="float-right  small">Week X - Y</div>
+                            <div class="float-right  small week-label">Week X - Y</div>
                             <h4 class="card-title">Phase 1: Core Principles
                             </h4>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
@@ -652,7 +662,7 @@
                 <div class="col-sm py-2">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <div class="float-right  small">Week X - Y</div>
+                            <div class="float-right  small week-label">Week X - Y</div>
                             <h4 class="card-title">Phase 2: Front-End & Back-End
                             </h4>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
@@ -695,7 +705,7 @@
                 <div class="col-sm py-2">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <div class="float-right  small">Week X - Y</div>
+                            <div class="float-right  small week-label">Week X - Y</div>
                             <h4 class="card-title">Phase 3: Real-World Projects
                             </h4>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
@@ -710,7 +720,7 @@
                 <div class="col-sm py-2">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <div class="float-right  small">Week X - Y</div>
+                            <div class="float-right  small week-label">Week X - Y</div>
                             <h4 class="card-title">Phase 4: Internship & Job Placement
                             </h4>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
@@ -811,161 +821,137 @@
     <!-- End Flowchart-->
     <section id="customer-reviews">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
-                    <div class="section-head-tag">Testimonials</div>
-                    <h2 class="section-head-title">What Our Trained Developers Are Saying</h2>
-                    <p class="section-head-body">Our trainers are 10+ years industry veterans, Some of the words by the trainees who got benefited</p>
+            <div class="row reviews-container">
+                <!-- Review 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review">
+                        <div class="review-video mb-3 position-relative">
+                            <img src="assets/images/thumbnail1.jpeg" alt="Video Thumbnail 1" class="w-100" id="video-thumbnail-1" 
+                                 style="cursor: pointer;" onclick="playVideo('video-thumbnail-1', 'assets/images/samplevideo1.mp4')">
+                        </div>
+                        <div class="quote-mark">
+                            <i class="material-icons-round">format_quote</i>
+                        </div>
+                        <div class="review-head">Great product! Loved it!!</div>
+                        <div class="review-text">
+                            <p>This is not only a smart watch; it is something that fits in your daily life and fills your needs in time.</p>
+                        </div>
+                        <div class="review-avtar d-flex align-items-center">
+                            <div class="avtar-img">
+                                <img src="assets/images/testimonials/av1.jpg" alt="avatar">
+                            </div>
+                            <div class="avtar-body">
+                                <h6>Emma Johnson</h6>
+                                <p>Software Engineer, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row reviews-container">
-                    
-                    <!-- Review 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="review">
-                            <!-- Video Thumbnail -->
-                            <div class="review-video mb-3 position-relative" style="display: inline-block;">
-                                <!-- Thumbnail Image -->
-                                <img src="assets/images/thumbnail.png" alt="Video Thumbnail" class="w-100" id="video-thumbnail-1" style="cursor: pointer;" onclick="playVideo('video-thumbnail-1', 'video-player-1')">
-                                <!-- Play Button -->
-                                <div class="play-button position-absolute top-50 start-50 translate-middle">
-                                    
-                                </div>
-                            </div>
     
-                            <div class="quote-mark">
-                                <i class="material-icons-round">format_quote</i>
+                <!-- Review 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review">
+                        <div class="review-video mb-3 position-relative">
+                            <img src="assets/images/thumbnail2.jpeg" alt="Video Thumbnail 2" class="w-100" id="video-thumbnail-2" 
+                                 style="cursor: pointer;" onclick="playVideo('video-thumbnail-2', 'assets/images/samplevideo2.mp4')">
+                        </div>
+                        <div class="quote-mark">
+                            <i class="material-icons-round">format_quote</i>
+                        </div>
+                        <div class="review-head">Great quality</div>
+                        <div class="review-text">
+                            <p>This is not only a smart watch; it is something that fits in your daily life and fills your needs in time.</p>
+                        </div>
+                        <div class="review-avtar d-flex align-items-center">
+                            <div class="avtar-img">
+                                <img src="assets/images/testimonials/av2.jpg" alt="avatar">
                             </div>
-                            <div class="review-head">
-                                Great product! Loved it!!
-                            </div>
-                            <div class="review-text">
-                                <p>This is not only a smart watch, this is something that fits in your daily life and fills your needs in time.</p>
-                            </div>
-                            <div class="review-avtar d-flex align-items-center">
-                                <div class="avtar-img">
-                                    <img src="assets/images/testimonials/av1.jpg" alt="avtar">
-                                </div>
-                                <div class="avtar-body">
-                                    <h6>Jack Evans</h6>
-                                    <p>CEO, codeonec</p>
-                                </div>
+                            <div class="avtar-body">
+                                <h6>Liam Smith</h6>
+                                <p>Project Manager, Innovate Inc.</p>
                             </div>
                         </div>
                     </div>
+                </div>
     
-                    <!-- Review 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="review">
-                            <!-- Video Thumbnail -->
-                            <div class="review-video mb-3 position-relative" style="display: inline-block;">
-                                <!-- Thumbnail Image -->
-                                <img src="assets/images/thumbnail.png" alt="Video Thumbnail" class="w-100" id="video-thumbnail-2" style="cursor: pointer;" onclick="playVideo('video-thumbnail-2', 'video-player-2')">
-                                <!-- Play Button -->
-                                <div class="play-button position-absolute top-50 start-50 translate-middle">
-                                    
-                                </div>
+                <!-- Review 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review">
+                        <div class="review-video mb-3 position-relative">
+                            <img src="assets/images/thumbnail3.jpeg" alt="Video Thumbnail 3" class="w-100" id="video-thumbnail-3" 
+                                 style="cursor: pointer;" onclick="playVideo('video-thumbnail-3', 'assets/images/samplevideo3.mp4')">
+                        </div>
+                        <div class="quote-mark">
+                            <i class="material-icons-round">format_quote</i>
+                        </div>
+                        <div class="review-head">Best ever customer support</div>
+                        <div class="review-text">
+                            <p>This is not only a smart watch; it is something that fits in your daily life and fills your needs in time.</p>
+                        </div>
+                        <div class="review-avtar d-flex align-items-center">
+                            <div class="avtar-img">
+                                <img src="assets/images/testimonials/av3.jpg" alt="avatar">
                             </div>
-    
-                            <div class="quote-mark">
-                                <i class="material-icons-round">format_quote</i>
-                            </div>
-                            <div class="review-head">
-                                Great quality
-                            </div>
-                            <div class="review-text">
-                                <p>This is not only a smart watch, this is something that fits in your daily life and fills your needs in time.</p>
-                            </div>
-                            <div class="review-avtar d-flex align-items-center">
-                                <div class="avtar-img">
-                                    <img src="assets/images/testimonials/av2.jpg" alt="avtar">
-                                </div>
-                                <div class="avtar-body">
-                                    <h6>Jack Evans</h6>
-                                    <p>CEO, codeonec</p>
-                                </div>
+                            <div class="avtar-body">
+                                <h6>Jack Evans</h6>
+                                <p>CEO, CodeOneC</p>
                             </div>
                         </div>
                     </div>
-    
-                    <!-- Review 3 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="review">
-                            <!-- Video Thumbnail -->
-                            <div class="review-video mb-3 position-relative" style="display: inline-block;">
-                                <!-- Thumbnail Image -->
-                                <img src="assets/images/thumbnail.png" alt="Video Thumbnail" class="w-100" id="video-thumbnail-3" style="cursor: pointer;" onclick="playVideo('video-thumbnail-3', 'video-player-3')">
-                                <!-- Play Button -->
-                                <div class="play-button position-absolute top-40 start-90 translate-middle">
-                                   
-                                </div>
-                            </div>
-    
-                            <div class="quote-mark">
-                                <i class="material-icons-round">format_quote</i>
-                            </div>
-                            <div class="review-head">
-                                Best ever customer support
-                            </div>
-                            <div class="review-text">
-                                <p>This is not only a smart watch, this is something that fits in your daily life and fills your needs in time.</p>
-                            </div>
-                            <div class="review-avtar d-flex align-items-center">
-                                <div class="avtar-img">
-                                    <img src="assets/images/testimonials/av3.jpg" alt="avtar">
-                                </div>
-                                <div class="avtar-body">
-                                    <h6>Jack Evans</h6>
-                                    <p>CEO, codeonec</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
                 </div>
             </div>
         </div>
     </section>
     
-    <script>
-       function playVideo(thumbnailId, playerId) {
-    // Get the thumbnail and its parent container
-    var thumbnail = document.getElementById(thumbnailId);
     
+    
+    
+    
+    <script>
+     function playVideo(thumbnailId, videoSrc) {
+    var thumbnail = document.getElementById(thumbnailId);
+
     // Create the video element dynamically
     var videoPlayer = document.createElement('video');
-    videoPlayer.setAttribute('width', '100%');
-    videoPlayer.setAttribute('height', '100%'); // Ensure it takes up full height
     videoPlayer.setAttribute('controls', 'true');
-    videoPlayer.classList.add('video-player'); // Add the video-player class
-    
+    videoPlayer.classList.add('video-player');
+
     // Add the source for the video
     var source = document.createElement('source');
-    source.setAttribute('src', 'assets/images/samplevideo.mp4');
+    source.setAttribute('src', videoSrc); // Use the exact path passed in videoSrc
     source.setAttribute('type', 'video/mp4');
-    
-    // Append the source to the video element
     videoPlayer.appendChild(source);
-    
+
     // Replace the thumbnail with the video player
     thumbnail.parentNode.replaceChild(videoPlayer, thumbnail);
+
+    // Play the video
     videoPlayer.play();
 }
+
 
     </script>
     
 <style>
 .review-video {
     position: relative;
-    display: inline-block;
     width: 100%;
-    height: 215px; /* Set a fixed height */
-    overflow: hidden; /* Prevents overflow when the video is inserted */
+    padding-top: 177.78%; /* Aspect ratio for 9:16 */
+    background-color: #000;
+    overflow: hidden;
 }
 
+.review-video img,
 .video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%; /* Ensure the video takes the full height of the container */
+    height: 100%;
+    object-fit: cover;
 }
+
+
 </style>
     <!-- Start Subscribe -->
     <section id="subscribe">

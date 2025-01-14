@@ -89,6 +89,7 @@ p
 }
 .section-head-tag
 {
+   
     margin-bottom: 15px;
     color: var(--color-sec);
     font-size: 18px;
@@ -261,7 +262,7 @@ nav .btn-main
 {
     #cover .cover-body h1
     {
-        font-size: 50px;
+        font-size: 2.7rem;
     }
     #cover
     {
@@ -352,7 +353,7 @@ nav .btn-main
 -------------------------------------------- */
 #useability
 {
-    padding: 100px 0;
+    padding: 0px 0;
 }
 #useability .useable-body .useable-abstracts
 {
@@ -763,6 +764,7 @@ nav .btn-main
 {
     padding: 100px 0;
     background-color: var(--bg-sec);
+   
 }
 #subscribe .section-head
 {
