@@ -85,7 +85,8 @@ p
 }
 .section-head
 {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+    /* changed the margin from 60px to 0px */
 }
 .section-head-tag
 {
@@ -768,7 +769,8 @@ nav .btn-main
 }
 #subscribe .section-head
 {
-    margin-bottom: 30px !important;
+    margin-bottom: 10px !important;
+    /* changed the margin from 30px to 10px */
 }
 #subscribe .subscribe-container .subscribe-form input
 {
