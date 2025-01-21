@@ -702,7 +702,7 @@ nav .btn-main
 ---------------------------------------------------------------- */
 #customer-reviews
 {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 #customer-reviews .reviews-container .review
 {
@@ -762,7 +762,7 @@ nav .btn-main
 -------------------------------------------- */
 #subscribe
 {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: var(--bg-sec);
    
 }
@@ -849,7 +849,7 @@ nav .btn-main
 -------------------------------------------- */
 #contact
 {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-sec);
 }
 #contact .contact-information .info .info-icon i

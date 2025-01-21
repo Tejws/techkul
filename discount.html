@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
+                    <div class="section-head-tag">Courses We Offer</div>
+                    <h2 class="section-head-title">We have crafted the best industry-ready courses for you</h2>
+                    <p class="section-head-body">Learn from experts at unbeatable prices!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="products-slider">
+                        <div class="owl-carousel owl-theme">
+                            <!-- Product Item -->
+                            <div class="item product">
+                                <div class="product-img position-relative">
+                                    <div class="discount-label">Save $100</div>
+                                    <img src="assets/images/coding7.webp" class="img-fluid" alt="Core Software Development">
+                                </div>
+                                <div class="product-body text-center">
+                                    <h5>Core Software Development</h5>
+                                    <p>Offline</p>
+                                    <h5><del>$399</del> $299</h5>
+                                    <div class="mt-4">
+                                        <a href="core.html" class="btn-main" target="_blank">Enroll now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat for other products -->
+                            <div class="item product">
+                                <div class="product-img position-relative">
+                                    <div class="discount-label">Save $50</div>
+                                    <img src="assets/images/coding9.webp" class="img-fluid" alt="Front-End Development">
+                                </div>
+                                <div class="product-body text-center">
+                                    <h5>Front-End Development</h5>
+                                    <p>Online/Offline</p>
+                                    <h5><del>$299</del> $249</h5>
+                                    <div class="mt-4">
+                                        <a href="frontendcourse.html" class="btn-main">Enroll now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item product">
+                                <div class="product-img position-relative">
+                                    <div class="discount-label">Save $50</div>
+                                    <img src="assets/images/c1.jpeg" class="img-fluid" alt="Back-End Development">
+                                </div>
+                                <div class="product-body text-center">
+                                    <h5>Back-End Development</h5>
+                                    <p>Online/Offline</p>
+                                    <h5><del>$249</del> $199</h5>
+                                    <div class="mt-4">
+                                        <a href="#" class="btn-main">Enroll now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item product">
+                                <div class="product-img position-relative">
+                                    <div class="discount-label">Save $100</div>
+                                    <img src="assets/images/fullstackcourse.png" class="img-fluid" alt="Full-Stack Development">
+                                </div>
+                                <div class="product-body text-center">
+                                    <h5>Full-Stack Development</h5>
+                                    <p>Online</p>
+                                    <h5><del>$399</del> $299</h5>
+                                    <div class="mt-4">
+                                        <a href="fullstackcourse.html" class="btn-main" target="_blank">Enroll now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    /* General Styles */
+    .section-head-title {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .section-head-tag {
+        color: #007bff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    /* Product Image Section */
+    .product-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    .product-img img {
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .product-img:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* Discount Label */
+    .discount-label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #FF4D4D;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        text-transform: uppercase;
+    }
+    
+    /* Product Body */
+    .product-body {
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #eee;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+    }
+    .product-body h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .product-body p {
+        font-size: 0.9rem;
+        color: #555;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Button */
+    .btn-main {
+        background: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .btn-main:hover {
+        background: #0056b3;
+        color: #fff;
+    }
+    
+    /* Product Hover Effects */
+    .product:hover .product-img {
+        transform: translateY(-10px);
+    }
+    </style>
+     
+</body>
+</html>

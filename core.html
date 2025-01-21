@@ -376,8 +376,8 @@ body {
 
 
 
-<!-- Full Stack Developer Course Card -->
-<!-- Full Stack Developer Course Card -->
+<!-- TallStack Developer Course Card -->
+
 <div class="main-content">
     <style>
        .animated-bgs {
@@ -426,99 +426,95 @@ body {
         }
 
         .text-sections {
-            max-width: 50%;
-            color: white;
-            text-align: left; /* Ensure all text aligns to the left */
-        }
+    max-width: 50%;
+    color: white;
+    text-align: left; /* Ensure text aligns to the left on larger screens */
+}
 
-        .image-sections {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1.5rem;
-            background-color: #333;
-            border-radius: 15px;
-            width: 180px;
-            height: 180px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
+.image-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #333;
+    border-radius: 15px;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
 
-        .image-sections img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+.image-sections img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    object-fit: cover;
+}
 
-        .image-sections:hover {
-            transform: scale(1.1);
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-        }
+.image-sections:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
 
-        .buttons {
-            background-color: #0066cc;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 8px;
-            text-transform: uppercase;
-            font-size: 1rem;
-            font-weight: normal; /* Make button text normal */
-            transition: background-color 0.3s ease;
-        }
+.buttons {
+    background-color: #0066cc;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: normal; /* Make button text normal */
+    transition: background-color 0.3s ease;
+}
 
-        .buttons:hover {
-            background-color: #005bb5;
-        }
+.buttons:hover {
+    background-color: #005bb5;
+}
 
-        @media (max-width: 768px) {
-            .cards {
-                flex-direction: column;
-                align-items: center;
-            }
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px;
+    }
 
-            .text-sections {
-                max-width: 100%;
-                margin-bottom: 1.5rem;
-                text-align: left; /* Ensure left alignment on smaller screens */
-            }
+    .text-sections {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+        text-align: center; /* Center text on smaller screens */
+    }
 
-            .image-sections {
-                width: 150px;
-                height: 150px;
-            }
-
-            .image-sections img {
-                max-width: 100px;
-            }
-        }
-    </style>
+    .image-sections {
+        margin-bottom: 1.5rem; /* Add spacing between image and text */
+    }
+}
+</style>
 
     <div class="animated-bgs"></div>
 
-    <!-- Card with Front-End Development Content -->
+    <!-- Card with TallStack Development Content -->
      
-    <div class="cards">
-        <div class="text-sections">
-            <h2 class="font-semibold text-3xl lg:text-4xl mb-4">Master Front-End Development</h2>
+    <div class="cards d-flex flex-wrap align-items-center">
+        <!-- Image Section -->
+        <div class="image-sections order-0 order-md-1 ">
+            <img src="assets/images/core.png" alt="TallStack Development Course" class="img-fluid">
+        </div>
+    
+        <!-- Text Section -->
+        <div class="text-sections order-1 order-md-0">
+            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 " style="padding-top: 10px;">Master CORE Software Development</h2>
             <p class="mt-3 text-lg font-light leading-relaxed">
-                Dive into the world of Front-End Development and create stunning, responsive, and accessible web interfaces. 
-                Learn to build engaging user experiences using HTML, CSS, and JavaScript, while mastering responsive design 
-                and accessibility best practices.
+                Master the fundamentals of Core Software Development by learning key concepts like object-oriented programming, data structures, algorithms, and software design principles.
             </p>
             <div class="mt-6">
-                <button class="buttons">
+                <button class="buttons btn btn-primary btn-lg">
                     Start Learning Now
                 </button>
             </div>
         </div>
-
-        <!-- Enhanced Image Section -->
-        <div class="image-sections">
-            <img src="assets/images/frontend2.png" alt="Front-End Development Course" class="img-fluid rounded-full">
-        </div>
     </div>
-</div>
+    
+    
 
 <div style="margin-top: 50px;"></div>
 
@@ -593,11 +589,15 @@ body {
 </div> --><div style="margin-top: 150px;"></div>
 <div class="animated-text-wrapper">
     <div class="animated-text">
-        <span> Learn Core Principles!  Master the Basics  Enroll Now </span>
-        <span>Learn Core Principles!  Master the Basics  Enroll Now </span>
-        <span>Learn Core Principles!  Master the Basics  Enroll Now </span>
-        <span>Learn Core Principles!  Master the Basics  Enroll Now </span>
+        <span>Master the fundamentals of programming with languages like Python, Java, and C++.</span>
+        <span>Understand data structures and algorithms to solve complex problems efficiently.</span>
+        <span>Design scalable software using Object-Oriented Programming (OOP) principles.</span>
+        <span>Collaborate effectively using version control systems like Git for code management.</span>
+        <span>Build robust back-end systems with databases like MySQL, PostgreSQL, and MongoDB.</span>
+        <span>Write high-quality code with thorough testing and debugging techniques.</span>
+        <span>Deploy applications using cloud platforms like AWS, Azure, and Google Cloud.</span>
     </div>
+    
     
 </div>
 <style>
@@ -610,7 +610,7 @@ body {
     position: relative;
     border: solid #000000; /* Optional border for styling */
     /* border-radius: 10px; */
-    padding: 10px 0;
+    padding: 5px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -638,61 +638,73 @@ body {
         transform: translateX(-100%);
     }
 }
+@media (max-width: 768px) {
+        /* Make the font smaller on mobile */
+        .animated-text {
+            font-size: 1rem;
+        }
 
+        /* Adjust padding and container settings for mobile */
+        .animated-text-wrapper {
+            padding: 5px 0;
+            top: -90px;
+        }
+    }
 
 </style>
 
     
 <!-- horizontal -->
-<br>
-<h2 style="color: white; margin-bottom: 1.5em;">Full-Stack Development Course</h4>
+<!-- <br>
+<h2 style="color: white; margin-bottom: 1.5em;">TallStack Mastery Course</h2>
 <div style="margin-top: 50px;"></div>
 <div class="flip">
-  <div class="front" style="background-image: url('assets/images/coding2.jpg');">
-    <h1 class="text-shadow">Problem-Solving</h1>
+  <div class="front" style="background-image: url('assets/images/tailwind.png');">
+    <h1 class="text-shadow">Responsive Design</h1>
   </div>
   <div class="back">
-    <h2>Programming Languages</h2>
-<p>Learn Python, JavaScript, Java, and more.</p>
-<p><strong>Duration:</strong> 8 weeks</p>
-<p><strong>Prerequisite:</strong> Basic programming knowledge (any language)</p>
-<button onclick="alert('Enroll in Programming Languages')">Enroll Now</button>
+    <h2>Master Tailwind CSS</h2>
+    <p>Learn utility-first CSS to build responsive, modern, and visually stunning UIs.</p>
+    <p><strong>Duration:</strong> 6 weeks</p>
+    <p><strong>Prerequisite:</strong> Basic HTML & CSS knowledge</p>
+    <button onclick="alert('Enroll in Tailwind CSS Mastery')">Enroll Now</button>
   </div>
 </div>
 
+
 <div class="flip">
   <div class="front" style="background-image: url('assets/images/coding1.jpg');">
-    <h1 class="text-shadow">Algorithm Design:</h1>
+    <h1 class="text-shadow">Dynamic</h1>
   </div>
   <div class="back">
-    <h2>Data Structures</h2>
-<p>Optimize projects with appropriate data structures.</p>
+    <h2>Alpine.js Essentials</h2>
+<p>Create lightweight, interactive components with minimal JavaScript.</p>
 <p><strong>Duration:</strong> 8 weeks</p>
-<p><strong>Prerequisite:</strong> Basic programming knowledge (any language)</p>
+<p><strong>Prerequisite:</strong> Basic HTML & JavaScript knowledge</p>
 <button onclick="alert('Enroll in Data Structures')">Enroll Now</button>
   </div>
 </div>
 <div class="flip">
   <div class="front" style="background-image: url('assets/images/coding3.jpg');">
-    <h1 class="text-shadow">Data Structures</h1>
+    <h1 class="text-shadow">Powerful Back-End</h1>
   </div>
   <div class="back">
-    <h2>Algorithm Design</h2>
-<p>Understand and implement efficient algorithms.</p>
+    <h2>Laravel Framework</h2>
+<p>Master building dynamic web applications with Laravel’s robust features.</p>
 <p><strong>Duration:</strong> 8 weeks</p>
-<p><strong>Prerequisite:</strong> Basic programming knowledge (any language)</p>
+<p><strong>Prerequisite:</strong> Basic PHP knowledge</p>
 <button onclick="alert('Enroll in Algorithm Design')">Enroll Now</button>
   </div>
 </div>
 <div class="flip">
   <div class="front" style="background-image: url('assets/images/coding4.jpg');">
-    <h1 class="text-shadow">Programming LanguagesBackend Development</h1>
+    <h1 class="text-shadow">Interactive Components</h1>
   </div>
   <div class="back">
-    <h2>Problem-Solving</h2>
-<p>Master breaking down complex problems into manageable solutions.</p>
-<p><strong>Duration:</strong> 8 weeks</p>
-<p><strong>Prerequisite:</strong> Basic programming knowledge (any language)</p>
+    <h2>Livewire Framework</h2>
+<p>Build modern, dynamic web applications without writing JavaScript.</p>
+<p><strong>Duration:</strong> 6 weeks</p>
+<p><strong>Prerequisite:</strong> Basic programming knowledge </p>
 <button onclick="alert('Enroll in Problem-Solving')">Enroll Now</button>
   </div>
 </div>
@@ -701,547 +713,458 @@ body {
 </div>
 
 
-<br>
+<br> -->
 
 <section class="carrer-path">
-    
-
-
     <div class="content-wrapper">
         <!-- Course Header -->
         <div class="course-header">
             <h2 class="course-subtitle">Core Software Development Principles</h2>
-            <h1>Software Developer Path</h1>
+            <h1>Course Details</h1>
             <p>Master the essentials of Front-End Development, from HTML to advanced techniques.</p>
         </div>
-        
-    
+
         <div class="card-wrapper">
-            <!-- Frontend Development Course -->
-            <div class="single-card">
-                <article class="card-item">
-                    <figure class="card-image-wrapper">
-                        <img src="assets/images/frontend.png" alt="Frontend Development Course" />
-                    </figure>
-                    <div class="card-header-wrapper">
-                        <a href="#">Frontend Development</a>
-                    </div>
-                    <div class="card-content-wrapper">
-                        <h3>What You Will Learn:</h3>
-                        <ul>
-                            <li>HTML, CSS, and JavaScript Basics</li>
-                            <li>Responsive Web Design</li>
-                            <li>Modern Frameworks (e.g., React, Vue.js)</li>
-                            <li>Version Control with Git</li>
-                        </ul>
-                        <p><strong>Time to Complete:</strong> 6 Weeks</p>
-                    </div>
-                    <div class="card-footer-wrapper">
-                        <button class="enroll-btn">Enroll Now</button>
-                    </div>
-                </article>
-            </div>
-    
+
+
             <!-- Tailwind CSS Course -->
-            <div class="single-card">
-                <article class="card-item">
-                    <figure class="card-image-wrapper">
-                        <img src="assets/images/tailwind.png" alt="Tailwind CSS Course" />
-                    </figure>
-                    <div class="card-header-wrapper">
-                        <a href="#">Tailwind CSS Mastery</a>
+            <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
+              <article class="card-item">
+                <figure class="card-image-wrapper">
+                  <img src="assets/images/prog_fundamentals.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
+                </figure>
+                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
+                  <a href="#" style="font-size: 1.3rem; font-weight: bold; color: rgb(43, 79, 255);">Programming Fundamentals</a> <!-- Increased font size and centered -->
+                </div>
+                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
+                  <h3>What You Will Learn:</h3>
+                  <div style="margin-bottom: 10px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Basic programming concepts and syntax</span>
                     </div>
-                    <div class="card-content-wrapper">
-                        <h3>What You Will Learn:</h3>
-                        <ul>
-                            <li>Utility-First CSS Design</li>
-                            <li>Customizing Themes</li>
-                            <li>Building Modern UI Components</li>
-                            <li>Integration with Frameworks</li>
-                        </ul>
-                        <p><strong>Time to Complete:</strong> 4 Weeks</p>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Variables, data types, and operators</span>
                     </div>
-                    <div class="card-footer-wrapper">
-                        <button class="enroll-btn">Enroll Now</button>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Control structures (loops, conditionals) </span>
                     </div>
-                </article>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Certification</span>
+                    </div>
+                  </div>
+                  <p><strong>Time to Complete:</strong> 2 Weeks</p>
+                </div>
+                <div class="card-footer-wrapper" style="display: flex; justify-content: center; padding: 10px;">
+                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
+                </div>
+                
+              </article>
             </div>
-    
-            <!-- MERN Stack Development Course -->
-            <div class="single-card">
-                <article class="card-item">
-                    <figure class="card-image-wrapper">
-                        <img src="assets/images/mern.png" alt="MERN Stack Development Course" />
-                    </figure>
-                    <div class="card-header-wrapper">
-                        <a href="#">MERN Stack</a>
+
+          
+          <!-- Frontend Development Course -->
+          <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
+              <article class="card-item">
+                <figure class="card-image-wrapper">
+                  <img src="assets/images/dsa.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
+                </figure>
+                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
+                  <a href="#" style="font-size: 1.3rem; font-weight: bold; color: rgb(43, 79, 255);">Data Structures and Algorithms</a> <!-- Increased font size and centered -->
+                </div>
+                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
+                  <h3>What You Will Learn:</h3>
+                  <div style="margin-bottom: 10px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Arrays, Linked Lists, Stacks</span>
                     </div>
-                    <div class="card-content-wrapper">
-                        <h3>What You Will Learn:</h3>
-                        <ul>
-                            <li>MongoDB, Express.js, React, and Node.js</li>
-                            <li>Building REST APIs</li>
-                            <li>Authentication and Authorization</li>
-                            <li>Deploying Full-Stack Applications</li>
-                        </ul>
-                        <p><strong>Time to Complete:</strong> 10 Weeks</p>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Trees, Graphs, Hash Maps</span>
                     </div>
-                    <div class="card-footer-wrapper">
-                        <button class="enroll-btn">Enroll Now</button>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Algorithm design</span>
                     </div>
-                </article>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Certification</span>
+                    </div>
+                  </div>
+                  <p><strong>Time to Complete:</strong> 4 Weeks</p>
+                </div>
+                <div class="card-footer-wrapper" style="display: flex; justify-content: center; padding: 10px;">
+                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
+                </div>
+                
+              </article>
             </div>
+  
+        
+  
+          <!-- MERN Stack Development Course -->
+          <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
+              <article class="card-item">
+                <figure class="card-image-wrapper">
+                  <img src="assets/images/oops.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
+                </figure>
+                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
+                  <a href="#" style="font-size: 1.3rem; font-weight: bold; color: rgb(43, 79, 255);">Object-Oriented Programming</a> <!-- Increased font size and centered -->
+                </div>
+                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
+                  <h3>What You Will Learn:</h3>
+                  <div style="margin-bottom: 10px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span> Classes, Objects, and Methods</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Encapsulation, Abstraction, Inheritance</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Designing scalable and reusable systems</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
+                      <span>Certification</span>
+                    </div>
+                  </div>
+                  <p><strong>Time to Complete:</strong> 4 Weeks</p>
+                </div>
+                <div class="card-footer-wrapper" style="text-align: center; padding: 10px;">
+                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
+                </div>
+              </article>
+            </div>
+
         </div>
     </div>
-    
-    <style>
-        /* General Styles */
-        .content-wrapper {
-            font-family: "Lexend", sans-serif;
-            line-height: 1.5;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            color: #ffffff;
-            background-color: rgb(23, 23, 23);
-            padding: 40px 20px;
-        }
-    
-        .course-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #fff; /* For consistent text coloring */
-}
+</section>
 
-.course-header .course-subtitle {
-    font-size: 1.2rem;
-    color: #007bff; /* Blue text */
-    font-weight: 400; /* Normal weight */
-    margin-bottom: 5px;
-}
-
-.course-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700; /* Bold */
-    margin: 10px 0;
-    color: #fff;
-}
-
-.course-header p {
-    color: #ccc;
-    font-size: 1rem;
-    margin-top: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-}
-
-    
-        .card-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-            width: 100%;
-            
-            max-width: 1200px;
-        }
-    
-        .single-card {
-            width: calc(33.333% - 20px);
-            box-sizing: border-box;
-        }
-    
-        .card-item {
-            background-color: rgb(23, 23, 23);
-            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            overflow: hidden;
-            padding: 1.25rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            justify-content: space-between; /* Ensures consistent spacing inside the card */
-            height: 650px; /* Fixed height for uniform card sizes */
-        }
-    
-        .card-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 0 2px rgb(0, 61, 122), 0 10px 60px 0 rgba(0, 0, 0, 0.3);
-        }
-    
-        .card-image-wrapper img {
-            max-width: 100%;
-            height: 200px;
-            object-fit: contain;
-            object-position: center;
-            border-radius: 10px;
-            background: #f4f4f4;
-        }
-    
-        .card-header-wrapper {
-            margin: 1.5rem 0;
-        }
-    
-        .card-header-wrapper a {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: rgb(0, 61, 122);
-            text-decoration: none;
-        }
-        .card-content-wrapper ul li {
-        margin-bottom: 10px; /* Space between list items */
+<style>
+    /* General Styles */
+    .content-wrapper {
+        font-family: "Lexend", sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        color: #ffffff;
+        background-color: rgb(23, 23, 23);
+        padding: 40px 20px;
     }
-        .card-content-wrapper h3 {
-            font-size: 1.4rem; /* Slightly larger heading size */
-            margin-bottom: 10px;
-            color: #fff;
-            border-bottom: 2px solid rgba(0, 180, 216, 0.4); /* Subtle divider */
-        }
-    
-        .card-content-wrapper ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            color: #ddd; /* Softer white for contrast */
-        font-size: 1rem; /* Normal font size for bullet points */
-        line-height: 1.6; /* Add spacing for better readability */
-        font-weight: 400; /* Keep text light but readable */
-        }
-    
-        .card-content-wrapper p {
-        font-size: 1.1rem; /* Slightly larger for emphasis */
-        color: #ccc; /* Softer tone */
+
+    .course-header {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .course-header .course-subtitle {
+        font-size: 1.2rem;
+        color: #007bff;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .course-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 10px 0;
+        color: #fff;
+    }
+
+    .course-header p {
+        color: #ccc;
+        font-size: 1rem;
         margin-top: 10px;
-        font-weight: 500; /* Add some weight for importance */
-        }
-        .card-header-wrapper a {
-        font-size: 1.8rem; /* Larger font for course title */
-        font-weight: 700; /* Bold for emphasis */
-        color: rgb(43, 79, 255); /* Consistent with the accent color */
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+    }
+
+    /* Card Wrapper */
+    .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .single-card {
+        width: calc(33.333% - 20px);
+        box-sizing: border-box;
+    }
+
+    .card-item {
+        background-color: rgb(23, 23, 23);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 1.25rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        justify-content: space-between;
+        height: 650px;
+    }
+
+    .card-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 0 2px rgb(0, 61, 122), 0 10px 60px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .card-image-wrapper img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 10px;
+        background: #f4f4f4;
+    }
+
+    .card-header-wrapper {
+        margin: 1.5rem 0;
+    }
+
+    .card-header-wrapper a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(0, 61, 122);
         text-decoration: none;
+    }
+
+    .card-content-wrapper ul li {
         margin-bottom: 10px;
-        display: inline-block;
-        transition: color 0.3s ease; /* Subtle color change on hover */
     }
-    .card-header-wrapper a:hover {
-        color: #0096c7; /* Darker shade for hover effect */
+
+    .card-content-wrapper h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        color: #fff;
+        border-bottom: 2px solid rgba(0, 180, 216, 0.4);
     }
-        .card-footer-wrapper {
-            display: flex;
-            justify-content: center;
-           
-            margin-top: auto; /* Push the footer to the bottom */
-        }
-    
-        .enroll-btn {
+
+    .card-content-wrapper ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        color: #ddd;
+        font-size: 1rem;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+
+    .card-content-wrapper p {
+        font-size: 1.1rem;
+        color: #ccc;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+    .card-footer-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+    }
+
+    .enroll-btn {
         background-color: rgb(43, 79, 255);
         color: #fff;
         border: none;
-        padding: 12px 25px; /* Add more padding for better button visibility */
-        border-radius: 8px; /* Slightly rounded corners for modern look */
+        padding: 12px 25px;
+        border-radius: 8px;
         cursor: pointer;
-        font-size: 1.1rem; /* Larger font size for importance */
-        font-weight: 600; /* Bold for emphasis */
+        font-size: 1.1rem;
+        font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 1px; /* Adds a clean, modern feel */
+        letter-spacing: 1px;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
-    
+
     .enroll-btn:hover {
-        background-color: #0096c7; /* Darker hover color */
-        transform: translateY(-3px); /* Subtle lift effect on hover */
+        background-color: #0096c7;
+        transform: translateY(-3px);
     }
-    </style>
-    
-    <section class="container py-2 mt-4 mb-4">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
-                <div class="section-head-tag">Core Software Development Principles</div>
-                <h2 class="section-head-title">Software Developer Path</h2>
-                <p class="section-head-body" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: rgb(157, 157, 158);">Master the essentials of Front-End Development, from HTML and CSS to JavaScript and responsive design...</p>
-    
-    
-            </div>
-        </div>
-        <!-- timeline item 1 -->
-        <div class="row no-gutters">
-            <div class="col-sm"> <!--spacer--> </div>
-            <!-- timeline item 1 center dot -->
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-                <div class="row h-50">
-                    <div class="col">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-                <h5 class="m-2">
-                    <span class="badge badge-pill bg-light border">&nbsp;</span>
-                </h5>
-                <div class="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-            </div>
-            <!-- timeline item 1 event content -->
-            <div class="col-sm py-2">
-                <div class="card bg-dark">
-                    <div class="card-body">
-                        <div class="float-right small" style="font-size: 16px;">Week 1 - 3</div>
-                        <h4 class="card-title" style="font-size: 19.2px;">Phase 1: Introduction to Software Development</h4>
-                        <p class="card-text" style="font-size: 16px; color: rgb(157, 157, 158);">In this phase, you'll learn the foundational principles of software development, including understanding the software development life cycle (SDLC), version control, and basic project management concepts.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/row-->
-        
-        <!-- timeline item 2 -->
-        <div class="row no-gutters">
-            <div class="col-sm py-2">
-                <div class="card bg-dark">
-                    <div class="card-body">
-                        <div class="float-right small" style="font-size: 16px;">Week 4 - 6</div>
-                        <h4 class="card-title" style="font-size: 19.2px;">Phase 2: Object-Oriented Design</h4>
-                        <p class="card-text" style="font-size: 16px; color: rgb(157, 157, 158);">Learn the core principles of object-oriented design (OOD), including classes, objects, inheritance, encapsulation, and polymorphism. These concepts are essential for creating scalable, maintainable software systems.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-                <div class="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-                <h5 class="m-2">
-                    <span class="badge badge-pill bg-light border">&nbsp;</span>
-                </h5>
-                <div class="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-            </div>
-            <div class="col-sm"> <!--spacer--> </div>
-        </div>
-        <!--/row-->
-        
-        <!-- timeline item 3 -->
-        <div class="row no-gutters">
-            <div class="col-sm"> <!--spacer--> </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-                <div class="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-                <h5 class="m-2">
-                    <span class="badge badge-pill bg-light border">&nbsp;</span>
-                </h5>
-                <div class="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-            </div>
-            <div class="col-sm py-2">
-                <div class="card bg-dark">
-                    <div class="card-body">
-                        <div class="float-right small" style="font-size: 16px;">Week 7 - 9</div>
-                        <h4 class="card-title" style="font-size: 19.2px;">Phase 3: Data Structures & Algorithms</h4>
-                        <p class="card-text" style="font-size: 16px; color: rgb(157, 157, 158);">Learn the importance of data structures and algorithms. Topics will include arrays, linked lists, trees, graphs, sorting, and searching. Understanding these will help you write efficient and optimized code.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/row-->
-        
-        <!-- timeline item 4 -->
-        <div class="row no-gutters">
-            <div class="col-sm py-2">
-                <div class="card bg-dark">
-                    <div class="card-body">
-                        <div class="float-right small" style="font-size: 16px;">Week 10 - 12</div>
-                        <h4 class="card-title" style="font-size: 19.2px;">Phase 4: Software Testing & Debugging</h4>
-                        <p class="card-text" style="font-size: 16px; color: rgb(157, 157, 158);">In this phase, you’ll dive into software testing, including unit tests, integration tests, and debugging techniques. You'll learn how to improve the quality and reliability of your code through effective testing practices.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-                <div class="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-                <h5 class="m-2">
-                    <span class="badge badge-pill bg-light border">&nbsp;</span>
-                </h5>
-                <div class="row h-50">
-                    <div class="col">&nbsp;</div>
-                    <div class="col">&nbsp;</div>
-                </div>
-            </div>
-            <div class="col-sm"> <!--spacer--> </div>
-        </div>
-        <!--/row-->
-    </section>
-    
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    
-        .wrapper {
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
+
+    /* Mobile responsiveness */
+    @media only screen and (max-width: 768px) {
+        .card-wrapper {
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            background-color: rgb(23, 23, 23);
-            overflow-x: hidden;
         }
-    
-        .carousel-container {
-            width: 90%;
-            max-width: 1200px;
-            overflow: hidden;
-            position: relative;
-            background-color: #1a1a1a;
-            border-radius: 20px;
-            padding: 20px;  /* Added padding for better container spacing */
+
+        .single-card {
+            width: 100%;
+            margin-bottom: 20px;
         }
-    
-        .carousel {
-            display: flex;
-            transition: transform 0.4s ease-in-out;
-            gap: 20px; /* Adding space between the cards */
-        }
-    
-        .review-card {
-            flex: 0 0 100%;
-            max-width: 100%;
-            background: #1e1e1e;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            text-align: left;  /* Text aligned to the left */
-            color: white;
-            transition: transform 0.3s, box-shadow 0.3s;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-            background-color: #2c2c2c;
-            box-sizing: border-box;
-        }
-    
-        .review-card:hover {
-            transform: scale(1.05);  /* Grows the card but stays within the container */
-            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
-        }
-    
-        .review-card img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        .review-card h3 {
-            margin: 10px 0;
-            font-size: 1.25rem;
-            color: #ffffff;
-        }
-    
-        .review-card .stars {
-            color: #FFD700;
-            margin-bottom: 15px;
-        }
-    
-        .review-card p {
-            font-size: 1rem;
-            color: #bbbbbb;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-    
-        .review-card .course-details {
-            margin: 15px 0;
-            font-size: 0.9rem;
-            color: #aaa;
-        }
-    
-        .review-card .course-details span {
-            font-weight: bold;
-        }
-    
-        .review-card .action-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 15px;
-            background-color: #FF5722;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+
+        .card-header-wrapper a {
+            font-size: 1.2rem;
             text-align: center;
         }
-    
-        .review-card .action-btn:hover {
-            background-color: #E64A19;
+
+        .card-content-wrapper {
+            font-size: 0.9rem;
         }
-    
-        .carousel-controls {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+
+        .enroll-btn {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
+            padding: 12px 20px;
         }
+    }
+</style>
+    <!-- Start Download -->
+    <section id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
+                    <h2 class="section-head-title">Downloads</h2>
+                    <p class="section-head-body">Master the core principles of Software Development, including programming fundamentals, data structures, algorithms, and software design patterns to build efficiently.</p>
+
+                    <a href="#" class="btn btn-outline-primary">Software Development Syllabus</a>
+                    <a href="#" class="btn btn-outline-danger">RILT Syllabus</a>
+                </div>
+            </div>
+    </section>
+    <!-- End Download -->
+<section id="faqs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
+                <div class="section-head-tag">FAQs</div>
+                <h2 class="section-head-title">Frequently Asked Questions</h2>
+                <p class="section-head-body">Find answers to common questions about core software development courses, programming, and building robust applications.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-12 faqs-container offset-lg-2">
+                <div class="faq">
+                    <div class="faq-head">
+                        <h5 class="mb-0" data-toggle="collapse" data-target="#faq1" aria-expanded="true">
+                            What is software development?
+                        </h5>
+                    </div>
+                    <div class="collapse show" id="faq1">
+                        <div class="faq-body">
+                            <p>Software development is the process of designing, coding, testing, and maintaining software applications. It involves a range of disciplines, including programming, database management, and algorithm design, to create functional and scalable applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-head">
+                        <h5 class="mb-0" data-toggle="collapse" data-target="#faq2">
+                            Do I need prior knowledge before learning core software development concepts?
+                        </h5>
+                    </div>
+                    <div class="collapse" id="faq2">
+                        <div class="faq-body">
+                            <p>Core software development courses are designed for all skill levels. While no prior knowledge is necessary for beginner courses, understanding basic programming concepts will be beneficial. Advanced courses may require knowledge of algorithms, data structures, or object-oriented programming.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-head">
+                        <h5 class="mb-0" data-toggle="collapse" data-target="#faq3">
+                            How can I start learning core software development concepts?
+                        </h5>
+                    </div>
+                    <div class="collapse" id="faq3">
+                        <div class="faq-body">
+                            <p>You can start learning by enrolling in beginner-level courses on programming fundamentals, data structures, and algorithms. We recommend starting with languages like Python or JavaScript to build a strong foundation in coding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-head">
+                        <h5 class="mb-0" data-toggle="collapse" data-target="#faq4">
+                            What resources can help me improve my software development skills?
+                        </h5>
+                    </div>
+                    <div class="collapse" id="faq4">
+                        <div class="faq-body">
+                            <p>In addition to our courses, you can enhance your skills by practicing coding regularly on platforms like LeetCode, HackerRank, or CodeWars. Joining developer communities, reading books, and contributing to open-source projects can also provide valuable hands-on experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Align FAQ text to the left */
+    .faq-body {
+        text-align: left;
+    }
     
-        .control-btn {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-size: 1.5rem;
-        }
-    
-        .control-btn:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-    
-        /* Responsive Adjustments */
-        @media (min-width: 768px) {
-            .review-card {
-                flex: 0 0 48%;
-                max-width: 48%;
-            }
-        }
-    
-        @media (min-width: 1024px) {
-            .review-card {
-                flex: 0 0 32%;
-                max-width: 32%;
-            }
-        }
-    </style>
-    
+    /* Adjusting alignment of the FAQ header if needed */
+    .faq-head h5 {
+        text-align: left;
+        color: white; /* Set the color of the h5 text to white */
+    }
+</style>
+
    
     
-<div style="margin-top: 100px;"></div>
+    <!-- End FAQs -->
+     <style>
+#faqs
+{
+    padding: 20px 0;
+}
+#faqs .faqs-container .faq
+{
+    border-top: 1px solid var(--color-border);
+    padding: 15px;
+}
+#faqs .faqs-container .faq .faq-head
+{
+    padding: 15px 0px;
+    position: relative;
+}
+#faqs .faqs-container .faq .faq-head h5
+{
+    width: 90%;
+    cursor: pointer;
+}
+#faqs .faqs-container .faq .faq-head h5::before
+{
+    content: 'keyboard_arrow_down';
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Material Icons Round';
+    height: 25px;
+    width: 25px;
+    color: #fefefe;
+    background: var(--color-sec);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#faqs .faqs-container .faq .faq-head h5[aria-expanded=true]::before
+{
+    content: 'keyboard_arrow_up';
+}
+</style>
+   
+<div style="margin-top: 50px;"></div>
+<!-- Start Contact -->
+<div style="margin-top: 50px;"></div>
 <!-- Start Contact -->
 <section id="contact">
     <div class="container" style="border-radius: 15px; box-shadow: 0 4px 10px rgb(29, 29, 31); padding: 20px; background: rgb(29, 29, 31); color: #fff;">
@@ -1249,29 +1172,23 @@ body {
             <div class="col-lg-6 contact-information">
                 <div class="section-head-tag" style="color: #007bff;">Contact</div>
                 <h2 class="section-head-title" style="color: #fff;">Feel Free To Contact Us</h2>
-                <p class="mb-5 section-head-body">We are always available for your service with great support. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="mb-5 section-head-body">We are always available for your service with great support.</p>
                
                 <div class="info mb-3 d-flex align-items-center">
                     <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">
-                            location_on
-                        </i>
+                        <i class="material-icons-round">location_on</i>
                     </div>
-                    <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80%;">Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
+                    <p style="text-align: left;">Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
                 </div>
                 <div class="info mb-3 d-flex align-items-center">
                     <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">
-                            mail
-                        </i>
+                        <i class="material-icons-round">mail</i>
                     </div>
                     <a href="mailto:info@tech2edge.com" style="color: #007bff;">info@tech2edge.com</a>
                 </div>
                 <div class="info mb-3 d-flex align-items-center">
                     <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">
-                            call
-                        </i>
+                        <i class="material-icons-round">call</i>
                     </div>
                     <a href="tel:+919930249947" style="color: #007bff;">+91 99302 49947</a>
                 </div>
@@ -1292,15 +1209,18 @@ body {
                             <option value="backend">Backend Development</option>
                             <option value="fullstack">Full-Stack Development</option>
                             
+                            <!-- Grouping Core Software Principles option as pre-selected -->
+                            <option value="core_software_principles" selected>Core Software Principles</option>
+                            
                             <!-- Grouping MERN / MEAN Stack options -->
                             <optgroup label="MERN / MEAN Stack">
-                                <option value="mern" selected>MERN Stack</option>
-                                <option value="mean" selected>MEAN Stack</option>
+                                <option value="mern">MERN Stack</option>
+                                <option value="mean">MEAN Stack</option>
                             </optgroup>
                             
                             <!-- Grouping TALL, RILT, & VILT Stacks -->
                             <optgroup label="TALL, RILT, & VILT Stacks">
-                                <option value="tall" selected>TALL Stack</option>
+                                <option value="tall">TALL Stack</option>
                                 <option value="rilt">RILT Stack</option>
                                 <option value="vilt">VILT Stack</option>
                             </optgroup>
@@ -1318,6 +1238,7 @@ body {
         </div>
     </div>
 </section>
+
 
 
          <!-- Start Footer -->
