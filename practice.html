@@ -1,264 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MERN Stack Development</title>
-    <!-- Link to Google Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <style>
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #111;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+<style>
+    #flowchart .mermaid i.fa-lightbulb {
+        color: #5de44b !important;
+    }
 
-.container {
-    text-align: center;
-}
+    #flowchart .mermaid i.fa-users {
+        color: #4af341 !important;
+    }
 
-.download-btn {
-    background-color: #1E3A8A;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.download-btn:hover {
-    background-color: #3B82F6;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: #2E2E2E;
-    border-radius: 8px;
-    padding: 40px;
-    width: 80%;
-    max-width: 700px;
-    text-align: left;
-    max-height: 80vh;
-    overflow-y: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.course-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-.course-description {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #bbb;
-}
-
-.syllabus {
-    margin-bottom: 30px;
-}
-
-.syllabus h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-    color: #fff;
-    font-weight: 500;
-}
-
-.syllabus ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.syllabus li {
-    margin: 8px 0;
-    font-size: 1.1rem;
-    color: #ddd;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Blue color for all material icons */
-.material-icons {
-    color: #1E3A8A;  /* Blue color for the icons */
-}
-
-.enroll-btn {
-    background-color: #10B981;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.enroll-btn:hover {
-    background-color: #059669;
-}
-
-.close-btn {
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.close-btn:hover {
-    color: #FF6347;
-}
-
-    </style>
-    <div class="container">
-        <button id="downloadBtn" class="download-btn"><span class="material-icons">cloud_download</span> Download Course Info</button>
+    #flowchart .mermaid i.fa-book {
+        color: #ddff00;
         
-        <!-- Modal to show the MERN Stack Course syllabus -->
-        <div id="courseModal" class="modal">
-            <div class="modal-content">
-                <span id="closeBtn" class="close-btn"><span class="material-icons">close</span></span>
-                <h2 class="course-title">MERN Stack Development</h2>
-                <p class="course-description">Learn Full Stack Web Development with the MERN Stack (MongoDB, Express.js, React, Node.js). This course covers everything from the basics of web development to building full-stack applications.</p>
-                
-                <div class="syllabus">
-                    <h3><span class="material-icons">laptop_chromebook</span> Week 1: Introduction to Web Development</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Basics of the Internet and Web Development</li>
-                        <li><span class="material-icons">check_circle</span> Installing VSCode and other essential tools</li>
-                        <li><span class="material-icons">check_circle</span> Creating your first webpage: "Hello World"</li>
-                        <li><span class="material-icons">check_circle</span> Basic HTML tags (Headings, Text formatting, etc.)</li>
-                        <li><span class="material-icons">check_circle</span> Project 1: Foodie Woodie (A simple HTML-based food menu webpage)</li>
-                    </ul>
-                    
-                    <h3><span class="material-icons">code</span> Week 2: Advanced HTML</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> List types: Ordered and Unordered Lists</li>
-                        <li><span class="material-icons">check_circle</span> Multimedia elements: Video, Audio, Iframe, Embed</li>
-                        <li><span class="material-icons">check_circle</span> Form elements: Input fields, Buttons, Radio, Checkbox, etc.</li>
-                        <li><span class="material-icons">check_circle</span> Exercise: Create a contact form with validation.</li>
-                    </ul>
+    }
 
-                    <h3><span class="material-icons">brush</span> Week 3: Introduction to CSS</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Styling basics (Inline, Internal, External CSS)</li>
-                        <li><span class="material-icons">check_circle</span> CSS Selectors (Universal, Element, Class, ID)</li>
-                        <li><span class="material-icons">check_circle</span> CSS properties (Font size, Color, Background color)</li>
-                        <li><span class="material-icons">check_circle</span> Practical: Style your "Foodie Woodie" project with CSS.</li>
-                    </ul>
+    #flowchart .mermaid i.fa-cogs {
+        color: #ddff00;
+        
+    }
 
-                    <h3><span class="material-icons">settings</span> Week 4: Intermediate CSS</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Box model: Margin, Padding, Borders</li>
-                        <li><span class="material-icons">check_circle</span> Advanced properties (Box-shadow, Text-align, Hover effects)</li>
-                        <li><span class="material-icons">check_circle</span> Layout design: Display, Position properties</li>
-                    </ul>
+    #flowchart .mermaid i.fa-briefcase {
+        color: #ddff00;
+        
+    }
 
-                    <h3><span class="material-icons">phone_iphone</span> Week 5: Responsive Web Design</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Flexbox: Aligning items, Justify content, and Flex direction</li>
-                        <li><span class="material-icons">check_circle</span> Media Queries: Making websites responsive</li>
-                        <li><span class="material-icons">check_circle</span> Projects: Build a calculator interface, About Me webpage</li>
-                    </ul>
+    #flowchart .mermaid i.fa-trophy {
+        color: #ddff00;
+        
+    }
+</style>
 
-                    <h3><span class="material-icons">settings_input_component</span> Week 6: Version Control with GitHub</h3>
-<ul>
-    <li><span class="material-icons">check_circle</span> Introduction to Git, GitHub workflow</li>
-    <li><span class="material-icons">check_circle</span> Mini Project: Clone the homepage of the Paytm website.</li>
-</ul>
-
-
-                    <h3><span class="material-icons">code</span> Weeks 8-11: JavaScript</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Introduction to JavaScript</li>
-                        <li><span class="material-icons">check_circle</span> Conditional Statements, Arrays, DOM Manipulation</li>
-                    </ul>
-
-                    <h3><span class="material-icons">settings_input_component</span> Weeks 12-16: React.js</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Introduction to React, JSX, Components</li>
-                        <li><span class="material-icons">check_circle</span> Props and State, React Router, React Hooks</li>
-                    </ul>
-
-                    <h3><span class="material-icons">storage</span> Week 17: Full-Stack Development with MERN</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Connecting React with Node.js and MongoDB</li>
-                        <li><span class="material-icons">check_circle</span> Building full-stack applications with REST APIs and React frontend</li>
-                    </ul>
-
-                    <h3><span class="material-icons">cloud_upload</span> Week 18: Deployment</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Deploying MERN applications on platforms (Heroku, Vercel, Netlify)</li>
-                    </ul>
-
-                    <h3><span class="material-icons">code</span> Weeks 19-24: Capstone Project</h3>
-                    <ul>
-                        <li><span class="material-icons">check_circle</span> Project Theme: Build a Full-Stack Hospital Management System</li>
-                        <li><span class="material-icons">check_circle</span> Features: User roles (Admin, Doctor, Patient), Authentication (JWT)</li>
-                        <li><span class="material-icons">check_circle</span> Final project presentation in Week 24</li>
-                    </ul>
-                </div>
-
-                <button class="enroll-btn"><span class="material-icons">school</span> Enroll Now</button>
+<!-- Start Flowchart -->
+<section id="flowchart" class="py-3" style="background-color: var(--bg-sec);">
+    <div class="row justify-content-center align-items-center" style="height: 80vh;">
+        <div class="col-lg-8 col-md-10 text-center">
+            <div class="section-head-tag">The Path</div>
+            <h2 class="section-head-title">It’s a formula designed for YOUR success.</h2>
+            <p class="section-head-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima incidunt
+                possimus voluptatum cumque, odit nulla!</p>
+            <div class="mermaid text-center text-white mt-4">
+                graph TD
+                A[<i class="fas fa-book"></i> Learn the Basics] -->
+                B[<i class="fas fa-cogs"></i> Work on Real Projects]
+                B -->
+                C[<i class="fas fa-briefcase"></i> Build Confidence with Internships]
+                C -->
+                D[<i class="fas fa-trophy"></i> Get Placed with Top Companies]
+                Skills[<i class="fas fa-lightbulb skills-icon"></i> Skills] --> C
+                Support[<i class="fas fa-users support-icon"></i> Support] --> D
             </div>
         </div>
     </div>
-    <script>
-        // Get elements
-const downloadBtn = document.getElementById('downloadBtn');
-const courseModal = document.getElementById('courseModal');
-const closeBtn = document.getElementById('closeBtn');
-
-// Show modal when the button is clicked
-downloadBtn.addEventListener('click', () => {
-    courseModal.style.display = 'flex';
-});
-
-// Close modal when close button is clicked
-closeBtn.addEventListener('click', () => {
-    courseModal.style.display = 'none';
-});
-
-// Close modal if clicked outside of the modal content
-window.addEventListener('click', (event) => {
-    if (event.target === courseModal) {
-        courseModal.style.display = 'none';
-    }
-});
-
-    </script>
-
-</body>
-</html>
+</section>
+<!-- End Flowchart-->

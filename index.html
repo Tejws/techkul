@@ -186,49 +186,178 @@
     <!-- End Pre-Loader -->
 
     <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <!-- <img src="assets/images/logo-c.png" alt="logo" height="20"> -->
-                <h1 style="font-size: 30px;font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                <h1 style="font-size: 30px; font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
             </a>
             <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="material-icons-round">
-                    dehaze
-                </i>
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="material-icons-round">dehaze</i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cover">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#customer-reviews">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faqs">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#cover">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#customer-reviews">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-
             </div>
-            <a href="#" class="btn-main">
+            <!-- Login Button -->
+            <a href="#" class="btn-main" data-toggle="modal" data-target="#loginModal">
                 Login
             </a>
         </div>
     </nav>
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="form-group text-center">
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+/* Modal Styles */
+.modal-content {
+    background-color: #1d1f20; /* Dark background for modal */
+    color: #f0f0f0; /* Light text color */
+    border-radius: 15px; /* Increased border radius for smooth corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    border: none; /* Remove any default border */
+}
+
+/* Modal Header Styles */
+.modal-header {
+    background-color: #333; /* Dark gray header */
+    color: #fff;
+    border-bottom: 1px solid #444; /* Subtle separator */
+    padding: 15px;
+    text-align: center; /* Centered text */
+}
+
+/* Modal Title Styling */
+.modal-title {
+    font-size: 1.75rem; /* Larger title for prominence */
+    font-weight: bold;
+}
+
+/* Close Button Styling */
+.close {
+    color: #aaa; /* Subtle close icon color */
+    font-size: 1.8rem; /* Slightly larger for better accessibility */
+    cursor: pointer; /* Indicate that it is clickable */
+}
+
+.close:hover {
+    color: #fff; /* Change color on hover for better contrast */
+}
+
+/* Modal Body Styles */
+.modal-body {
+    padding: 25px 30px; /* Adjust padding for better spacing */
+}
+
+/* Form Group Label Styling */
+.form-group label {
+    font-size: 1.1rem;
+    color: #ccc; /* Light gray for labels */
+    margin-bottom: 5px; /* Added space between label and input */
+}
+
+/* Input Field Styling */
+.form-control {
+    width: 100%;
+    padding: 12px; /* Increased padding for a more spacious feel */
+    margin-top: 10px; /* Increased space above the input field */
+    background-color: #444; /* Dark background for input fields */
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove the default outline */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 12px; /* Larger button for better usability */
+    border: none;
+    border-radius: 30px; /* Rounded corners for the button */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Modal Background Overlay */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker backdrop */
+}
+
+/* Ensuring modal is centered */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the modal is vertically centered on the screen */
+}
+
+.modal-content {
+    margin: auto; /* Centering the modal content */
+    width: 100%;
+    max-width: 500px; /* Optional: Max width for the modal */
+}
+
+</style>    
+ 
     <!-- Navbar End -->
 
     <!-- Cover Start -->
@@ -482,7 +611,7 @@
                                     <!-- <span class="discount-label">Discounted Price</span> -->
                                 </div>
                                 <div class="product-body text-center">
-                                    <h5>Full-Stack Development</h5>
+                                    <h5>Full-Stack Course</h5>
                                     <p>Online</p>
                                     <h5>₹45,000</h5>
                                     <div class="mt-4">
@@ -510,7 +639,7 @@
                                     <span class="discount-label">Discounted Price</span>
                                 </div>
                                 <div class="product-body text-center">
-                                    <h5>TALL, RILT, & VILT Stacks</h5>
+                                    <h5>TALL & VILT Stacks</h5>
                                     <p>Online</p>
                                     <h5><del>₹45,000</del> <span class="discounted-price">₹35,000</span></h5>
 
@@ -818,12 +947,12 @@
     
     <!-- Start Flowchart -->
     <section id="flowchart" class="py-3" style="background-color: var(--bg-sec);">
-        <div class="row justify-content-center align-items-center" style="height: 80vh;">
+        <div class="row justify-content-center align-items-center" style="height: 100%;">
             <div class="col-lg-8 col-md-10 text-center">
                 <div class="section-head-tag">The Path</div>
                 <h2 class="section-head-title">It’s a formula designed for YOUR success.</h2>
-                <p class="section-head-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima incidunt
-                    possimus voluptatum cumque, odit nulla!</p>
+                <p class="section-head-body">Our tech courses provide the skills needed to thrive in the industry.</p>
+
                 <div class="mermaid text-center text-white mt-4">
                     graph TD
                     A[<i class="fas fa-book"></i> Learn the Basics] -->
@@ -1299,7 +1428,8 @@
                             <a href="#">Terms of Use</a> ᛫
                             <a href="#">Privacy Policy</a> ᛫
                             <a href="#">Company</a> ᛫
-                            <a href="location.html">location</a>
+                            <a href="#">Case Studies</a>
+                            <a href="login">location</a>
                         </div>
                     </div>
                 </div>
