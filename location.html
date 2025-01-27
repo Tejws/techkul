@@ -22,7 +22,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <style>
         body, html {
             overflow-x: hidden; /*To Ensure horizontal scroll is hidden */
@@ -380,17 +381,7 @@ body {
 
 <div class="main-content">
     <style>
-       .animated-bgs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90%; /* Changed from 80% to 100% for more height */
-    background: linear-gradient(135deg, #000428, #004e92, #0f2027);
-    background-size: 200% 200%;
-    animation: gradient-animation 6s ease-in-out infinite;
-    z-index: -1;
-}
+       
 
 
         @keyframes gradient-animation {
@@ -476,8 +467,12 @@ body {
         flex-direction: column;
         align-items: center;
         border-radius: 0px;
+        background-color: transparent; 
+        box-shadow: none;
     }
-
+    .animated-bgs {
+        height: 125%;
+    }
     .text-sections {
         max-width: 100%;
         margin-bottom: 1.5rem;
@@ -487,6 +482,9 @@ body {
     .image-sections {
         margin-bottom: 1.5rem; /* Add spacing between image and text */
     }
+    .buttons{
+        background-color: #000000;
+    }
 }
 </style>
 
@@ -494,26 +492,25 @@ body {
 
     <!-- Card with TallStack Development Content -->
      
-    <div class="cards d-flex flex-wrap align-items-center">
+    <!-- <div class="cards d-flex flex-wrap align-items-center"> -->
         <!-- Image Section -->
-        <div class="image-sections order-0 order-md-1 ">
-            <img src="assets/images/frontend2.png" alt="TallStack Development Course" class="img-fluid">
-        </div>
+        <!-- <div class="image-sections order-0 order-md-1 ">
+            <img src="assets/images/core.png" alt="TallStack Development Course" class="img-fluid">
+        </div> -->
     
         <!-- Text Section -->
-        <div class="text-sections order-1 order-md-0">
-            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 " style="padding-top: 10px;">Frontend Development Course</h2>
+        <!-- <div class="text-sections order-1 order-md-0">
+            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 " style="padding-top: 10px;">Master CORE Software Development</h2>
             <p class="mt-3 text-lg font-light leading-relaxed">
-                Master the essentials of Frontend Development, including HTML, CSS, JavaScript, and responsive design principles.
+                Master the fundamentals of Core Software Development by learning key concepts like object-oriented programming, data structures, algorithms, and software design principles.
             </p>
-            
             <div class="mt-6">
                 <button class="buttons btn btn-primary btn-lg">
                     Start Learning Now
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
     
     
 
@@ -588,32 +585,35 @@ body {
         </div>
     </div>
 </div> --><div style="margin-top: 150px;"></div>
-<div class="animated-text-wrapper">
+<!-- <div class="animated-text-wrapper">
     <div class="animated-text">
-        <span>Learn the fundamentals of Frontend Development with HTML, CSS, and JavaScript.</span>
-        <span>Build responsive designs using modern CSS frameworks like Tailwind and Bootstrap.</span>
-        <span>Create interactive user interfaces with JavaScript and frameworks like React or Vue.js.</span>
-        <span>Master responsive web design to ensure compatibility across devices.</span>
-        <span>Optimize website performance for faster load times and better user experience.</span>
-        <span>Implement best practices for semantic and accessible web development.</span>
-    </div>
+        <span>Master the fundamentals of programming with languages like Python, Java, and C++.</span>
+        <span>Understand data structures and algorithms to solve complex problems efficiently.</span>
+        <span>Design scalable software using Object-Oriented Programming (OOP) principles.</span>
+        <span>Collaborate effectively using version control systems like Git for code management.</span>
+        <span>Build robust back-end systems with databases like MySQL, PostgreSQL, and MongoDB.</span>
+        <span>Write high-quality code with thorough testing and debugging techniques.</span>
+        <span>Deploy applications using cloud platforms like AWS, Azure, and Google Cloud.</span>
+    </div> -->
     
     
 </div>
 <style>
-      /* Wrapper styling */
-      .animated-text-wrapper {
-    width: 100%; /* Full width */
-    background-color: #222;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    border: 1px solid #000; /* Slimmer border */
-    /* border-radius: 5px; */ /* Optional, can uncomment for rounded edges */
-    padding: 8px 2px; /* Very slim padding */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    font-size: 0.4rem; /* Smaller text for a slimmer look */
-    line-height: 1; /* Reduces the vertical space between lines */
+    /* Wrapper styling */
+    .animated-text-wrapper {
+        width: 100%;
+background-color: #222;
+overflow: hidden;
+white-space: nowrap;
+position: relative;
+border: 1px solid #000;
+/* border-radius: 5px; */
+padding: 8px 2px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+font-size: 0.4rem;
+line-height: 1;
+margin-top: 20px; /* Pushes the component a little down */
+top: 10px;
 }
 
 
@@ -718,350 +718,181 @@ body {
 
 <br> -->
 
-<section class="carrer-path">
-    <div class="content-wrapper">
-        <!-- Course Header -->
-        <div class="course-header">
-            <h2 class="course-subtitle">Frontend Development Principles</h2>
-            <h1>Course Details</h1>
-            <p>Master the essentials of Front-End Development, from HTML to advanced techniques.</p>
-        </div>
-
-        <div class="card-wrapper">
-
-
-            <!-- Tailwind CSS Course -->
-            <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
-              <article class="card-item">
-                <figure class="card-image-wrapper">
-                  <img src="assets/images/html.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
-                </figure>
-                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
-                  <a href="#" style="font-size: 1.3rem; font-weight: bold; color: rgb(43, 79, 255);">HTML Fundamentals</a> <!-- Increased font size and centered -->
-                </div>
-                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
-                  <h3>What You Will Learn:</h3>
-                  <div style="margin-bottom: 10px;">
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Structure web pages using HTML</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Use semantic tags for accessible web design</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Create forms and handle user input </span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Certification</span>
-                    </div>
-                  </div>
-                  <p><strong>Time to Complete:</strong> 2 Weeks</p>
-                </div>
-                <div class="card-footer-wrapper" style="display: flex; justify-content: center; padding: 10px;">
-                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
-                </div>
-                
-              </article>
-            </div>
-
-          
-          <!-- Frontend Development Course -->
-          <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
-              <article class="card-item">
-                <figure class="card-image-wrapper">
-                  <img src="assets/images/css_new.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
-                </figure>
-                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
-                  <a href="#" style="font-size: 1.3rem; font-weight: bold; color: rgb(43, 79, 255);">CSS Fundamentals</a> <!-- Increased font size and centered -->
-                </div>
-                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
-                  <h3>What You Will Learn:</h3>
-                  <div style="margin-bottom: 10px;">
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>CSS basics: Selectors, properties, and units</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Layouts: Flexbox and Grid</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Responsive design and media queries</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Transitions, animations</span>
-                    </div>
-                  </div>
-                  <p><strong>Time to Complete:</strong> 4 Weeks</p>
-                </div>
-                <div class="card-footer-wrapper" style="display: flex; justify-content: center; padding: 10px;">
-                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
-                </div>
-                
-              </article>
-            </div>
-  
-        
-  
-          <!-- MERN Stack Development Course -->
-          <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
-              <article class="card-item">
-                <figure class="card-image-wrapper">
-                  <img src="assets/images/js.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
-                </figure>
-                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
-                  <a href="#" style="font-size: 1.3rem; font-weight: bold; color: rgb(43, 79, 255);">JavaScript Fundamentals</a> <!-- Increased font size and centered -->
-                </div>
-                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
-                  <h3>What You Will Learn:</h3>
-                  <div style="margin-bottom: 10px;">
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span> JavaScript syntax and basics</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>DOM manipulation and events</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Working with functions, objects, and arrays</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Certification</span>
-                    </div>
-                  </div>
-                  <p><strong>Time to Complete:</strong> 4 Weeks</p>
-                </div>
-                <div class="card-footer-wrapper" style="text-align: center; padding: 10px;">
-                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
-                </div>
-              </article>
-            </div>
-
-        </div>
-    </div>
-</section>
+     
 
 <style>
-    /* General Styles */
-    .content-wrapper {
-        font-family: "Lexend", sans-serif;
-        line-height: 1.5;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        color: #ffffff;
-        background-color: rgb(23, 23, 23);
-        padding: 40px 20px;
-    }
-
-    .course-header {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-        color: #fff;
-    }
-
-    .course-header .course-subtitle {
-        font-size: 1.2rem;
-        color: #007bff;
-        font-weight: 400;
-        margin-bottom: 5px;
-    }
-
-    .course-header h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin: 10px 0;
-        color: #fff;
-    }
-
-    .course-header p {
-        color: #ccc;
-        font-size: 1rem;
-        margin-top: 10px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.5;
-    }
-
-    /* Card Wrapper */
-    .card-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-    }
-
-    .single-card {
-        width: calc(33.333% - 20px);
-        box-sizing: border-box;
-    }
-
-    .card-item {
-        background-color: rgb(23, 23, 23);
-        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        overflow: hidden;
-        padding: 1.25rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        justify-content: space-between;
-        height: 650px;
-    }
-
-    .card-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0 0 2px rgb(0, 61, 122), 0 10px 60px 0 rgba(0, 0, 0, 0.3);
-    }
-
-    .card-image-wrapper img {
-        max-width: 100%;
-        height: 200px;
-        object-fit: contain;
-        object-position: center;
-        border-radius: 10px;
-        background: #f4f4f4;
-    }
-
-    .card-header-wrapper {
-        margin: 1.5rem 0;
-    }
-
-    .card-header-wrapper a {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: rgb(0, 61, 122);
-        text-decoration: none;
-    }
-
-    .card-content-wrapper ul li {
-        margin-bottom: 10px;
-    }
-
-    .card-content-wrapper h3 {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-        color: #fff;
-        border-bottom: 2px solid rgba(0, 180, 216, 0.4);
-    }
-
-    .card-content-wrapper ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        margin-bottom: 10px;
-        color: #ddd;
-        font-size: 1rem;
-        line-height: 1.6;
-        font-weight: 400;
-    }
-
-    .card-content-wrapper p {
-        font-size: 1.1rem;
-        color: #ccc;
-        margin-top: 10px;
-        font-weight: 500;
-    }
-
-    .card-footer-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: auto;
-    }
-
-    .enroll-btn {
-        background-color: rgb(43, 79, 255);
-        color: #fff;
-        border: none;
-        padding: 12px 25px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .enroll-btn:hover {
-        background-color: #0096c7;
-        transform: translateY(-3px);
-    }
-
-    /* Mobile responsiveness */
-    @media only screen and (max-width: 768px) {
-        .card-wrapper {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .single-card {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .card-header-wrapper a {
-            font-size: 1.2rem;
-            text-align: center;
-        }
-
-        .card-content-wrapper {
-            font-size: 0.9rem;
-        }
-
-        .enroll-btn {
-            width: 100%;
-            padding: 12px 20px;
-        }
-    }
-</style>
-    <!-- Start Download -->
-    <section id="download">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
-                    <h2 class="section-head-title">Downloads</h2>
-                    <p class="section-head-body">Download the complete Frontend Development syllabus to learn HTML, CSS, JavaScript, and modern frameworks for creating responsive and interactive web applications.</p>
-    
-                    <a href="#" class="btn btn-outline-primary">Frontend Development Syllabus</a>
-                    <a href="#" class="btn btn-outline-danger">CSS and JavaScript Guide</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <style>
   
-  #download {
-    padding: 100px 0;
-    background: linear-gradient(90deg, rgba(27, 27, 27, 0.8), rgba(0, 0, 0, 0.8)), 
-                url('assets/images/c1.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  .address-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center; /* Center align the cards horizontally */
+    justify-content: center; /* Center align the content vertically */
+  }
+
+  .address-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: rgb(29, 29, 31);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 10px 20px; /* Reduced margin for a smaller card */
+    max-width: 1000px; /* Limit width of the card */
+    width: 100%; /* Ensure the card takes full width */
+  }
+
+  .address-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .address-content {
+    flex: 1;
+    padding: 20px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap between sections */
+    background: rgb(29, 29, 31);
+    color: white;
+    text-align: left;
+  }
+
+  .address-icon {
+    font-size: 2.5rem; /* Slightly smaller icon */
+    color: #007bff;
+    align-self: flex-start;
+  }
+
+  .address-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduced gap between title, paragraph, and contact info */
+  }
+
+  .address-details h3 {
+    margin: 0;
+    font-size: 1.6rem; /* Reduced font size */
+    font-weight: bold;
+    color: white;
+  }
+
+  .address-details p {
+    margin: 0;
+    font-size: 1rem; /* Reduced font size */
+    line-height: 1.5;
+    color: white;
+  }
+
+  .address-details .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced space between contact details */
+    color: white;
+  }
+
+  .map-wrapper {
+    flex: 1;
+    min-width: 45%; /* Reduced width of the map */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+  }
+
+  .map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 12px 12px 0;
+  }
+
+  @media (max-width: 768px) {
+    .address-card {
+      flex-direction: column;
+      margin: 0 10px 20px;
+    }
+
+    .map-wrapper {
+      min-width: 100%;
+      height: 180px; /* Reduced height of the map */
+    }
+
+    .map-wrapper iframe {
+      border-radius: 0 0 12px 12px;
+    }
   }
 </style>
- 
-      
-    <!-- End Download -->
-<section id="faqs">
+
+
+  
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
+        <div class="section-head-tag">Our Locations</div>
+<h2 class="section-head-title">Best Training Centers in Mumbai</h2>
+<p class="section-head-body">Our training centers are strategically located across Mumbai to ensure easy accessibility and comfort for our students.</p>
+    </div>
+</div>
+
+  <div class="address-section">
+    <!-- First Address Card -->
+    <div class="address-card">
+      <div class="address-content">
+        <div>
+          <span class="material-icons address-icon">location_on</span>
+        </div>
+        <div class="address-details">
+          <h3>Company Headquarters</h3>
+          <p>Located in Bihar our headquarters provides the perfect workspace for innovation and collaboration.</p>
+          <div class="contact-info">
+            <p><strong>Address:</strong> Maranpur near brahmachari baba gali post chand chaura PS Vishnu pad, Gaya Bihar.</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Pincode:</strong> 823001</p>
+            <p><strong>Email:</strong> contact@company.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.810444749964!2d85.00848004616354!3d24.801943521331935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a19ddc9060b%3A0xe89c5ecc41b3d241!2sBaba%20Gali%2C%20Murarpur%2C%20Gaya%2C%20Bihar%20823001!5e0!3m2!1sen!2sin!4v1737628691501!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <!-- Second Address Card -->
+    <div class="address-card">
+      <div class="address-content">
+        <div>
+          <span class="material-icons address-icon">business</span>
+        </div>
+        <div class="address-details">
+            <h3>Tech2Edge Corporate Office</h3>
+            <p>Our corporate office at Tech2Edge is equipped with cutting-edge technology and infrastructure to foster innovation and provide exceptional training for aspiring developers.</p>
+            <div class="contact-info">
+              <p><strong>Address:</strong> Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai</p>
+              <p><strong>Phone:</strong> +91 87654 32109</p>
+              <p><strong>Pincode:</strong> 400703</p>
+              <p><strong>Email:</strong> support@tech2edge.com</p>
+            </div>
+          </div>
+          
+      </div>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7375595107133!2d73.01668551078411!3d19.075272982054607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c12f427655eb%3A0x1072db9bdb944df!2sTech2Edge%20Technology%20Solutions%20LLP!5e0!3m2!1sen!2sin!4v1737628768567!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <section id="faqs">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
                 <div class="section-head-tag">FAQs</div>
                 <h2 class="section-head-title">Frequently Asked Questions</h2>
-                <p class="section-head-body">Find answers to common questions about core software development courses, programming, and building robust applications.</p>
+                <p class="section-head-body">Find answers to common questions about the locations of our tech courses, how to enroll, and what you can expect to learn in each course.</p>
             </div>
         </div>
         <div class="row">
@@ -1069,48 +900,48 @@ body {
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq1" aria-expanded="true">
-                            What is Frontend Development?
+                            Where are your tech courses located?
                         </h5>
                     </div>
                     <div class="collapse show" id="faq1">
                         <div class="faq-body">
-                            <p>No prior experience is required to start learning Frontend Development. Our course covers everything from the basics, including HTML and CSS, to advanced topics like JavaScript frameworks, making it suitable for beginners and those looking to enhance their skills.</p>
+                            <p>Our tech courses are available online, allowing you to access them from anywhere in the world. We offer courses in full-stack development, web design, and various other tech disciplines, all designed to be taken remotely, at your own pace.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq2">
-                            Do I need any prior knowledge for the Frontend Development course?
+                            Are there any physical locations where I can take these courses?
                         </h5>
                     </div>
                     <div class="collapse" id="faq2">
                         <div class="faq-body">
-                            <p>No prior experience is required to start learning Frontend Development. Our course covers everything from the basics, including HTML and CSS, to advanced topics like JavaScript frameworks, making it suitable for beginners and those looking to enhance their skills.</p>
+                            <p>Currently, all our courses are provided online. We do not have physical locations for course delivery, but you can access all the materials, resources, and support via our online platform from anywhere at your convenience.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq3">
-                            What tools and technologies will I learn in this course?
+                            Can I access the courses from any location in the world?
                         </h5>
                     </div>
                     <div class="collapse" id="faq3">
                         <div class="faq-body">
-                            <p>You will learn core frontend technologies like HTML, CSS, and JavaScript. Additionally, you’ll explore CSS frameworks like Bootstrap or Tailwind, and JavaScript frameworks such as React or Vue.js to build professional-grade web applications.</p>
+                            <p>Yes! Our courses are available to learners worldwide. All you need is an internet connection, and you can start learning from anywhere. Whether you're in India, the US, Europe, or any other part of the world, our platform is accessible globally.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq4">
-                            How can I practice the concepts I learn in this course?
+                            How do I find courses that are specific to my location or time zone?
                         </h5>
                     </div>
                     <div class="collapse" id="faq4">
                         <div class="faq-body">
-                            <p>Practice by building real-world projects like portfolios, blogs, or e-commerce websites. Additionally, you can use platforms like CodePen, GitHub, or Frontend Mentor to showcase your work and improve your skills through challenges.</p>
+                            <p>Although all our courses are available online, you can filter and select courses based on your availability and time zone. Each course offers flexible schedules, and you can start at any time, ensuring it fits your preferred time zone.</p>
                         </div>
                     </div>
                 </div>
@@ -1118,6 +949,7 @@ body {
         </div>
     </div>
 </section>
+
 
 <style>
     /* Align FAQ text to the left */
@@ -1135,8 +967,7 @@ body {
    
     
     <!-- End FAQs -->
-     <style>
-#faqs
+     <style>#faqs
 {
     padding: 20px 0;
 }
@@ -1178,82 +1009,6 @@ body {
     content: 'keyboard_arrow_up';
 }
 </style>
-   
-<div style="margin-top: 50px;"></div>
-<!-- Start Contact -->
-<div style="margin-top: 50px;"></div>
-<!-- Start Contact -->
-<section id="contact">
-    <div class="container" style="border-radius: 15px; box-shadow: 0 4px 10px rgb(29, 29, 31); padding: 20px; background: rgb(29, 29, 31); color: #fff;">
-        <div class="row">
-            <div class="col-lg-6 contact-information">
-                <div class="section-head-tag" style="color: #007bff;">Contact</div>
-                <h2 class="section-head-title" style="color: #fff;">Feel Free To Contact Us</h2>
-                <p class="mb-5 section-head-body">We are always available for your service with great support.</p>
-               
-                <div class="info mb-3 d-flex align-items-center">
-                    <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">location_on</i>
-                    </div>
-                    <p style="text-align: left;">Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
-                </div>
-                <div class="info mb-3 d-flex align-items-center">
-                    <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">mail</i>
-                    </div>
-                    <a href="mailto:info@tech2edge.com" style="color: #007bff;">info@tech2edge.com</a>
-                </div>
-                <div class="info mb-3 d-flex align-items-center">
-                    <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">call</i>
-                    </div>
-                    <a href="tel:+919930249947" style="color: #007bff;">+91 99302 49947</a>
-                </div>
-            </div>
-            <div class="col-lg-6 contact-form align-self-center">
-                <form>
-                    <div class="form-group">
-                        <input type="email" placeholder="Enter email" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Enter name" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
-                    </div>
-
-                    <!-- Dropdown for Course Selection -->
-                    <div class="form-group">
-                        <select id="course" class="form-control" style="background: #333; color: #fff; border: 1px solid #444; border-radius: 10px; padding: 10px;">
-                            <option value="frontend" selected>Frontend Development</option>
-                            <option value="backend">Backend Development</option>
-                            <option value="fullstack">Full-Stack Development</option>
-                            <option value="fullstack">CORE Software Development</option>
-                            
-                            <!-- Grouping MERN / MEAN Stack options -->
-                            <optgroup label="MERN / MEAN Stack">
-                                <option value="mern">MERN Stack</option>
-                                <option value="mean">MEAN Stack</option>
-                            </optgroup>
-                            
-                            <!-- Grouping TALL, RILT, & VILT Stacks -->
-                            <optgroup label="TALL, RILT, & VILT Stacks">
-                                <option value="tall">TALL Stack</option>
-                                <option value="rilt">RILT Stack</option>
-                                <option value="vilt">VILT Stack</option>
-                            </optgroup>
-                            
-                            <option value="accessibility">Accessibility</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <textarea rows="3" placeholder="Enter message" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-main" style="border-radius: 20px; padding: 10px 20px; border: none; background: #007bff; color: #fff; cursor: pointer;">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 
          <!-- Start Footer -->

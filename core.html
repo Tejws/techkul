@@ -476,8 +476,12 @@ body {
         flex-direction: column;
         align-items: center;
         border-radius: 0px;
+        background-color: transparent; 
+        box-shadow: none;
     }
-
+    .animated-bgs {
+        height: 95%;
+    }
     .text-sections {
         max-width: 100%;
         margin-bottom: 1.5rem;
@@ -486,6 +490,9 @@ body {
 
     .image-sections {
         margin-bottom: 1.5rem; /* Add spacing between image and text */
+    }
+    .buttons{
+        background-color: #000000;
     }
 }
 </style>
@@ -603,23 +610,26 @@ body {
 <style>
     /* Wrapper styling */
     .animated-text-wrapper {
-    width: 100%;
+    width: 100%; /* Full width */
     background-color: #222;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    border: solid #000000; /* Optional border for styling */
-    /* border-radius: 10px; */
-    padding: 5px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #000; /* Slimmer border */
+    /* border-radius: 5px; */ /* Optional, can uncomment for rounded edges */
+    padding: 8px 2px; /* Very slim padding */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 0.4rem; /* Smaller text for a slimmer look */
+    line-height: 1; /* Reduces the vertical space between lines */
 }
+
 
 /* Text container */
 .animated-text {
     display: flex;
     animation: scroll 30s linear infinite; /* Slower scrolling animation */
     font-family: 'Courier New', Courier, monospace; /* Coding-style font */
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: #ffffff;
     letter-spacing: 1px;
 }
@@ -728,7 +738,7 @@ body {
 
 
             <!-- Tailwind CSS Course -->
-            <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
+            <div class="single-card m-auto" style="max-width: 400px; display: flex; flex-direction: column;">
               <article class="card-item">
                 <figure class="card-image-wrapper">
                   <img src="assets/images/prog_fundamentals.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
@@ -767,7 +777,7 @@ body {
 
           
           <!-- Frontend Development Course -->
-          <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
+          <div class="single-card m-auto" style="max-width: 400px;  display: flex; flex-direction: column;">
               <article class="card-item">
                 <figure class="card-image-wrapper">
                   <img src="assets/images/dsa.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
@@ -807,7 +817,7 @@ body {
         
   
           <!-- MERN Stack Development Course -->
-          <div class="single-card" style="max-width: 400px; margin: auto; display: flex; flex-direction: column;">
+          <div class="single-card m-auto" style="max-width: 400px;  display: flex; flex-direction: column;">
               <article class="card-item">
                 <figure class="card-image-wrapper">
                   <img src="assets/images/oops.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
@@ -897,7 +907,7 @@ body {
     .card-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        
         justify-content: space-between;
         width: 100%;
         max-width: 1200px;
@@ -999,15 +1009,22 @@ body {
 
     /* Mobile responsiveness */
     @media only screen and (max-width: 768px) {
+        .content-wrapper{
+        padding: 0 20px;
+        }
         .card-wrapper {
             flex-direction: column;
             align-items: center;
+            
+        }
+        .card-item{
+            height: 100% !important;
         }
 
         .single-card {
             width: 100%;
-            margin-bottom: 20px;
-        }
+            margin-bottom: 20px !important;
+            }
 
         .card-header-wrapper a {
             font-size: 1.2rem;
@@ -1037,6 +1054,16 @@ body {
                 </div>
             </div>
     </section>
+<style>
+    #download {
+        padding: 100px 0;
+        background: linear-gradient(90deg, rgba(27, 27, 27, 0.8), rgba(0, 0, 0, 0.8)), 
+                    url('assets/images/c1.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
     <!-- End Download -->
 <section id="faqs">
     <div class="container">

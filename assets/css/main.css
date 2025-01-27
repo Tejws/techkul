@@ -93,7 +93,7 @@ p
    
     margin-bottom: 15px;
     color: var(--color-sec);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 .section-head-title
@@ -104,6 +104,7 @@ p
 .section-head-body
 {
     font-size: 18px;
+    padding-bottom: 20px;
 }
 
 
@@ -430,7 +431,7 @@ nav .btn-main
 -------------------------------------------- */
 #features
 {
-    padding: 100px 0;
+    padding: 60px 0;
     background: var(--bg-sec);
 }
 #features .features-container .features-img img
@@ -505,7 +506,7 @@ nav .btn-main
 -------------------------------------------- */
 #products
 {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 #products .products-slider .product
 {
@@ -805,7 +806,7 @@ nav .btn-main
 -------------------------------------------- */
 #faqs
 {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 #faqs .faqs-container .faq
 {
