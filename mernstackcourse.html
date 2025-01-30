@@ -23,297 +23,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <style>
-        body, html {
-            overflow-x: hidden; /*To Ensure horizontal scroll is hidden */
-            background-color: (23, 23, 23);
-        }
+ <link href="mernstackcourse.css" rel="stylesheet">
     
-        .row {
-            margin-right: 0;
-            margin-left: 0; /* Ensure no extra margin on the row */
-        }
-    
-        .col-md-4 {
-            padding-left: 10px; /* Adjust padding to prevent overflow */
-            padding-right: 10px;
-        }
-    
-        .card {
-            box-sizing: border-box; /* Prevent overflow */
-        }
-        * {
-  box-sizing: border-box;
-  font-weight: normal;
-}
-body {
-  color: #555;
-   background-color: (23, 23, 23);
-  text-align: center;
-  font-family: 'Roboto Mono';
-
-}
-.carrer-path {
-            
-        }
-
-        .carrer-path .card-title {
-            font-size: 1.2rem;
-        }
-
-        .carrer-path .card-body .float-right.small {
-            background-color: var(--color-sec);
-        padding: 0px;
-            border: 1px solid var(--color-sec);
-            border-radius: 7px;
-        }
-
-        @media only screen and (max-width:600px) {
-            .carrer-path {
-               
-            }
-        }
-
-
-.flip-container {
-  display: flex;
-  justify-content: space-around; /* Horizontally space out the items */
-  align-items: stretch; /* Ensure all flip elements align equally */
-}
-
-.flip {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 2em;
-  width: 450px; /* Increased width */
-  height: 280px; /* Increased height */
-  cursor: pointer;
-}
-
-.flip > .front,
-.flip > .back {
-  display: block;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 2s;
-  transition-property: transform, opacity;
-  color: white;
-  width: 100%;
-  height: 100%;
-  padding: 1.5em 2em;
-  border-radius: 12px;
-  background-size: cover !important;
-  background-position: center !important;
-}
-
-.flip > .front {
-  transform: rotateY(0deg);
-}
-
-.flip > .back {
-  position: absolute;
-  opacity: 0;
-  top: 0px;
-  left: 0px;
-  background: #313131;
-  text-align: left;
-  transform: rotateY(-180deg);
-  padding: 1.5em 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Align content and button */
-  height: 100%;
-}
-.flip:hover > .front {
-  transform: rotateY(180deg);
-}
-
-.flip:hover > .back {
-  opacity: 1;
-  transform: rotateY(0deg);
-}
-
-.flip.flip-vertical > .back {
-  transform: rotateX(-180deg);
-}
-
-.flip.flip-vertical:hover > .front {
-  transform: rotateX(180deg);
-}
-
-.flip.flip-vertical:hover > .back {
-  transform: rotateX(0deg);
-}
-
-.flip h1,
-.flip h2 {
-  margin: 0;
-}
-
-.flip p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0.5em 0;
-  color: #ddd;
-}
-
-.flip button {
-  margin-top: auto; /* Push the button to the bottom */
-  padding: 0.5em 1em;
-  font-size: 0.9rem;
-  color: white;
-  background-color: #ff5722;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.flip button:hover {
-  background-color: #e64a19;
-}
-
-.text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
-    3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
-    0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
-    7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
-    9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
-    11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
-    13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
-    0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
-    17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
-    19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
-}
-
-/* Ensure all .flip items align in a row without misalignment */
-.flip-container {
-  display: flex;
-  gap: 20px; /* Adds space between each flip */
-}
-.card-title, .card-text, .small {
-    color: white;
-  }
-
-/* Course Details Section */
-.course-details {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 20px;
-  color: white; /* Sets the text color to white */
-}
-
-.course-details h2 {
-  font-size: 32px;
-  font-weight: bold;
-  color: white; /* Ensures the heading is white */
-  margin-bottom: 10px;
-}
-
-.course-details p {
-  font-size: 18px;
-  color: white; /* Ensures the paragraph text is white */
-  margin: 0 auto;
-  max-width: 600px;
-  line-height: 1.5;
-}
-
-
-
-/* Box Wrapper and Cards */
-/* Wrapper for all boxes */
-.box-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 30px; /* Increased spacing between the boxes */
-  justify-content: center;
-  align-items: center;
-  margin: 40px auto; /* Center the wrapper */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-/* Individual box styling */
-.box {
-  position: relative;
-  width: 283px; /* Slightly wider for better aesthetics */
-  height: 350px; /* Adjust height for balance */
-  background: #222;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: 600; /* Slightly lighter weight for better readability */
-  color: white;
-  border-radius: 20px; /* Increased border radius for rounded corners */
-  cursor: pointer;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover */
-  background-image: rgb(29, 29, 31) ;/* Gradient background */
-  background-size: 100% 100%;
-}
-
-/* Box content styling */
-.content {
-  padding: 15px;
-  font-family: 'Arial', sans-serif; /* Set a clean font for better readability */
-}
-
-/* Heading Styling */
-.content h3 {
-  font-size: 24px; /* Increase heading size */
-  font-weight: 700; /* Make headings bold */
-  margin-bottom: 10px; /* Add space below the heading */
-  text-transform: uppercase; /* Capitalize the heading for impact */
-  letter-spacing: 1px; /* Space out letters slightly */
-  color: #f0f0f0; /* Slightly lighter color for the heading */
-}
-
-/* Paragraph styling */
-.content p {
-  font-size: 16px; /* Smaller font size for description */
-  line-height: 1.5; /* Increase line-height for readability */
-  color: rgba(255, 255, 255, 0.9); /* Light color for paragraphs */
-  text-align: center;
-  margin: 0; /* Remove margin */
-}
-
-/* Hover effect */
-.box:hover {
-  background: rgb(0, 102, 204); /* Change background color on hover */
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-  background-image: linear-gradient(135deg, #1e3c72, #2a5298); /* Darker gradient on hover */
-}
-
-/* Optional: Add a focus effect for better accessibility */
-.box:focus {
-  outline: none; /* Remove default focus outline */
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.6); /* Blue outline for focus */
-}
-
-/* Add a little more space between the boxes */
-.box-wrapper > .box {
-  transition: transform 0.3s ease; /* Add transition on box hover */
-}
-
-.box-wrapper > .box:hover {
-  transform: scale(1.05); /* Slight zoom-in effect on hover */
-}
-
-/* Text Shadow for readability */
-.box p,
-.box h3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Subtle shadow to help text pop */
-}
-
-
-
-  
-
-    </style>
     <!-- <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=5366b776df77d' async='true'></script> -->
    
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -329,9 +40,9 @@ body {
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <!-- <img src="assets/images/logo-c.png" alt="logo" height="20"> -->
-                    <h1 style="font-size: 30px;font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                    <h1 class="hnew">TechKul <span class="snew">.</span></h1>
                 </a>
                 <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -341,26 +52,27 @@ body {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
                         <li class="nav-item">
-                            <a class="nav-link" href="#cover">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="index.html#about">About</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#features">Features</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#products">Courses</a>
+                            <a class="nav-link" href="index.html#products">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#customer-reviews">Testimonials</a>
+                            <a class="nav-link" href="index.html#customer-reviews">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#faqs">FAQs</a>
+                            <a class="nav-link" href="index.html#faqs">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="index.html#contact">Contact</a>
                         </li>
                     </ul>
     
@@ -373,125 +85,14 @@ body {
 
         
       <!-- Add Gap -->
-<div style="margin-top: 100px;"></div>
+<div class="gap-100"></div>
 
 
 
 <!-- TallStack Developer Course Card -->
 
 <div class="main-content">
-    <style>
-        .animated-bgs {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 90%; /* Changed from 80% to 100% for more height */
-         background: linear-gradient(135deg, #000428, #004e92, #0f2027);
-         background-size: 200% 200%;
-         animation: gradient-animation 6s ease-in-out infinite;
-         z-index: -1;
-}
-
-
-        @keyframes gradient-animation {
-            0% {
-                background-position: 0% 0%;
-            }
-            50% {
-                background-position: 100% 100%;
-            }
-            100% {
-                background-position: 0% 0%;
-            }
-        }
-
-        /* Styling for the card */
-        .cards {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem;
-            background-color: #222;
-            border-radius: 15px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            max-width: 900px;
-            width: 100%;
-            margin: auto;
-        }
-
-        .cards:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-.text-sections {
-    max-width: 50%;
-    color: white;
-    text-align: left; /* Ensure text aligns to the left on larger screens */
-}
-
-.image-sections {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    background-color: #333;
-    border-radius: 15px;
-    width: 260px;
-    height: 240px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-}
-
-.image-sections img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20%;
-    object-fit: cover;
-}
-
-.image-sections:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.buttons {
-    background-color: #0066cc;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: normal; /* Make button text normal */
-    transition: background-color 0.3s ease;
-}
-
-.buttons:hover {
-    background-color: #005bb5;
-}
-
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-        border-radius: 0px;
-        background-color: transparent; 
-        box-shadow: none;
-    }
-
-    .text-sections {
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-        text-align: center; /* Center text on smaller screens */
-    }
-
-    .image-sections {
-        margin-bottom: 1.5rem; /* Add spacing between image and text */
-    }
-}
-</style>
+   
 
     <div class="animated-bgs"></div>
 
@@ -499,17 +100,16 @@ body {
      
     <div class="cards d-flex flex-wrap align-items-center">
         <!-- Image Section -->
-        <div class="image-sections order-0 order-md-1">
-            <img src="assets/images/MERN_MEAN.png" alt="MERN and MEAN Stack Development Course" class="img-fluid">
+        <div class="image-sections order-0 order-md-1 ">
+            <img src="assets/images/MERN_MEAN.png" alt="TallStack Development Course" class="img-fluid">
         </div>
     
         <!-- Text Section -->
         <div class="text-sections order-1 order-md-0">
-            <h2 class="font-semibold text-3xl lg:text-4xl mb-4" style="padding-top: 10px;">Master MERN & MEAN Stack Development</h2>
+            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 " >Master MERN & MEAN Stack Development</h2>
             <p class="mt-3 text-lg font-light leading-relaxed">
-                Learn to build full-stack web applications with the MERN stack (MongoDB, Express.js, React.js, Node.js) and the MEAN stack (MongoDB, Express.js, Angular, Node.js).
+                Become a full-stack developer with MERN (MongoDB, Express.js, React.js, Node.js) and MEAN (MongoDB, Express.js, Angular, Node.js).
             </p>
-            
             <div class="mt-6">
                 <button class="buttons btn btn-primary btn-lg">
                     Start Learning Now
@@ -519,79 +119,91 @@ body {
     </div>
     
     
+
+<!-- <div style="margin-top: 50px;"></div> -->
+
+    <!-- Animation Script
+    <script>
+        const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V108.306Z",
+            wave2 = "M0 250L50 244.048C100 238.095 200 226.19 300 226.19C400 226.19 500 238.095 600 232.143C700 226.19 800 202.381 900 196.429C1000 190.476 1100 202.381 1150 208.333L1200 214.286V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
+            wave3 = "M0 250L50 238.095C100 226.19 200 202.381 300 166.667C400 130.952 500 83.3333 600 101.19C700 119.048 800 202.381 900 214.286C1000 226.19 1100 166.667 1150 136.905L1200 107.143V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
+            wave4 = "M0 125L50 111.111C100 97.2222 200 69.4444 300 97.2222C400 125 500 208.333 600 236.111C700 263.889 800 236.111 900 229.167C1000 222.222 1100 236.111 1150 243.056L1200 250V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V125Z";
+    
+        anime({
+            targets: '.wave-top > path',
+            easing: 'linear',
+            duration: 12000,  // Slower animation speed
+            loop: true,
+            d: [
+                { value: [wave1, wave2] },
+                { value: wave3 },
+                { value: wave4 },
+                { value: wave1 },
+            ],
+        });
+    </script> -->
     
 
 
-<div style="margin-top: 150px;"></div>
+<!-- <div style="margin-top: 50px;">
+    <div class="course-details">
+        <h2>Course Details</h2>
+        <p style="color: rgb(157, 157, 158);">Dive into our Software Development program to master the core principles essential for building scalable, maintainable, and efficient systems.</p>
+        
+        <div style="margin-top: 50px;">
+        
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="content">
+                        <h3>Curriculum</h3>
+                        <p>Comprehensive modules covering software design patterns, algorithms, data structures, and best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="content">
+                        <h3>Design Principles</h3>
+                        <p>Learn core design principles like SOLID, object-oriented design (OOD), and modular architecture for creating efficient systems.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="content">
+                        <h3>Testing & Debugging</h3>
+                        <p>Master techniques in unit testing, integration testing, and debugging to ensure your software is robust and error-free.</p>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="content">
+                        <h3>Performance Optimization</h3>
+                        <p>Learn how to optimize algorithms and system performance to handle large-scale applications and ensure smooth user experiences.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <h3>Development Methodologies</h3>
+                        <p>Understand key software development methodologies like Agile, Scrum, and DevOps to effectively manage and deliver projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="gap-150"></div>
 <div class="animated-text-wrapper">
     <div class="animated-text">
-        <span>Master the MERN stack: MongoDB, Express.js, React.js, and Node.js!</span>
-        <span>Build dynamic, full-stack web applications with the MEAN stack.</span>
-        <span>Learn to create responsive front-ends using React.js or Angular.</span>
-        <span>Develop robust back-end APIs with Express.js and Node.js.</span>
-        <span>Store and manage data efficiently with MongoDB.</span>
-        <span>Implement authentication and authorization using JWT.</span>
-        <span>Take your web development skills to the next level with MERN and MEAN!</span>
+        <span>Build full-stack web applications with MERN & MEAN stacks.</span>
+        <span>Develop dynamic front-end UIs with React.js and Angular.</span>
+        <span>Handle back-end logic efficiently using Express.js and Node.js.</span>
+        <span>Leverage MongoDB for scalable and flexible database management.</span>
+        <span>Master modern JavaScript development with MERN & MEAN stacks.</span>
+        <span>Create high-performance applications with React, Angular & Node.js.</span>
+        <span>Seamlessly integrate front-end and back-end for robust web solutions.</span>
     </div>
     
-    
 </div>
-<style>
-   
-     /* Wrapper styling */
-     .animated-text-wrapper {
-    width: 100%; /* Full width */
-    background-color: #222;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    border: 1px solid #000; /* Slimmer border */
-    /* border-radius: 5px; */ /* Optional, can uncomment for rounded edges */
-    padding: 8px 2px; /* Very slim padding */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    font-size: 0.4rem; /* Smaller text for a slimmer look */
-    line-height: 1; /* Reduces the vertical space between lines */
-}
-
-
-/* Text container */
-.animated-text {
-    display: flex;
-    animation: scroll 30s linear infinite; /* Slower scrolling animation */
-    font-family: 'Courier New', Courier, monospace; /* Coding-style font */
-    font-size: 0.8rem;
-    color: #ffffff;
-    letter-spacing: 1px;
-}
-
-/* Duplicated text to ensure smooth looping */
-.animated-text span {
-    padding-right: 3rem;
-}
-
-/* Keyframe animation for scrolling */
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-@media (max-width: 768px) {
-        /* Make the font smaller on mobile */
-        .animated-text {
-            font-size: 1rem;
-        }
-
-        /* Adjust padding and container settings for mobile */
-        .animated-text-wrapper {
-            padding: 5px 0;
-            top: -90px;
-        }
-    }
-
-</style>
 
     
 <!-- horizontal -->
@@ -659,303 +271,150 @@ body {
     <div class="content-wrapper">
         <!-- Course Header -->
         <div class="course-header">
-            <h2 class="course-subtitle">Core Software Development Principles</h2>
+            <h2 class="course-subtitle">MEAN/MERN Development</h2>
             <h1>Course Details</h1>
-            <p>Master the essentials of Front-End Development, from HTML to advanced techniques.</p>
+            <p>Master the essentials of MEAN/MERN Stack Development.</p>
         </div>
 
         <div class="card-wrapper">
 
 
             <!-- Tailwind CSS Course -->
-            <div class="single-card m-auto" style="max-width: 450px;  display: flex; flex-direction: column;">
-              <article class="card-item">
-                <figure class="card-image-wrapper">
-                  <img src="assets/images/MERN_Stack.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
-                </figure>
-                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
-                  <a href="#" style="font-size: 1.5rem; font-weight: bold; color: rgb(43, 79, 255);">MERN Fundamentals</a> <!-- Increased font size and centered -->
-                </div>
-                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
-                  <h3>What You Will Learn:</h3>
-                  <div style="margin-bottom: 10px;">
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Build full-stack apps with MERN</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Learn React.js, Node.js, Express, MongoDB</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Learn how to interact with MongoDB</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Certification</span>
-                    </div>
+            <div class="single-card m-auto">
+                <article class="card-item">
+                  <figure class="card-image-wrapper">
+                    <img src="assets/images/MERN_Stack.png" alt="Mernstack Essentials" class="card-image" />
+                  </figure>
+                  <div class="card-header-wrapper">
+                    <a href="#" class="card-header-link">MERN Stack</a>
                   </div>
-                  <p><strong>Time to Complete:</strong> 2 Weeks</p>
-                </div>
-                <div class="card-footer-wrapper" style="display: flex; justify-content: center; padding: 10px;">
-                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
-                </div>
-                
-              </article>
-            </div>
+                  <div class="card-content-wrapper">
+                    <h3>What You Will Learn:</h3>
+                    <div class="card-content-list">
+                      <div class="card-content-item">
+                        <span class="checkmark">&#10004;</span>
+                        <span>Building full-stack applications</span>
+                      </div>
+                      <div class="card-content-item">
+                        <span class="checkmark">&#10004;</span>
+                        <span>RESTful APIs and database integration</span>
+                      </div>
+                      <div class="card-content-item">
+                        <span class="checkmark">&#10004;</span>
+                        <span>State management with Redux and React</span>
+                      </div>
+                      <div class="card-content-item">
+                        <span class="checkmark">&#10004;</span>
+                        <span>Certification</span>
+                      </div>
+                    </div>
+                    <p><strong>Time to Complete:</strong> 2 Weeks</p>
+                  </div>
+                  <div class="card-footer-wrapper">
+                    <button class="enroll-btn">Enroll Now</button>
+                  </div>
+                </article>
+              </div>
+              
 
           
           <!-- Frontend Development Course -->
-          <div class="single-card m-auto" style="max-width: 450px;  display: flex; flex-direction: column;">
-              <article class="card-item">
-                <figure class="card-image-wrapper">
-                  <img src="assets/images/MEAN_STACK_2.png" alt="Alpine.js Essentials" style="width: 100%; height: 200px; object-fit: cover;" />
-                </figure>
-                <div class="card-header-wrapper" style="padding: 10px; text-align: center;">
-                  <a href="#" style="font-size: 1.5rem; font-weight: bold; color: rgb(43, 79, 255);">MEAN STACK</a> <!-- Increased font size and centered -->
-                </div>
-                <div class="card-content-wrapper" style="padding: 10px; text-align: left; font-size: 0.85rem;">
-                  <h3>What You Will Learn:</h3>
-                  <div style="margin-bottom: 10px;">
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Build full-stack apps with MEAN</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Master Angular, Node.js, Express, MongoDB</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Learn how to interact with MongoDB</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
-                      <span style="font-size: 1.2rem; color: #007bff; margin-right: 10px;">&#10004;</span>
-                      <span>Certification</span>
-                    </div>
+          <div class="single-card m-auto">
+            <article class="card-item">
+              <figure class="card-image-wrapper">
+                <img src="assets/images/MEAN_STACK_2.png" alt="Meanstack" class="card-image" />
+              </figure>
+              <div class="card-header-wrapper">
+                <a href="#" class="card-header-link">MEAN Stack</a>
+              </div>
+              <div class="card-content-wrapper">
+                <h3>What You Will Learn:</h3>
+                <div class="card-content-list">
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Developing full-stack applications</span>
                   </div>
-                  <p><strong>Time to Complete:</strong> 4 Weeks</p>
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Two-way data binding</span>
+                  </div>
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Building scalable and secure apps</span>
+                  </div>
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Deploying apps using cloud services</span>
+                  </div>
                 </div>
-                <div class="card-footer-wrapper" style="display: flex; justify-content: center; padding: 10px;">
-                  <button class="enroll-btn" style="padding: 10px 20px; background-color: rgb(43, 79, 255); color: white; border: none; border-radius: 5px;">Enroll Now</button>
-                </div>
-                
-              </article>
-            </div>
-  
+                <p><strong>Time to Complete:</strong> 4 Weeks</p>
+              </div>
+              <div class="card-footer-wrapper">
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </article>
+          </div>
+          
         
   
-       
+          <!-- MERN Stack Development Course -->
+          <div class="single-card m-auto">
+            <article class="card-item">
+              <figure class="card-image-wrapper">
+                <img src="assets/images/prog_fundamentals.png" alt="dynamic programming" class="card-image" />
+              </figure>
+              <div class="card-header-wrapper">
+                <a href="#" class="card-header-link">Dynamic Programming</a>
+              </div>
+              <div class="card-content-wrapper">
+                <h3>What You Will Learn:</h3>
+                <div class="card-content-list">
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Mastering recursion</span>
+                  </div>
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Optimizing solutions</span>
+                  </div>
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Preparing for coding interviews</span>
+                  </div>
+                  <div class="card-content-item">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Mastering routing</span>
+                  </div>
+                </div>
+                <p><strong>Time to Complete:</strong> 4 Weeks</p>
+              </div>
+              <div class="card-footer-wrapper">
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </article>
+          </div>
+          
 
         </div>
     </div>
 </section>
 
-<style>
-    /* General Styles */
-    .content-wrapper {
-        font-family: "Lexend", sans-serif;
-        line-height: 1.5;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        color: #ffffff;
-        background-color: rgb(23, 23, 23);
-        padding: 40px 20px !important;
-       
-    }
 
-    .course-header {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-        color: #fff;
-    }
 
-    .course-header .course-subtitle {
-        font-size: 1.2rem;
-        color: #007bff;
-        font-weight: 400;
-        margin-bottom: 5px;
-    }
 
-    .course-header h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin: 10px 0;
-        color: #fff;
-    }
-
-    .course-header p {
-        color: #ccc;
-        font-size: 1rem;
-        margin-top: 10px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.5;
-    }
-
-    /* Card Wrapper */
-    .card-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-    }
-
-    .single-card {
-        width: calc(33.333% - 20px);
-        box-sizing: border-box;
-    }
-
-    .card-item {
-        background-color: rgb(23, 23, 23);
-        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        overflow: hidden;
-        padding: 1.25rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        justify-content: space-between;
-        height: 650px;
-    }
-
-    .card-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0 0 2px rgb(0, 61, 122), 0 10px 60px 0 rgba(0, 0, 0, 0.3);
-    }
-
-    .card-image-wrapper img {
-        max-width: 100%;
-        height: 200px;
-        object-fit: contain;
-        object-position: center;
-        border-radius: 10px;
-        background: #f4f4f4;
-    }
-
-    .card-header-wrapper {
-        margin: 1.5rem 0;
-    }
-
-    .card-header-wrapper a {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: rgb(0, 61, 122);
-        text-decoration: none;
-    }
-
-    .card-content-wrapper ul li {
-        margin-bottom: 10px;
-    }
-
-    .card-content-wrapper h3 {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-        color: #fff;
-        border-bottom: 2px solid rgba(0, 180, 216, 0.4);
-    }
-
-    .card-content-wrapper ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        margin-bottom: 10px;
-        color: #ddd;
-        font-size: 1rem;
-        line-height: 1.6;
-        font-weight: 400;
-    }
-
-    .card-content-wrapper p {
-        font-size: 1.1rem;
-        color: #ccc;
-        margin-top: 10px;
-        font-weight: 500;
-    }
-
-    .card-footer-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: auto;
-    }
-
-    .enroll-btn {
-        background-color: rgb(43, 79, 255);
-        color: #fff;
-        border: none;
-        padding: 12px 25px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .enroll-btn:hover {
-        background-color: #0096c7;
-        transform: translateY(-3px);
-    }
-
-    /* Mobile responsiveness */
-    @media only screen and (max-width: 768px) {
-        .card-wrapper {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .single-card {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .card-item{
-            
-            height: 100% !important;
-        }
-        
-
-        .card-header-wrapper a {
-            font-size: 1.2rem;
-            text-align: center;
-        }
-
-        .card-content-wrapper {
-            font-size: 0.9rem;
-        }
-
-        .enroll-btn {
-            width: 100%;
-            padding: 12px 20px;
-        }
-        .content-wrapper{
-            padding: 0px 20px
-        }
-        
-    }
-</style>
     <!-- Start Download -->
+   <section id="download">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
+                <h2 class="section-head-title">Downloads</h2>
+                <p class="section-head-body">
+                    Explore the power of MERN and MEAN stacks to build dynamic, full-stack web applications with modern JavaScript frameworks.
+                </p>
 
-
-    <!--Copied From Tall.html-->
-    <section id="download">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
-                    <h2 class="section-head-title">Downloads</h2>
-                    <p class="section-head-body">
-                        Explore the powerful TALL Stack (Tailwind CSS, Alpine.js, Laravel, and Livewire) to build modern, scalable web applications.
-                    </p>
-                    <!-- Updated TallStack Syllabus Button -->
-                    <a href="#" class="btn btn-outline-primary" id="tallStackBtn">TallStack Syllabus</a>
-                    <a href="#" class="btn btn-outline-danger">RILT Syllabus</a>
-    
+                <!-- Buttons -->
+                <a href="#" class="btn btn-outline-primary" id="mernbtn">Mern Stack Details</a>
+                <a href="#" class="btn btn-outline-danger">Mean Stack Syllabus</a>
                     <!-- Modal for Course Syllabus -->
                     <div id="courseModal" class="modal">
                         <div class="modal-content">
@@ -1046,200 +505,11 @@ body {
                             </div>
                         </div>
                     </div>
-                    <style>
-                 
-/* Container for centering the content */
-
-/* Container for centering the content */
-.container {
-    text-align: center;
-}
-
-/* Button Styling */
-.download-btn {
-    background-color: #1E3A8A;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.download-btn:hover {
-    background-color: #3B82F6;
-}
-
-/* Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #2E2E2E;
-    border-radius: 8px;
-    padding: 40px;
-    width: 80%;
-    max-width: 700px;
-    text-align: left;
-    max-height: 80vh;
-    overflow-y: scroll; /* Enables scrolling */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Hiding Default Scrollbar */
-.modal-content::-webkit-scrollbar {
-    display: none; /* Hide the default scrollbar */
-}
-
-/* Custom Scrollbar */
-.modal-content {
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #3B82F6 #2E2E2E; /* Firefox color scheme for the scrollbar */
-}
-
-/* Custom Scrollbar for Webkit Browsers */
-.modal-content::-webkit-scrollbar {
-    width: 10px; /* Thin scrollbar */
-}
-
-.modal-content::-webkit-scrollbar-thumb {
-    background-color: #3B82F6; /* Blue thumb color */
-    border-radius: 10px;
-}
-
-.modal-content::-webkit-scrollbar-track {
-    background-color: #2E2E2E; /* Darker track color */
-    border-radius: 10px;
-}
-
-/* Course Title */
-.course-title {
-    font-size: 1.7rem; /* Corrected font size */
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-/* Course Description */
-.course-description {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #bbb;
-}
-
-/* Syllabus Styling */
-.syllabus {
-    margin-bottom: 50px;
-}
-
-/* Syllabus Section Header */
-.syllabus h3 {
-    font-size: 1.2rem; /* Increased header size for visibility */
-    margin-bottom: 15px;
-    color: #fff;
-    font-weight: 500;
-    padding-bottom: 10px; /* Extra padding for space between week title and topics */
-    padding-top: 10px;
-    border-bottom: 1px solid #444; /* Adds a thin line below the section title */
-    border-top: 1px solid #444; /* Adds a thin line above the section title */
-}
-
-/* List Styling in Syllabus */
-.syllabus ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.syllabus li {
-    margin: 12px 0; /* Increased margin between items */
-    font-size: 1rem; /* Smaller list items */
-    color: #ddd;
-    display: flex;
-    align-items: center; /* Ensures icon and text are aligned properly */
-    gap: 12px; /* Space between icon and text */
-}
-
-/* Blue Material Icons */
-.material-icons {
-    color: #1E3A8A; /* Blue color for the icons */
-    font-size: 1.3rem; /* Ensure consistent icon size */
-    vertical-align: middle; /* Vertically align icon with text */
-}
-
-/* Enroll Button */
-.enroll-btn {
-    background-color: #070707;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.enroll-btn:hover {
-    background-color: #25262f;
-}
-
-/* Close Button */
-.close-btn {
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.close-btn:hover {
-    color: #FF6347;
-}
-</style>
+                    
 
 
 
-                    <script>
-                        // Get elements
-                        const tallStackBtn = document.getElementById('tallStackBtn');
-                        const courseModal = document.getElementById('courseModal');
-                        const closeBtn = document.getElementById('closeBtn');
-                        
-                        // Show modal when TallStack Syllabus button is clicked
-                        tallStackBtn.addEventListener('click', (event) => {
-                            event.preventDefault(); // Prevent default link behavior
-                            courseModal.style.display = 'flex';
-                        });
-                
-                        // Close modal when close button is clicked
-                        closeBtn.addEventListener('click', () => {
-                            courseModal.style.display = 'none';
-                        });
-                
-                        // Close modal if clicked outside of the modal content
-                        window.addEventListener('click', (event) => {
-                            if (event.target === courseModal) {
-                                courseModal.style.display = 'none';
-                            }
-                        });
-                    </script>
+                   
                     </div>
                     </div>
                 </section>
@@ -1259,36 +529,36 @@ body {
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq1" aria-expanded="true">
-                            What is this website about?
+                            What is the MERN Stack and how does it differ from the MEAN Stack?
                         </h5>
                     </div>
                     <div class="collapse show" id="faq1">
                         <div class="faq-body">
-                            <p>This website provides an online learning platform for full-stack web development courses, including courses on the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire). It offers a structured curriculum, practical projects, and resources to help you become proficient in full-stack development.</p>
+                            <p>The MERN Stack is a collection of JavaScript-based technologies: MongoDB, Express.js, React, and Node.js.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq2">
-                            Do I need any prior knowledge before taking a course?
+                            Which stack should I choose, MERN or MEAN?
                         </h5>
                     </div>
                     <div class="collapse" id="faq2">
                         <div class="faq-body">
-                            <p>Most of our courses are beginner-friendly and include detailed instructions. For advanced courses, basic knowledge of programming or web development concepts may be helpful. However, we have courses for every skill level, from beginner to expert.</p>
+                            <p>Choosing between MERN and MEAN depends on your project requirements.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq3">
-                            How can I access the courses on Tech2Kul?
+                            Can I use MongoDB with Angular in a MEAN Stack project?
                         </h5>
                     </div>
                     <div class="collapse" id="faq3">
                         <div class="faq-body">
-                            <p>You can access all our courses directly from our website. Simply sign up or log in, browse the course catalog, and enroll in the ones you wish to take. Courses are available on-demand, allowing you to learn at your own pace.</p>
+                            <p>Yes, MongoDB is used in both the MERN and MEAN stacks.</p>
                         </div>
                     </div>
                 </div>
@@ -1309,152 +579,94 @@ body {
     </div>
 </section>
 
-<style>
-    /* Align FAQ text to the left */
-    .faq-body {
-        text-align: left;
-    }
-    
-    /* Adjusting alignment of the FAQ header if needed */
-    .faq-head h5 {
-        text-align: left;
-        color: white; /* Set the color of the h5 text to white */
-    }
-</style>
+
 
    
     
     <!-- End FAQs -->
-     <style>#faqs
-{
-    padding: 20px 0;
-}
-#faqs .faqs-container .faq
-{
-    border-top: 1px solid var(--color-border);
-    padding: 15px;
-}
-#faqs .faqs-container .faq .faq-head
-{
-    padding: 15px 0px;
-    position: relative;
-}
-#faqs .faqs-container .faq .faq-head h5
-{
-    width: 90%;
-    cursor: pointer;
-}
-#faqs .faqs-container .faq .faq-head h5::before
-{
-    content: 'keyboard_arrow_down';
-    text-align: center;
-    font-size: 20px;
-    line-height: 27px;
-    font-family: 'Material Icons Round';
-    height: 25px;
-    width: 25px;
-    color: #fefefe;
-    background: var(--color-sec);
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    transition: 0.5s;
-}
-#faqs .faqs-container .faq .faq-head h5[aria-expanded=true]::before
-{
-    content: 'keyboard_arrow_up';
-}
-</style>
-   
-<div style="margin-top: 50px;"></div>
-<!-- Start Contact -->
-<section id="contact">
-    <div class="container" style="border-radius: 15px; box-shadow: 0 4px 10px rgb(29, 29, 31); padding: 20px; background: rgb(29, 29, 31); color: #fff;">
-        <div class="row">
-            <div class="col-lg-6 contact-information">
-                <div class="section-head-tag" style="color: #007bff;">Contact</div>
-                <h2 class="section-head-title" style="color: #fff;">Feel Free To Contact Us</h2>
-                <p class="mb-5 section-head-body">We are always available for your service with great support.</p>
-               
-                <div class="info mb-3 d-flex align-items-center">
-                    <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">
-                            location_on
-                        </i>
-                    </div>
-                    <p style="text-align: left;">Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
-                </div>
-                <div class="info mb-3 d-flex align-items-center">
-                    <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">
-                            mail
-                        </i>
-                    </div>
-                    <a href="mailto:info@tech2edge.com" style="color: #007bff;">info@tech2edge.com</a>
-                </div>
-                <div class="info mb-3 d-flex align-items-center">
-                    <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                        <i class="material-icons-round">
-                            call
-                        </i>
-                    </div>
-                    <a href="tel:+919930249947" style="color: #007bff;">+91 99302 49947</a>
-                </div>
-            </div>
-            <div class="col-lg-6 contact-form align-self-center">
-                <form>
-                    <div class="form-group">
-                        <input type="email" placeholder="Enter email" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Enter name" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
-                    </div>
+    
+    <div class="spacing-top"></div>
 
-                    <!-- Dropdown for Course Selection -->
-                    <div class="form-group">
-                        <select id="course" class="form-control" style="background: #333; color: #fff; border: 1px solid #444; border-radius: 10px; padding: 10px;">
-                            <option value="frontend">Frontend Development</option>
-                            <option value="backend">Backend Development</option>
-                            <option value="fullstack">Full-Stack Development</option>
-                            <option value="fullstack">Core Software Principle</option>
-                            
-                            <!-- Grouping MERN / MEAN Stack options -->
-                            <optgroup label="MERN / MEAN Stack">
-                                <option value="mern" selected>MERN Stack</option>
-                                <option value="mean" selected>MEAN Stack</option>
-                            </optgroup>
-                            
-                            <!-- Grouping TALL, RILT, & VILT Stacks -->
-                            <optgroup label="TALL, RILT, & VILT Stacks">
-                                <option value="tall" selected>TALL Stack</option>
-                                <option value="rilt">RILT Stack</option>
-                                <option value="vilt">VILT Stack</option>
-                            </optgroup>
-                            
-                            <option value="accessibility">Accessibility</option>
-                        </select>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 contact-information">
+                    <div class="section-head-tag">Contact</div>
+                    <h2 class="section-head-title">Feel Free To Contact Us</h2>
+                    <p class="mb-5 section-head-body">We are always available for your service with great support.</p>
+                   
+                    <div class="info mb-3 d-flex align-items-center">
+                        <div class="info-icon">
+                            <i class="material-icons-round">location_on</i>
+                        </div>
+                        <p>Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
                     </div>
-
-                    <div class="form-group">
-                        <textarea rows="3" placeholder="Enter message" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;"></textarea>
+                    <div class="info mb-3 d-flex align-items-center">
+                        <div class="info-icon">
+                            <i class="material-icons-round">mail</i>
+                        </div>
+                        <a href="mailto:info@tech2edge.com">info@tech2edge.com</a>
                     </div>
-                    <button type="submit" class="btn btn-main" style="border-radius: 20px; padding: 10px 20px; border: none; background: #007bff; color: #fff; cursor: pointer;">Submit</button>
-                </form>
+                    <div class="info mb-3 d-flex align-items-center">
+                        <div class="info-icon">
+                            <i class="material-icons-round">call</i>
+                        </div>
+                        <a href="tel:+919930249947">+91 99302 49947</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 contact-form align-self-center">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter name">
+                        </div>
+    
+                        <!-- Dropdown for Course Selection -->
+                        <div class="form-group">
+                            <select id="course" class="form-control">
+                                <option value="frontend">Frontend Development</option>
+                                <option value="backend">Backend Development</option>
+                                <option value="fullstack">Full-Stack Development</option>
+                                
+                                <!-- Grouping MERN / MEAN Stack options -->
+                                <optgroup label="MERN / MEAN Stack">
+                                    <option value="mernmean" selected>MERN Stack & MEAN Stack</option>
+                                   
+                                </optgroup>
+                                
+                                <!-- Grouping TALL, RILT, & VILT Stacks -->
+                                <optgroup label="TALL, RILT, & VILT Stacks">
+                                    <option value="tall">TALL Stack</option>
+                                    <option value="rilt">RILT Stack</option>
+                                    <option value="vilt">VILT Stack</option>
+                                </optgroup>
+                                
+                                <option value="accessibility">Accessibility</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <textarea rows="3" placeholder="Enter message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-main">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-         <!-- Start Footer -->
-         <footer id="footer">
+    </section>
+    
+    
+    
+             <!-- Start Footer -->
+        <footer id="footer">
             <div class="container">
                 <div class="row justify-content-center align-items-center footer-main" >
                     <div class="col-lg-6 col-md-8 text-center">
                         <a class="footer-brand" href="#">
-                            <h1 style="font-size: 25px; font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                            <h1 class="footer-brand">TechKul <span class="highlight">.</span></h1>
+
                         </a>
                         <p class="footer-text mt-4">Unlock your potential with TechKul! Learn cutting-edge technologies, from web development to full-stack expertise.</p>
                         <div class="footer-social-links mt-4">
@@ -1480,21 +692,20 @@ body {
                             </a>
                         </div>
                         <div class="footer-links mt-4">
-                            <a href="#">About</a> ᛫
-                            <a href="#">Terms of Use</a> ᛫
-                            <a href="#">Privacy Policy</a> ᛫
-                            <a href="#">Company</a> ᛫
-                            <a href="location.html">location</a>
-                            
+                            <a href="index.html#about">About</a> ᛫
+                           
+                            <a href="location.html">Location</a>
                         </div>
                     </div>
                 </div>
                 <div class="row footer-rights d-flex justify-content-center align-items-center">
-                    <div class="col-12 text-center ">
-                        <p style="padding-bottom: 10px;" class="d-flex justify-content-center align-items-center">Copyright © 2025
-                            <h1 style="font-size: 20px; font-weight: 800; margin: 0; ">
-                                TechKul <span style="color:blue">.</span>
+                    <div class="col-12 text-center">
+                        <p class="footer-rights-text">Copyright © 2025
+
+                            <h1 class="footer-brand-title">
+                                TechKul <span class="brand-dot">.</span>
                             </h1>
+                            
                             All rights reserved. Proudly Powered by
                             <a href="https://tech2edge.co/">Tech2Edge</a>
                         </p>
@@ -1512,6 +723,7 @@ body {
     <script src="assets/script/owl.carousel.min.js"></script>
     <!-- Main JS -->
     <script src="assets/script/main.js"></script>
+    <script src="mernstackcourse.js"></script>
 
 </body>
 

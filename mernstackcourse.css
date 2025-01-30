@@ -1,0 +1,783 @@
+.hnew{
+    font-size: 30px;font-weight: 800;
+    
+}
+.snew{
+    color:blue
+}
+
+
+
+
+.gap-100{margin-top: 100px;}
+.animated-bgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%; /* Changed from 80% to 100% for more height */
+    background: linear-gradient(135deg, #000428, #004e92, #0f2027);
+    background-size: 200% 200%;
+    animation: gradient-animation 6s ease-in-out infinite;
+    z-index: -1;
+}
+
+
+   @keyframes gradient-animation {
+       0% {
+           background-position: 0% 0%;
+       }
+       50% {
+           background-position: 100% 100%;
+       }
+       100% {
+           background-position: 0% 0%;
+       }
+   }
+
+   /* Styling for the card */
+   .cards {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 2rem;
+       background-color: #222;
+       border-radius: 15px;
+       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+       transition: all 0.3s ease;
+       max-width: 900px;
+       width: 100%;
+       margin: auto;
+   }
+
+   .cards:hover {
+       transform: scale(1.05);
+       box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+   }
+
+.text-sections {
+max-width: 50%;
+color: white;
+text-align: left; /* Ensure text aligns to the left on larger screens */
+}
+
+.image-sections {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1.5rem;
+background-color: #333;
+border-radius: 15px;
+width: 260px;
+height: 240px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease-in-out;
+}
+
+.image-sections img {
+max-width: 100%;
+height: auto;
+border-radius: 20%;
+object-fit: cover;
+}
+
+.image-sections:hover {
+transform: scale(1.1);
+box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+background-color: #0066cc;
+color: white;
+padding: 0.8rem 1.5rem;
+border-radius: 8px;
+text-transform: uppercase;
+font-size: 1rem;
+font-weight: normal; /* Make button text normal */
+transition: background-color 0.3s ease;
+}
+
+.buttons:hover {
+background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+.cards {
+   flex-direction: column;
+   align-items: center;
+   border-radius: 0px;
+   background-color: transparent; 
+   box-shadow: none;
+}
+
+.text-sections {
+   max-width: 100%;
+   margin-bottom: 1.5rem;
+   text-align: center; /* Center text on smaller screens */
+}
+
+.image-sections {
+   margin-bottom: 1.5rem; /* Add spacing between image and text */
+}
+}
+
+
+.pnew{padding-top: 10px;}
+
+.gap-150{margin-top: 140px;}
+
+
+ /* Wrapper styling */
+     /* Wrapper styling */
+     .animated-text-wrapper {
+        width: 100%; /* Full width */
+        background-color: #222;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        border: 1px solid #000; /* Slimmer border */
+        /* border-radius: 5px; */ /* Optional, can uncomment for rounded edges */
+        padding: 8px 2px; /* Very slim padding */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 0.4rem; /* Smaller text for a slimmer look */
+        line-height: 1; /* Reduces the vertical space between lines */
+    }
+    
+    #download {
+        margin-top: 20px; /* Adjust the value as needed */
+    }
+    
+    /* Text container */
+    .animated-text {
+        display: flex;
+        animation: scroll 30s linear infinite; /* Slower scrolling animation */
+        font-family: 'Courier New', Courier, monospace; /* Coding-style font */
+        font-size: 0.8rem;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+    
+    /* Duplicated text to ensure smooth looping */
+    .animated-text span {
+        padding-right: 3rem;
+    }
+    
+    /* Keyframe animation for scrolling */
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    @media (max-width: 768px) {
+            /* Make the font smaller on mobile */
+            .animated-text {
+                font-size: 1rem;
+            }
+    
+            /* Adjust padding and container settings for mobile */
+            .animated-text-wrapper {
+                padding: 5px 0;
+                top: -150px;
+            }
+        }
+        @media (max-width: 768px) {
+            .mt-6 {
+                display: flex;
+                justify-content: center; /* Centers the button horizontally */
+                align-items: center; /* Centers the button vertically if needed */
+                 /* Optional: Makes sure the button is centered vertically in the viewport */
+            }
+        }
+
+    
+        /* Card Layout */
+.single-card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px !important;
+    object-fit: cover !important;
+  }
+  
+  .card-header-wrapper {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-header-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(43, 79, 255) !important;
+  }
+  
+  .card-content-wrapper {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.85rem;
+  }
+  
+  .card-content-list {
+    margin-bottom: 10px;
+  }
+  
+  .card-content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .checkmark {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .card-footer-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .enroll-btn {
+    padding: 10px 20px;
+    background-color: rgb(43, 79, 255) !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+ /* General Styles */
+ .content-wrapper {
+    font-family: "Lexend", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    background-color: rgb(23, 23, 23);
+    padding: 40px 20px !important;
+}
+
+.course-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.course-header .course-subtitle {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.course-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.course-header p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+/* Card Wrapper */
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.single-card {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.card-item {
+    background-color: rgb(23, 23, 23);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: space-between;
+    height: 650px;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 0 2px rgb(0, 61, 122), 0 10px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-image-wrapper img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    background: #f4f4f4;
+}
+
+.card-header-wrapper {
+    margin: 1.5rem 0;
+}
+
+.card-header-wrapper a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(0, 61, 122);
+    text-decoration: none;
+}
+
+.card-content-wrapper ul li {
+    margin-bottom: 10px;
+}
+
+.card-content-wrapper h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 2px solid rgba(0, 180, 216, 0.4);
+}
+
+.card-content-wrapper ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.card-content-wrapper p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.card-footer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.enroll-btn {
+    background-color: rgb(43, 79, 255);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.enroll-btn:hover {
+    background-color: #0096c7;
+    transform: translateY(-3px);
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-item{
+        
+        height: 100% !important;
+    }
+    
+
+    .card-header-wrapper a {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .card-content-wrapper {
+        font-size: 0.9rem;
+    }
+
+    .enroll-btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+    .content-wrapper{
+        padding: 0px 20px!important;
+    }
+    
+}     
+.container {
+    text-align: center;
+}
+
+/* Button Styling */
+.download-btn {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-btn:hover {
+    background-color: #3B82F6;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #2E2E2E;
+    border-radius: 8px;
+    padding: 40px;
+    width: 80%;
+    max-width: 700px;
+    text-align: left;
+    max-height: 80vh;
+    overflow-y: scroll; /* Enables scrolling */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hiding Default Scrollbar */
+.modal-content::-webkit-scrollbar {
+    display: none; /* Hide the default scrollbar */
+}
+
+/* Custom Scrollbar */
+.modal-content {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #3B82F6 #2E2E2E; /* Firefox color scheme for the scrollbar */
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+.modal-content::-webkit-scrollbar {
+    width: 10px; /* Thin scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #3B82F6; /* Blue thumb color */
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background-color: #2E2E2E; /* Darker track color */
+    border-radius: 10px;
+}
+
+/* Course Title */
+.course-title {
+    font-size: 1.7rem; /* Corrected font size */
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* Course Description */
+.course-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+/* Syllabus Styling */
+.syllabus {
+    margin-bottom: 50px;
+}
+
+/* Syllabus Section Header */
+.syllabus h3 {
+    font-size: 1.2rem; /* Increased header size for visibility */
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 10px; /* Extra padding for space between week title and topics */
+    padding-top: 10px;
+    border-bottom: 1px solid #444; /* Adds a thin line below the section title */
+    border-top: 1px solid #444; /* Adds a thin line above the section title */
+}
+
+/* List Styling in Syllabus */
+.syllabus ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.syllabus li {
+    margin: 12px 0; /* Increased margin between items */
+    font-size: 1rem; /* Smaller list items */
+    color: #ddd;
+    display: flex;
+    align-items: center; /* Ensures icon and text are aligned properly */
+    gap: 12px; /* Space between icon and text */
+}
+
+/* Blue Material Icons */
+.material-icons {
+    color: #1E3A8A; /* Blue color for the icons */
+    font-size: 1.3rem; /* Ensure consistent icon size */
+    vertical-align: middle; /* Vertically align icon with text */
+}
+
+/* Enroll Button */
+.enroll-btn {
+    background-color: #070707;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.enroll-btn:hover {
+    background-color: #25262f;
+}
+
+/* Close Button */
+.close-btn {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-btn:hover {
+    color: #FF6347;
+}
+/* Align FAQ text to the left */
+.faq-body {
+    text-align: left;
+}
+
+/* Adjusting alignment of the FAQ header if needed */
+.faq-head h5 {
+    text-align: left;
+    color: white; /* Set the color of the h5 text to white */
+}
+#faqs
+{
+    padding: 20px 0;
+}
+#faqs .faqs-container .faq
+{
+    border-top: 1px solid var(--color-border);
+    padding: 15px;
+}
+#faqs .faqs-container .faq .faq-head
+{
+    padding: 15px 0px;
+    position: relative;
+}
+#faqs .faqs-container .faq .faq-head h5
+{
+    width: 90%;
+    cursor: pointer;
+}
+#faqs .faqs-container .faq .faq-head h5::before
+{
+    content: 'keyboard_arrow_down';
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Material Icons Round';
+    height: 25px;
+    width: 25px;
+    color: #fefefe;
+    background: var(--color-sec);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#faqs .faqs-container .faq .faq-head h5[aria-expanded=true]::before
+{
+    content: 'keyboard_arrow_up';
+}
+
+
+.spacing-top {
+    margin-top: 50px;
+}
+/* Styling for the contact section container */
+#contact .container {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgb(29, 29, 31);
+    padding: 20px;
+    background: rgb(29, 29, 31);
+    color: #fff;
+}
+
+/* Styling for the contact section title */
+#contact .section-head-tag {
+    color: #007bff;
+    text-align: left; /* Left-align the section head tag */
+}
+
+#contact .section-head-title {
+    color: #fff;
+    text-align: left; /* Left-align the section title */
+}
+
+/* Styling for the contact section body text */
+#contact .section-head-body {
+    margin-bottom: 30px;
+    text-align: left; /* Left-align the section body */
+}
+
+/* Styling for contact info section */
+#contact .info {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: left; /* Left-align the contact info text */
+}
+
+/* Styling for the icons in contact info */
+#contact .info-icon {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Styling for links in the contact section */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+    text-align: left; /* Left-align the links */
+}
+
+/* Form container and form elements */
+#contact .contact-form {
+    padding: 20px;
+    background-color: rgb(29, 29, 31);
+    border-radius: 10px;
+    text-align: left; /* Left-align the form */
+}
+
+#contact .form-group {
+    margin-bottom: 15px;
+}
+
+#contact .form-group input,
+#contact .form-group textarea,
+#contact .form-group select {
+    border-radius: 10px;
+    border: 1px solid #444;
+    padding: 10px;
+    width: 100%;
+    background: #333;
+    color: #fff;
+}
+
+#contact .form-group textarea {
+    resize: none;
+}
+
+/* Button styling */
+#contact .btn-main {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .btn {
+        display: block; /* Make buttons block level so they take full width */
+        margin-bottom: 10px; /* Add a gap between buttons */
+    }
+}
+#contact .btn-main:hover {
+    background-color: #0056b3;
+}
+
+/* Footer brand styling */
+.footer-brand {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Highlighted part of brand name */
+.footer-brand .highlight {
+    color: blue;
+}
+
+/* Footer rights text styling */
+.footer-rights-text {
+    padding-bottom: 10px;
+}
+
+/* Footer brand title styling */
+.footer-brand-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Brand dot color */
+.brand-dot {
+    color: blue;
+}
+@media (max-width: 768px) {
+    .buttons {
+        background-color: #000000;
+    }
+}

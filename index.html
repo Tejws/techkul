@@ -21,158 +21,16 @@
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+    <link href="index.css" rel="stylesheet">
 
     <!-- <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=5366b776df77d' async='true'></script> -->
 
-    <style>
-        .carrer-path {
-            padding: 100px;
-        }
-
-        .carrer-path .card-title {
-            font-size: 1.2rem;
-        }
-
-        .carrer-path .card-body .float-right.small {
-            background-color: var(--color-sec);
-            padding: 0px;
-            border: 1px solid var(--color-sec);
-            border-radius: 7px;
-        }
-        .week-label {
-    background-color: rgb(48, 79, 255); /* You can adjust the blue color */
-    color: white; /* Text color should be white to stand out */
-    padding: 3px 5px; /* Add padding for better spacing */
-    border-radius: 7px; /* Optional: rounding corners */
-    font-size: 16px; /* Ensure the text is clear and readable */
-}
-        @media only screen and (max-width:600px) {
-            .carrer-path-fix{
-               
-            }
-        }
-    </style>
-    <!-- Add this style block to your head section or your main CSS file -->
-    <style>
-    body, html {
-  
-    padding: 0;
-    overflow-x: hidden;
     
-}
-
-        #partners {
-            padding: 80px 0;
-            background-color: #1a1a1a;
-        }
-
-        .partner-scroll-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .partner-scroll {
-            display: flex;
-            width: fit-content;
-            animation-duration: 30s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-        }
-
-        .scroll-left {
-            animation-name: scroll-left;
-        }
-
-        .scroll-right {
-            animation-name: scroll-right;
-        }
-
-        .partner-logo {
-            flex: 0 0 auto;
-            width: 200px;
-            height: 100px;
-            margin: 0 20px;
-           /* background-color: #2a2a2a;*/
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.3s ease;
-        }
-
-        .partner-logo:hover {
-            transform: scale(1.05);
-        }
-
-        .partner-logo img {
-            max-width: 80%;
-            max-height: 80%;
-            opacity: 0.7;
-            transition: opacity 0.3s ease;
-        }
-
-        .partner-logo:hover img {
-            opacity: 1;
-        }
-
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        @keyframes scroll-right {
-            0% {
-                transform: translateX(-50%);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            #partners {
-                padding: 70px 0;
-            }
-
-            .partner-logo {
-                width: 150px;
-                height: 80px;
-                margin: 0 10px;
-            }
-        }
-    </style>
     <!-- End Partners -->
 
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>
-     mermaid.initialize({
-    startOnLoad: true,
-    theme: "dark", // Built-in dark theme
-    themeVariables: {
-      primaryColor: "#1f6feb", // Nodes' primary color
-      primaryTextColor: "#ffffff", // Text color inside nodes
-      primaryBorderColor: "#1f6feb", // Border color of nodes
-      lineColor: "#f8f9fa", // Line color for connections
-      arrowheadColor: "#f8f9fa", // Arrowhead color
-      background: "#121212", // Background color
-    },
-  });
-    </script>
-    <style>
-        body{
-            overflow-x: hidden;
-        }
-       
-
-    </style>
+    
+   
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -190,7 +48,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <h1 style="font-size: 30px; font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                <h1 class="navbar-logo">TechKul <span class="navbar-logo-span">.</span></h1>
             </a>
             <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -212,6 +70,7 @@
             </a>
         </div>
     </nav>
+    
     
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -244,119 +103,7 @@
             </div>
         </div>
     </div>
-<style>
-/* Modal Styles */
-.modal-content {
-    background-color: #1d1f20; /* Dark background for modal */
-    color: #f0f0f0; /* Light text color */
-    border-radius: 15px; /* Increased border radius for smooth corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-    border: none; /* Remove any default border */
-}
-
-/* Modal Header Styles */
-.modal-header {
-    background-color: #333; /* Dark gray header */
-    color: #fff;
-    border-bottom: 1px solid #444; /* Subtle separator */
-    padding: 15px;
-    text-align: center; /* Centered text */
-}
-
-/* Modal Title Styling */
-.modal-title {
-    font-size: 1.75rem; /* Larger title for prominence */
-    font-weight: bold;
-}
-
-/* Close Button Styling */
-.close {
-    color: #aaa; /* Subtle close icon color */
-    font-size: 1.8rem; /* Slightly larger for better accessibility */
-    cursor: pointer; /* Indicate that it is clickable */
-}
-
-.close:hover {
-    color: #fff; /* Change color on hover for better contrast */
-}
-
-/* Modal Body Styles */
-.modal-body {
-    padding: 25px 30px; /* Adjust padding for better spacing */
-}
-
-/* Form Group Label Styling */
-.form-group label {
-    font-size: 1.1rem;
-    color: #ccc; /* Light gray for labels */
-    margin-bottom: 5px; /* Added space between label and input */
-}
-
-/* Input Field Styling */
-.form-control {
-    width: 100%;
-    padding: 12px; /* Increased padding for a more spacious feel */
-    margin-top: 10px; /* Increased space above the input field */
-    background-color: #444; /* Dark background for input fields */
-    border: 1px solid #555;
-    color: #fff;
-    border-radius: 5px;
-    transition: border-color 0.3s; /* Smooth transition for focus effect */
-}
-
-.form-control:focus {
-    border-color: #007bff; /* Blue border on focus */
-    outline: none; /* Remove the default outline */
-}
-
-/* Button Styling */
-.btn-primary {
-    background-color: #007bff;
-    color: white;
-    width: 100%;
-    padding: 12px; /* Larger button for better usability */
-    border: none;
-    border-radius: 30px; /* Rounded corners for the button */
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Forgot Password Link */
-.forgot-password {
-    color: #007bff;
-    font-size: 0.9rem;
-    text-decoration: none;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-/* Modal Background Overlay */
-.modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.7); /* Darker backdrop */
-}
-
-/* Ensuring modal is centered */
-.modal-dialog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the modal is vertically centered on the screen */
-}
-
-.modal-content {
-    margin: auto; /* Centering the modal content */
-    width: 100%;
-    max-width: 500px; /* Optional: Max width for the modal */
-}
-
-</style>    
+    
  
     <!-- Navbar End -->
 
@@ -460,10 +207,9 @@
     <!-- Start Useability -->
     <section id="useability">
         <div class="container">
-            <div style="margin-top: 50px;"></div>
+            <div class="mt-50"></div>
             <div class="row">
                 <!-- Text Content (Left Side) -->
-         
                 <div class="col-lg-6 col-12 useable-body">
                     <h2 class="section-head-title text-center text-lg-start">Our Mission: Develop Versatile Developers</h2>
                     <p class="section-head-body text-center text-lg-start">
@@ -474,10 +220,7 @@
                         <div class="col-md-6 col-sm-6 col-12 mt-4">
                             <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
-                                    <!-- Updated icon for Skillful: tools -->
-                                    <i class="material-icons-round">
-                                        build
-                                    </i>
+                                    <i class="material-icons-round">build</i>
                                 </div>
                                 <div class="abstract-text mt-2">
                                     <h5>Skillful</h5>
@@ -489,10 +232,7 @@
                         <div class="col-md-6 col-sm-6 col-12 mt-4">
                             <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
-                                    <!-- Updated icon for Adaptable: device refresh (adaptive) -->
-                                    <i class="material-icons-round">
-                                        refresh
-                                    </i>
+                                    <i class="material-icons-round">refresh</i>
                                 </div>
                                 <div class="abstract-text mt-2">
                                     <h5>Adaptable</h5>
@@ -504,10 +244,7 @@
                         <div class="col-md-6 col-sm-6 col-12 mt-4">
                             <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
-                                    <!-- Updated icon for Confident: person with a checkmark (confident) -->
-                                    <i class="material-icons-round">
-                                        check_circle
-                                    </i>
+                                    <i class="material-icons-round">check_circle</i>
                                 </div>
                                 <div class="abstract-text mt-2">
                                     <h5>Confident</h5>
@@ -519,10 +256,7 @@
                         <div class="col-md-6 col-sm-6 col-12 mt-4">
                             <div class="abstract-container text-center d-flex flex-column align-items-center">
                                 <div class="abstract-icon">
-                                    <!-- Updated icon for AI Ready: devices (representing AI-driven future) -->
-                                    <i class="material-icons-round">
-                                        devices
-                                    </i>
+                                    <i class="material-icons-round">devices</i>
                                 </div>
                                 <div class="abstract-text mt-2">
                                     <h5>AI Ready</h5>
@@ -532,22 +266,18 @@
                         </div>
                     </div>
                 </div>
-                
-    
                 <!-- Image (Right Side) -->
-                <div class="col-lg-6 col-12 d-none d-md-block useable-image align-self-center text-center mt-4 mt-lg-0">
-                    <img src="assets/images/educator2.webp" class="img-fluid" style="max-width: 80%;" alt="product">
+                <div class="col-lg-6 col-12 d-none d-md-block image-container align-self-center text-center mt-4 mt-lg-0">
+                    <img src="assets/images/educator2.webp" class="img-fluid custom-image" alt="product">
                 </div>
-            </div>
-        </div>
-    </section>   
             </div>
         </div>
     </section>
     
+    
     <!-- End Useability -->
 
-
+<div class="mt-50"></div>
     <!-- Start Products -->
     <section id="products">
         <div class="container">
@@ -565,7 +295,8 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item product">
                                 <div class="product-img position-relative">
-                                    <img src="assets/images/coding7.webp" class="img-fluid" alt="product" style="max-width: 100%;">
+                                    <img src="assets/images/coding7.webp" class="img-fluid custom-img" alt="product">
+
                                     <!-- <span class="discount-label">Discounted Price</span> -->
                                 </div>
                                 <div class="product-body text-center">
@@ -579,7 +310,7 @@
                             </div>
                             <div class="item product">
                                 <div class="product-img position-relative">
-                                    <img src="assets/images/frontend.png" class="img-fluid" alt="product" style="max-width: 100%;">
+                                    <img src="assets/images/frontend.png" class="img-fluid custom-img" alt="product">
                                     <!-- <span class="discount-label">Discounted Price</span> -->
                                 </div>
                                 <div class="product-body text-center">
@@ -587,13 +318,13 @@
                                     <p>Online/Offline</p>
                                     <h5>₹45,000</h5>
                                     <div class="mt-4">
-                                        <a href="frontendcourse.html" class="btn-main">Enroll now</a>
+                                        <a href="frontendcourse.html" class="btn-main" target="_blank">Enroll now</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="item product">
                                 <div class="product-img position-relative">
-                                    <img src="assets/images/backend.png" class="img-fluid" alt="product" style="max-width: 100%;">
+                                    <img src="assets/images/backend.png" class="img-fluid custom-img" alt="product">
                                     <!-- <span class="discount-label">Discounted Price</span> -->
                                 </div>
                                 <div class="product-body text-center">
@@ -607,7 +338,7 @@
                             </div>
                             <div class="item product">
                                 <div class="product-img position-relative">
-                                    <img src="assets/images/fullstackcourse.png" class="img-fluid" alt="product" style="max-width: 100%;">
+                                    <img src="assets/images/fullstackcourse.png" class="img-fluid custom-img" alt="product">
                                     <!-- <span class="discount-label">Discounted Price</span> -->
                                 </div>
                                 <div class="product-body text-center">
@@ -615,13 +346,13 @@
                                     <p>Online</p>
                                     <h5>₹45,000</h5>
                                     <div class="mt-4">
-                                        <a href="fullstackcourse.html" target="_blank" class="btn-main">Enroll now</a>
+                                        <a href="fullstackcourse.html" target="_blank" class="btn-main" target="_blank">Enroll now</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="item product">
                                 <div class="product-img position-relative">
-                                    <img src="assets/images/MERN_MEAN.png" class="img-fluid" alt="product" style="max-width: 100%;">
+                                    <img src="assets/images/MERN_MEAN.png" class="img-fluid custom-img" alt="product" target="_blank">
                                     <span class="discount-label">Discounted Price</span>
                                 </div>
                                 <div class="product-body text-center">
@@ -629,65 +360,50 @@
                                     <p>Online</p>
                                     <h5><del>₹45,000</del> <span class="discounted-price">₹35,000</span></h5>
                                     <div class="mt-4">
-                                        <a href="#" class="btn-main">Enroll now</a>
+                                        <a href="mernstackcourse.html" class="btn-main" target="_blank">Enroll now</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="item product">
                                 <div class="product-img position-relative">
-                                    <img src="assets/images/tallstack.png" class="img-fluid" alt="product" style="max-width: 100%;">
+                                    <img src="assets/images/tallstack.png" class="img-fluid custom-img" alt="product">
                                     <span class="discount-label">Discounted Price</span>
                                 </div>
                                 <div class="product-body text-center">
-                                    <h5>TALL & VILT Stacks</h5>
+                                    <h5>TALL Stack Course</h5>
                                     <p>Online</p>
                                     <h5><del>₹45,000</del> <span class="discounted-price">₹35,000</span></h5>
 
                                     <div class="mt-4">
-                                        <a href="Tall.html" class="btn-main">Enroll now</a>
+                                        <a href="Tall.html" class="btn-main" target="_blank">Enroll now</a>
                                     </div>
                                 </div>
                                 
                             </div>
+
+                            <!-- <div class="item product">
+                                <div class="product-img position-relative">
+                                    <img src="assets/images/RILT.png" class="img-fluid custom-img" alt="product">
+                                    <span class="discount-label">Discounted Price</span>
+                                </div>
+                                <div class="product-body text-center">
+                                    <h5>RILT Stack Course</h5>
+                                    <p>Online</p>
+                                    <h5><del>₹45,000</del> <span class="discounted-price">₹35,000</span></h5>
+
+                                    <div class="mt-4">
+                                        <a href="rilt.html" class="btn-main" target="_blank">Enroll now</a>
+                                    </div>
+                                </div>
+                                
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<style>
-    
-.discount-label {
-    position: absolute;
-    top: -10px; /* Position the label above the image */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Ensure it's perfectly centered */
-    background-color: rgb(255, 47, 0);
-    text-align: center;
-    color: white;
-    padding: px; /* Adjust padding to make the label compact */
-    font-size: 0.6rem; /* Smaller font size */
-    border-radius: 0px;
-    text-transform: uppercase;
-    width: 120px;
-}
-
-.product-body h5 {
-    display: inline-flex; /* Makes the prices appear inline */
-    align-items: center; /* Vertically center-align the text */
-    gap: 5px; /* Add some space between the prices */
-}
-
-.product-body h5 del {
-    color: #888; /* Style for the original price */
-    text-decoration: line-through;
-}
-
-.discounted-price {
-    color: rgb(43, 211, 48); /* Style for the discounted price */
-    font-weight: bold;
-}
-</style>    
+   
     <!-- End Products -->
 
     <!-- Start Features -->
@@ -702,10 +418,9 @@
             </div>
         </div>
         <div class="row features-container align-items-center">
-            <div class="col-lg-4 col-md-6 features-1 text-right " >
+            <div class="col-lg-4 col-md-6 features-1 text-right">
                 <div class="features-left">
-
-                    <div class="feature d-flex align-items-center"style="padding-bottom: 20px;">
+                    <div class="feature d-flex align-items-center custom-padding">
                         <div class="order-lg-1">
                             <div class="feature-icon">
                                 <i class="material-icons-round">school</i>
@@ -714,59 +429,58 @@
                         <div class="feature-body order-lg-0">
                             <h5>Expert Guidance</h5>
                             <p>Learn from experts with 10+ years of experience, offering practical, industry-relevant knowledge.</p>
-</div>
+                        </div>
                     </div>
 
-                    <div class="feature d-flex align-items-center" >
+                    <div class="feature d-flex align-items-center">
                         <div class="order-lg-1">
                             <div class="feature-icon">
                                 <i class="material-icons-round">group</i>
-
                             </div>
                         </div>
                         <div class="feature-body order-lg-0">
                             <h5>Professional Mentorship</h5>
-<p>Receive guidance from seasoned professionals, equipping you with real-world, practical skills.</p>
-
-</div>
+                            <p>Receive guidance from seasoned professionals, equipping you with real-world, practical skills.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-          <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 features-2 features-img text-center" >
-    <img src="assets/images/skills.jpeg" class="img-fluid rounded" alt="product" style="max-width: 100%;">
-</div>
+            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 features-2 features-img text-center">
+                <img src="assets/images/skills.jpeg" class="img-fluid rounded custom-img" alt="product">
+            </div>
 
-<div class="col-lg-4 col-md-6 features-3" >
-    <div class="features-right">
-        <div class="feature d-flex align-items-center" style="padding-bottom: 20px;">
-            <div>
-                <div class="feature-icon">
-                    <i class="material-icons-round">support_agent</i>
+            <div class="col-lg-4 col-md-6 features-3">
+                <div class="features-right">
+                    <div class="feature d-flex align-items-center custom-padding">
+                        <div>
+                            <div class="feature-icon">
+                                <i class="material-icons-round">support_agent</i>
+                            </div>
+                        </div>
+                        <div class="feature-body">
+                            <h5>Personalized Support</h5>
+                            <p>Gain mentorship, tailored guidance, and ongoing support throughout your learning journey.</p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex align-items-center">
+                        <div>
+                            <div class="feature-icon">
+                                <i class="material-icons-round">android</i>
+                            </div>
+                        </div>
+                        <div class="feature-body">
+                            <h5>Future-Proof Skills</h5>
+                            <p>Prepare for the AI-driven future with courses that keep you ahead in software development.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="feature-body">
-                <h5>Personalized Support</h5>
-                <p>Gain mentorship, tailored guidance, and ongoing support throughout your learning journey.</p>
-            </div>
-        </div>
-        <div class="feature d-flex align-items-center">
-            <div>
-                <div class="feature-icon">
-                    <i class="material-icons-round">android</i>
-                </div>
-            </div>
-            <div class="feature-body">
-                <h5>Future-Proof Skills</h5>
-                <p>Prepare for the AI-driven future with courses that keep you ahead in software development.</p>
-            </div>
-        </div>
-    </div>
-</div>
 
         </div>
     </div>
 </section>
+
 
     <!-- End Features -->
 
@@ -918,44 +632,16 @@
     <!-- End Download -->
 
     <!-- Start Flowchart Styling -->
-    <style>
-        #flowchart .mermaid i.fa-lightbulb {
-            color: #5de44b !important;
-        }
-    
-        #flowchart .mermaid i.fa-users {
-            color: #4af341 !important;
-        }
-    
-        #flowchart .mermaid i.fa-book {
-            color: #ddff00;
-            
-        }
-    
-        #flowchart .mermaid i.fa-cogs {
-            color: #ddff00;
-            
-        }
-    
-        #flowchart .mermaid i.fa-briefcase {
-            color: #ddff00;
-            
-        }
-    
-        #flowchart .mermaid i.fa-trophy {
-            color: #ddff00;
-            
-        }
-    </style>
+   
     
     <!-- Start Flowchart -->
-    <section id="flowchart" class="py-3" style="background-color: var(--bg-sec);">
-        <div class="row justify-content-center align-items-center" style="height: 100%;">
+    <section id="flowchart" class="py-3">
+        <div class="row justify-content-center align-items-center">
             <div class="col-lg-8 col-md-10 text-center">
                 <div class="section-head-tag">The Path</div>
                 <h2 class="section-head-title">It’s a formula designed for YOUR success.</h2>
                 <p class="section-head-body">Our tech courses provide the skills needed to thrive in the industry.</p>
-
+    
                 <div class="mermaid text-center text-white mt-4">
                     graph TD
                     A[<i class="fas fa-book"></i> Learn the Basics] -->
@@ -970,27 +656,26 @@
             </div>
         </div>
     </section>
+    
     <!-- End Flowchart-->
 
 
     <!-- start customer reviews -->
     <section id="customer-reviews">
-        
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
-                        <div class="section-head-tag">Testimonials</div>
-                        <h2 class="section-head-title">What Our Trained Developers Are Saying</h2>
-                        <p class="section-head-body">Our trainers are 10+ years industry veterans, Some of the words by the trainees who got benefited</p>
-                    </div>
         <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
+                    <div class="section-head-tag">Testimonials</div>
+                    <h2 class="section-head-title">What Our Trained Developers Are Saying</h2>
+                    <p class="section-head-body">Our trainers are 10+ years industry veterans, Some of the words by the trainees who got benefited</p>
+                </div>
+            </div>
             <div class="row reviews-container">
                 <!-- Review 1 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="review">
                         <div class="review-video mb-3 position-relative">
-                            <img src="assets/images/thumbnail1.jpeg" alt="Video Thumbnail 1" class="w-100" id="video-thumbnail-1" 
-                                 style="cursor: pointer;" onclick="playVideo('video-thumbnail-1', 'assets/images/samplevideo1.mp4')">
+                            <img src="assets/images/thumbnail1.jpeg" alt="Video Thumbnail 1" class="w-100" id="video-thumbnail-1" onclick="playVideo('video-thumbnail-1', 'assets/images/samplevideo1.mp4')">
                         </div>
                         <div class="quote-mark">
                             <i class="material-icons-round">format_quote</i>
@@ -1010,13 +695,12 @@
                         </div>
                     </div>
                 </div>
-    
+        
                 <!-- Review 2 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="review">
                         <div class="review-video mb-3 position-relative">
-                            <img src="assets/images/thumbnail2.jpeg" alt="Video Thumbnail 2" class="w-100" id="video-thumbnail-2" 
-                                 style="cursor: pointer;" onclick="playVideo('video-thumbnail-2', 'assets/images/samplevideo2.mp4')">
+                            <img src="assets/images/thumbnail2.jpeg" alt="Video Thumbnail 2" class="w-100" id="video-thumbnail-2" onclick="playVideo('video-thumbnail-2', 'assets/images/samplevideo2.mp4')">
                         </div>
                         <div class="quote-mark">
                             <i class="material-icons-round">format_quote</i>
@@ -1036,13 +720,12 @@
                         </div>
                     </div>
                 </div>
-    
+        
                 <!-- Review 3 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="review">
                         <div class="review-video mb-3 position-relative">
-                            <img src="assets/images/thumbnail3.jpeg" alt="Video Thumbnail 3" class="w-100" id="video-thumbnail-3" 
-                                 style="cursor: pointer;" onclick="playVideo('video-thumbnail-3', 'assets/images/samplevideo3.mp4')">
+                            <img src="assets/images/thumbnail3.jpeg" alt="Video Thumbnail 3" class="w-100" id="video-thumbnail-3" onclick="playVideo('video-thumbnail-3', 'assets/images/samplevideo3.mp4')">
                         </div>
                         <div class="quote-mark">
                             <i class="material-icons-round">format_quote</i>
@@ -1067,53 +750,13 @@
     </section>
     
     
+    
     <!-- End Customer Review -->
     
     
-    <script>
-     function playVideo(thumbnailId, videoSrc) {
-    var thumbnail = document.getElementById(thumbnailId);
-
-    // Create the video element dynamically
-    var videoPlayer = document.createElement('video');
-    videoPlayer.setAttribute('controls', 'true');
-    videoPlayer.classList.add('video-player');
-
-    // Add the source for the video
-    var source = document.createElement('source');
-    source.setAttribute('src', videoSrc); // Use the exact path passed in videoSrc
-    source.setAttribute('type', 'video/mp4');
-    videoPlayer.appendChild(source);
-
-    // Replace the thumbnail with the video player
-    thumbnail.parentNode.replaceChild(videoPlayer, thumbnail);
-
-    // Play the video
-    videoPlayer.play();
-}
-
-
-    </script>
+    
 <!-- styling the customer reviews  -->
-<style>
-.review-video {
-    position: relative;
-    width: 100%;
-    padding-top: 177.78%; /* Aspect ratio for 9:16 */
-    background-color: #000;
-    overflow: hidden;
-}
 
-.review-video img,
-.video-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-</style>
 
 
     <!-- Start Subscribe -->
@@ -1176,11 +819,7 @@
                              alt="Partner 1" class="white-logo">
                     </div>
                     
-                    <style>
-                         .white-logo {
-        filter: invert(1) hue-rotate(180deg); /* Inverts black to white */
-    }
-                    </style>
+                   
                     
                     <div class="partner-logo">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="Partner 2">
@@ -1319,50 +958,44 @@
    
 
     <section id="contact">
-        <div class="container" style="border-radius: 15px; box-shadow: 0 4px 10px rgb(29, 29, 31); padding: 20px; background: rgb(29, 29, 31); color: #fff;">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 contact-information">
-                    <div class="section-head-tag" style="color: #007bff;">Contact</div>
-                    <h2 class="section-head-title" style="color: #fff;">Feel Free To Contact Us</h2>
+                    <div class="section-head-tag">Contact</div>
+                    <h2 class="section-head-title">Feel Free To Contact Us</h2>
                     <p class="mb-5 section-head-body">We are always available for your service with great support.</p>
                    
                     <div class="info mb-3 d-flex align-items-center">
-                        <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                            <i class="material-icons-round">
-                                location_on
-                            </i>
+                        <div class="info-icon">
+                            <i class="material-icons-round">location_on</i>
                         </div>
-                        <p >Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
+                        <p>Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai, Maharashtra 400703...</p>
                     </div>
                     <div class="info mb-3 d-flex align-items-center">
-                        <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                            <i class="material-icons-round">
-                                mail
-                            </i>
+                        <div class="info-icon">
+                            <i class="material-icons-round">mail</i>
                         </div>
-                        <a href="mailto:info@tech2edge.com" style="color: #007bff;">info@tech2edge.com</a>
+                        <a href="mailto:info@tech2edge.com">info@tech2edge.com</a>
                     </div>
                     <div class="info mb-3 d-flex align-items-center">
-                        <div class="info-icon" style="margin-right: 10px; color: #007bff;">
-                            <i class="material-icons-round">
-                                call
-                            </i>
+                        <div class="info-icon">
+                            <i class="material-icons-round">call</i>
                         </div>
-                        <a href="tel:+919930249947" style="color: #007bff;">+91 99302 49947</a>
+                        <a href="tel:+919930249947">+91 99302 49947</a>
                     </div>
                 </div>
                 <div class="col-lg-6 contact-form align-self-center">
                     <form>
                         <div class="form-group">
-                            <input type="email" placeholder="Enter email" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
+                            <input type="email" placeholder="Enter email">
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Enter name" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;">
+                            <input type="text" placeholder="Enter name">
                         </div>
     
                         <!-- Dropdown for Course Selection -->
                         <div class="form-group">
-                            <select id="course" class="form-control" style="background: #333; color: #fff; border: 1px solid #444; border-radius: 10px; padding: 10px;">
+                            <select id="course" class="form-control">
                                 <option value="frontend">Frontend Development</option>
                                 <option value="backend">Backend Development</option>
                                 <option value="fullstack">Full-Stack Development</option>
@@ -1385,14 +1018,15 @@
                         </div>
     
                         <div class="form-group">
-                            <textarea rows="3" placeholder="Enter message" style="border-radius: 10px; border: 1px solid #444; padding: 10px; width: 100%; margin-bottom: 15px; background: #333; color: #fff;"></textarea>
+                            <textarea rows="3" placeholder="Enter message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-main" style="border-radius: 20px; padding: 10px 20px; border: none; background: #007bff; color: #fff; cursor: pointer;">Submit</button>
+                        <button type="submit" class="btn btn-main">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    
     
     
              <!-- Start Footer -->
@@ -1401,7 +1035,8 @@
                 <div class="row justify-content-center align-items-center footer-main" >
                     <div class="col-lg-6 col-md-8 text-center">
                         <a class="footer-brand" href="#">
-                            <h1 style="font-size: 25px; font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                            <h1 class="footer-brand">TechKul <span class="highlight">.</span></h1>
+
                         </a>
                         <p class="footer-text mt-4">Unlock your potential with TechKul! Learn cutting-edge technologies, from web development to full-stack expertise.</p>
                         <div class="footer-social-links mt-4">
@@ -1435,10 +1070,12 @@
                 </div>
                 <div class="row footer-rights d-flex justify-content-center align-items-center">
                     <div class="col-12 text-center">
-                        <p style="padding-bottom: 10px;">Copyright © 2025
-                            <h1 style="font-size: 20px; font-weight: 800; margin: 0;">
-                                TechKul <span style="color:blue">.</span>
+                        <p class="footer-rights-text">Copyright © 2025
+
+                            <h1 class="footer-brand-title">
+                                TechKul <span class="brand-dot">.</span>
                             </h1>
+                            
                             All rights reserved. Proudly Powered by
                             <a href="https://tech2edge.co/">Tech2Edge</a>
                         </p>
@@ -1450,6 +1087,7 @@
         <!-- End Footer -->
 
     <!-- JavaScript Files -->
+     <script src="index.js"></script>
     <script src="assets/script/jquery-3.4.1.min.js"></script>
     <script src="assets/script/popper.min.js"></script>
     <script src="assets/script/bootstrap.min.js"></script>

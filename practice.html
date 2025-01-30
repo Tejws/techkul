@@ -1,53 +1,88 @@
-<style>
-    #flowchart .mermaid i.fa-lightbulb {
-        color: #5de44b !important;
-    }
-
-    #flowchart .mermaid i.fa-users {
-        color: #4af341 !important;
-    }
-
-    #flowchart .mermaid i.fa-book {
-        color: #ddff00;
-        
-    }
-
-    #flowchart .mermaid i.fa-cogs {
-        color: #ddff00;
-        
-    }
-
-    #flowchart .mermaid i.fa-briefcase {
-        color: #ddff00;
-        
-    }
-
-    #flowchart .mermaid i.fa-trophy {
-        color: #ddff00;
-        
-    }
-</style>
-
-<!-- Start Flowchart -->
-<section id="flowchart" class="py-3" style="background-color: var(--bg-sec);">
-    <div class="row justify-content-center align-items-center" style="height: 80vh;">
-        <div class="col-lg-8 col-md-10 text-center">
-            <div class="section-head-tag">The Path</div>
-            <h2 class="section-head-title">It’s a formula designed for YOUR success.</h2>
-            <p class="section-head-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima incidunt
-                possimus voluptatum cumque, odit nulla!</p>
-            <div class="mermaid text-center text-white mt-4">
-                graph TD
-                A[<i class="fas fa-book"></i> Learn the Basics] -->
-                B[<i class="fas fa-cogs"></i> Work on Real Projects]
-                B -->
-                C[<i class="fas fa-briefcase"></i> Build Confidence with Internships]
-                C -->
-                D[<i class="fas fa-trophy"></i> Get Placed with Top Companies]
-                Skills[<i class="fas fa-lightbulb skills-icon"></i> Skills] --> C
-                Support[<i class="fas fa-users support-icon"></i> Support] --> D
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Stats</title>
+    <style>
+        .wrapper {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .stat-box {
+            padding: 15px 20px;
+            border-radius: 8px;
+            background: #21262d;
+            min-width: 120px;
+        }
+        .stat {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #58a6ff;
+        }
+        .label {
+            font-size: 1em;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat" id="screens">0+</div>
+                <p class="label">Screens Designed</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat" id="projects">0+</div>
+                <p class="label">Projects Delivered</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat" id="brands">0+</div>
+                <p class="label">Brands Transformed</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat" id="clients">0+</div>
+                <p class="label">Happy Clients</p>
             </div>
         </div>
     </div>
-</section>
-<!-- End Flowchart-->
+
+    <script>
+        function animateCount(id, target) {
+            let count = 0;
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            const interval = setInterval(() => {
+                count += increment;
+                if (count >= target) {
+                    document.getElementById(id).innerText = target + '+';
+                    clearInterval(interval);
+                } else {
+                    document.getElementById(id).innerText = Math.floor(count) + '+';
+                }
+            }, 16);
+        }
+        
+        animateCount("screens", 200);
+        animateCount("projects", 100);
+        animateCount("brands", 20);
+        animateCount("clients", 40);
+    </script>
+</body>
+</html>
