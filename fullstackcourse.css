@@ -1,16 +1,304 @@
-.hnew{
-    font-size: 30px;font-weight: 800;
+body, html {
+    overflow-x: hidden; /*To Ensure horizontal scroll is hidden */
+    background-color: (23, 23, 23);
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0; /* Ensure no extra margin on the row */
+}
+
+.col-md-4 {
+    padding-left: 10px; /* Adjust padding to prevent overflow */
+    padding-right: 10px;
+}
+
+.card {
+    box-sizing: border-box; /* Prevent overflow */
+}
+* {
+box-sizing: border-box;
+font-weight: normal;
+}
+body {
+color: #555;
+background-color: (23, 23, 23);
+text-align: center;
+font-family: 'Roboto Mono';
+
+}
+.carrer-path {
     
 }
-.snew{
-    color:blue
+
+.carrer-path .card-title {
+    font-size: 1.2rem;
+}
+
+.carrer-path .card-body .float-right.small {
+    background-color: var(--color-sec);
+padding: 0px;
+    border: 1px solid var(--color-sec);
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:600px) {
+    .carrer-path {
+       
+    }
+}
+
+
+.flip-container {
+display: flex;
+justify-content: space-around; /* Horizontally space out the items */
+align-items: stretch; /* Ensure all flip elements align equally */
+}
+
+.flip {
+position: relative;
+display: inline-block;
+margin-right: 20px;
+margin-bottom: 2em;
+width: 450px; /* Increased width */
+height: 280px; /* Increased height */
+cursor: pointer;
+}
+
+.flip > .front,
+.flip > .back {
+display: block;
+transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+transition-duration: 2s;
+transition-property: transform, opacity;
+color: white;
+width: 100%;
+height: 100%;
+padding: 1.5em 2em;
+border-radius: 12px;
+background-size: cover !important;
+background-position: center !important;
+}
+
+.flip > .front {
+transform: rotateY(0deg);
+}
+
+.flip > .back {
+position: absolute;
+opacity: 0;
+top: 0px;
+left: 0px;
+background: #313131;
+text-align: left;
+transform: rotateY(-180deg);
+padding: 1.5em 2em;
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Align content and button */
+height: 100%;
+}
+.flip:hover > .front {
+transform: rotateY(180deg);
+}
+
+.flip:hover > .back {
+opacity: 1;
+transform: rotateY(0deg);
+}
+
+.flip.flip-vertical > .back {
+transform: rotateX(-180deg);
+}
+
+.flip.flip-vertical:hover > .front {
+transform: rotateX(180deg);
+}
+
+.flip.flip-vertical:hover > .back {
+transform: rotateX(0deg);
+}
+
+.flip h1,
+.flip h2 {
+margin: 0;
+}
+
+.flip p {
+font-size: 0.95rem;
+line-height: 1.6;
+margin: 0.5em 0;
+color: #ddd;
+}
+
+.flip button {
+margin-top: auto; /* Push the button to the bottom */
+padding: 0.5em 1em;
+font-size: 0.9rem;
+color: white;
+background-color: #ff5722;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.flip button:hover {
+background-color: #e64a19;
+}
+
+.text-shadow {
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
+3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
+0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
+7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
+9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
+11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
+13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
+0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
+17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
+19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+/* Ensure all .flip items align in a row without misalignment */
+.flip-container {
+display: flex;
+gap: 20px; /* Adds space between each flip */
+}
+.card-title, .card-text, .small {
+color: white;
+}
+
+/* Course Details Section */
+.course-details {
+text-align: center;
+margin-bottom: 30px;
+padding: 20px;
+color: white; /* Sets the text color to white */
+}
+
+.course-details h2 {
+font-size: 32px;
+font-weight: bold;
+color: white; /* Ensures the heading is white */
+margin-bottom: 10px;
+}
+
+.course-details p {
+font-size: 18px;
+color: white; /* Ensures the paragraph text is white */
+margin: 0 auto;
+max-width: 600px;
+line-height: 1.5;
 }
 
 
 
+/* Box Wrapper and Cards */
+/* Wrapper for all boxes */
+.box-wrapper {
+display: flex;
+flex-direction: row;
+gap: 30px; /* Increased spacing between the boxes */
+justify-content: center;
+align-items: center;
+margin: 40px auto; /* Center the wrapper */
+flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
 
+/* Individual box styling */
+.box {
+position: relative;
+width: 283px; /* Slightly wider for better aesthetics */
+height: 350px; /* Adjust height for balance */
+background: #222;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 22px;
+font-weight: 600; /* Slightly lighter weight for better readability */
+color: white;
+border-radius: 20px; /* Increased border radius for rounded corners */
+cursor: pointer;
+text-align: center;
+padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+background-image: rgb(29, 29, 31) ;/* Gradient background */
+background-size: 100% 100%;
+}
 
-.gap-100{margin-top: 100px;}
+/* Box content styling */
+.content {
+padding: 15px;
+font-family: 'Arial', sans-serif; /* Set a clean font for better readability */
+}
+
+/* Heading Styling */
+.content h3 {
+font-size: 24px; /* Increase heading size */
+font-weight: 700; /* Make headings bold */
+margin-bottom: 10px; /* Add space below the heading */
+text-transform: uppercase; /* Capitalize the heading for impact */
+letter-spacing: 1px; /* Space out letters slightly */
+color: #f0f0f0; /* Slightly lighter color for the heading */
+}
+
+/* Paragraph styling */
+.content p {
+font-size: 16px; /* Smaller font size for description */
+line-height: 1.5; /* Increase line-height for readability */
+color: rgba(255, 255, 255, 0.9); /* Light color for paragraphs */
+text-align: center;
+margin: 0; /* Remove margin */
+}
+
+/* Hover effect */
+.box:hover {
+background: rgb(0, 102, 204); /* Change background color on hover */
+transform: translateY(-5px); /* Slight lift effect */
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+background-image: linear-gradient(135deg, #1e3c72, #2a5298); /* Darker gradient on hover */
+}
+
+/* Optional: Add a focus effect for better accessibility */
+.box:focus {
+outline: none; /* Remove default focus outline */
+box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.6); /* Blue outline for focus */
+}
+
+/* Add a little more space between the boxes */
+.box-wrapper > .box {
+transition: transform 0.3s ease; /* Add transition on box hover */
+}
+
+.box-wrapper > .box:hover {
+transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Text Shadow for readability */
+.box p,
+.box h3 {
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Subtle shadow to help text pop */
+}
+/* Navbar Brand Title */
+.navbar-brand-title {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Blue dot styling */
+.blue-dot {
+    color: blue;
+}
+
+/* Button styling for the Login button (if needed) */
+
+/* Margin Top Class */
+.mt-100 {
+    margin-top: 100px;
+}
+
 .animated-bgs {
     position: absolute;
     top: 0;
@@ -24,168 +312,224 @@
 }
 
 
-   @keyframes gradient-animation {
-       0% {
-           background-position: 0% 0%;
-       }
-       50% {
-           background-position: 100% 100%;
-       }
-       100% {
-           background-position: 0% 0%;
-       }
-   }
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
 
-   /* Styling for the card */
-   .cards {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 2rem;
-       background-color: #222;
-       border-radius: 15px;
-       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-       transition: all 0.3s ease;
-       max-width: 900px;
-       width: 100%;
-       margin: auto;
-   }
+        /* Styling for the card */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background-color: #222;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+        }
 
-   .cards:hover {
-       transform: scale(1.05);
-       box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-   }
+        .cards:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+        }
 
-.text-sections {
-max-width: 50%;
-color: white;
-text-align: left; /* Ensure text aligns to the left on larger screens */
+        .text-sections {
+    max-width: 50%;
+    color: white;
+    text-align: left; /* Ensure text aligns to the left on larger screens */
 }
 
 .image-sections {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 1.5rem;
-background-color: #333;
-border-radius: 15px;
-width: 260px;
-height: 240px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #333;
+    border-radius: 15px;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
 .image-sections img {
-max-width: 100%;
-height: auto;
-border-radius: 20%;
-object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    object-fit: cover;
 }
 
 .image-sections:hover {
-transform: scale(1.1);
-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .buttons {
-background-color: #0066cc;
-color: white;
-padding: 0.8rem 1.5rem;
-border-radius: 8px;
-text-transform: uppercase;
-font-size: 1rem;
-font-weight: normal; /* Make button text normal */
-transition: background-color 0.3s ease;
+    background-color: #0066cc;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: normal; /* Make button text normal */
+    transition: background-color 0.3s ease;
 }
 
 .buttons:hover {
-background-color: #005bb5;
+    background-color: #005bb5;
 }
 
 @media (max-width: 768px) {
-.cards {
-   flex-direction: column;
-   align-items: center;
-   border-radius: 0px;
-   background-color: transparent; 
-   box-shadow: none;
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px;
+        background-color: transparent; 
+        box-shadow: none;
+    }
+    .animated-bgs {
+        height: 95%;
+    }
+    .text-sections {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .image-sections {
+        margin-bottom: 1.5rem; /* Add spacing between image and text */
+    }
+    .buttons{
+        background-color: #000000;
+    }
 }
 
-.text-sections {
-   max-width: 100%;
-   margin-bottom: 1.5rem;
-   text-align: center; /* Center text on smaller screens */
+/* Padding Top for Heading */
+.heading-padding-top {
+    padding-top: 10px;
 }
-
-.image-sections {
-   margin-bottom: 1.5rem; /* Add spacing between image and text */
+/* Margin Top for Div */
+.margin-top-50 {
+    margin-top: 50px;
 }
+/* Margin Top for Div */
+.margin-top-150 {
+    margin-top: 150px;
 }
-
-
-.pnew{padding-top: 10px;}
-
-.gap-150{margin-top: 150px;}
-
-
  /* Wrapper styling */
-     /* Wrapper styling */
-     .animated-text-wrapper {
-        width: 100%; /* Full width */
-        background-color: #222;
-        overflow: hidden;
-        white-space: nowrap;
-        position: relative;
-        border: 1px solid #000; /* Slimmer border */
-        /* border-radius: 5px; */ /* Optional, can uncomment for rounded edges */
-        padding: 8px 2px; /* Very slim padding */
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-        font-size: 0.4rem; /* Smaller text for a slimmer look */
-        line-height: 1; /* Reduces the vertical space between lines */
-    }
-    
-    
-    /* Text container */
-    .animated-text {
-        display: flex;
-        animation: scroll 30s linear infinite; /* Slower scrolling animation */
-        font-family: 'Courier New', Courier, monospace; /* Coding-style font */
-        font-size: 0.8rem;
-        color: #ffffff;
-        letter-spacing: 1px;
-    }
-    
-    /* Duplicated text to ensure smooth looping */
-    .animated-text span {
-        padding-right: 3rem;
-    }
-    
-    /* Keyframe animation for scrolling */
-    @keyframes scroll {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-    @media (max-width: 768px) {
-            /* Make the font smaller on mobile */
-            .animated-text {
-                font-size: 1rem;
-            }
-    
-            /* Adjust padding and container settings for mobile */
-            .animated-text-wrapper {
-                padding: 5px 0;
-                top: -170px;
-            }
-        }
+ .animated-text-wrapper {
+    width: 100%; /* Full width */
+    background-color: #222;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border: 1px solid #000; /* Slimmer border */
+    /* border-radius: 5px; */ /* Optional, can uncomment for rounded edges */
+    padding: 8px 2px; /* Very slim padding */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 0.4rem; /* Smaller text for a slimmer look */
+    line-height: 1; /* Reduces the vertical space between lines */
+}
 
 
-    
-        /* Card Layout */
-.single-card {
+/* Text container */
+.animated-text {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Slower scrolling animation */
+    font-family: 'Courier New', Courier, monospace; /* Coding-style font */
+    font-size: 0.8rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Duplicated text to ensure smooth looping */
+.animated-text span {
+    padding-right: 3rem;
+}
+
+/* Keyframe animation for scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media (max-width: 768px) {
+        /* Make the font smaller on mobile */
+        .animated-text {
+            font-size: 1rem;
+        }
+
+        /* Adjust padding and container settings for mobile */
+        .animated-text-wrapper {
+            padding: 5px 0;
+            top: -130px;
+        }
+    }
+/* Enroll Button */
+.enroll-btn {
+    padding: 10px 20px;
+    background-color: rgb(43, 79, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/* Check Item */
+.check-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/* Check Icon */
+.check-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+.card-content-wrapper {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.85rem;
+}
+/* Card Header Wrapper */
+.card-header-wrapper {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Card Header Link */
+.card-header-link {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(43, 79, 255);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+ /* Card Layout */
+ .single-card {
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -393,7 +737,6 @@ background-color: #005bb5;
     background-color: #0096c7;
     transform: translateY(-3px);
 }
-
 /* Mobile responsiveness */
 @media only screen and (max-width: 768px) {
     .card-wrapper {
@@ -426,173 +769,203 @@ background-color: #005bb5;
         padding: 12px 20px;
     }
     .content-wrapper{
-        padding: 30px 20px!important;
+        padding: 0px 20px!important;
     }
     
-}     
-.container {
-    text-align: center;
-}
-
-/* Button Styling */
-.download-btn {
-    background-color: #1E3A8A;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+}      /* General Styles */
+.content-wrapper {
+    font-family: "Lexend", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: flex-start;
+    color: #ffffff;
+    background-color: rgb(23, 23, 23);
+    padding: 40px 20px;
 }
 
-.download-btn:hover {
-    background-color: #3B82F6;
-}
-
-/* Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+.course-header {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #2E2E2E;
-    border-radius: 8px;
-    padding: 40px;
-    width: 80%;
-    max-width: 700px;
-    text-align: left;
-    max-height: 80vh;
-    overflow-y: scroll; /* Enables scrolling */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Hiding Default Scrollbar */
-.modal-content::-webkit-scrollbar {
-    display: none; /* Hide the default scrollbar */
-}
-
-/* Custom Scrollbar */
-.modal-content {
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #3B82F6 #2E2E2E; /* Firefox color scheme for the scrollbar */
-}
-
-/* Custom Scrollbar for Webkit Browsers */
-.modal-content::-webkit-scrollbar {
-    width: 10px; /* Thin scrollbar */
-}
-
-.modal-content::-webkit-scrollbar-thumb {
-    background-color: #3B82F6; /* Blue thumb color */
-    border-radius: 10px;
-}
-
-.modal-content::-webkit-scrollbar-track {
-    background-color: #2E2E2E; /* Darker track color */
-    border-radius: 10px;
-}
-
-/* Course Title */
-.course-title {
-    font-size: 1.7rem; /* Corrected font size */
-    font-weight: 600;
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 30px;
     color: #fff;
 }
 
-/* Course Description */
-.course-description {
+.course-header .course-subtitle {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.course-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.course-header p {
+    color: #ccc;
     font-size: 1rem;
-    margin-bottom: 20px;
-    color: #bbb;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
 }
 
-/* Syllabus Styling */
-.syllabus {
-    margin-bottom: 50px;
+/* Card Wrapper */
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
 }
 
-/* Syllabus Section Header */
-.syllabus h3 {
-    font-size: 1.2rem; /* Increased header size for visibility */
-    margin-bottom: 15px;
+.single-card {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.card-item {
+    background-color: rgb(23, 23, 23);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: space-between;
+    height: 650px;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 0 2px rgb(0, 61, 122), 0 10px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-image-wrapper img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    background: #f4f4f4;
+}
+
+.card-header-wrapper {
+    margin: 1.5rem 0;
+}
+
+.card-header-wrapper a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(0, 61, 122);
+    text-decoration: none;
+}
+
+.card-content-wrapper ul li {
+    margin-bottom: 10px;
+}
+
+.card-content-wrapper h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
     color: #fff;
-    font-weight: 500;
-    padding-bottom: 10px; /* Extra padding for space between week title and topics */
-    padding-top: 10px;
-    border-bottom: 1px solid #444; /* Adds a thin line below the section title */
-    border-top: 1px solid #444; /* Adds a thin line above the section title */
+    border-bottom: 2px solid rgba(0, 180, 216, 0.4);
 }
 
-/* List Styling in Syllabus */
-.syllabus ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.syllabus li {
-    margin: 12px 0; /* Increased margin between items */
-    font-size: 1rem; /* Smaller list items */
+.card-content-wrapper ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
     color: #ddd;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.card-content-wrapper p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.card-footer-wrapper {
     display: flex;
-    align-items: center; /* Ensures icon and text are aligned properly */
-    gap: 12px; /* Space between icon and text */
+    justify-content: center;
+    margin-top: auto;
+    text-align: center;
+padding: 10px;
 }
 
-/* Blue Material Icons */
-.material-icons {
-    color: #1E3A8A; /* Blue color for the icons */
-    font-size: 1.3rem; /* Ensure consistent icon size */
-    vertical-align: middle; /* Vertically align icon with text */
-}
-
-/* Enroll Button */
 .enroll-btn {
-    background-color: #070707;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: rgb(43, 79, 255);
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .enroll-btn:hover {
-    background-color: #25262f;
+    background-color: #0096c7;
+    transform: translateY(-3px);
 }
 
-/* Close Button */
-.close-btn {
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .content-wrapper{
+    padding: 0 20px;
+    }
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card-item{
+        height: 100% !important;
+    }
 
-.close-btn:hover {
-    color: #FF6347;
+    .single-card {
+        width: 100%;
+        margin-bottom: 20px !important;
+        }
+
+    .card-header-wrapper a {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .card-content-wrapper {
+        font-size: 0.9rem;
+    }
+
+    .enroll-btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
 }
-/* Align FAQ text to the left */
-.faq-body {
+#download {
+    padding: 100px 0;
+    background: linear-gradient(90deg, rgba(27, 27, 27, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('assets/images/c1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+   /* Align FAQ text to the left */
+   .faq-body {
     text-align: left;
 }
 
@@ -642,8 +1015,6 @@ background-color: #005bb5;
 {
     content: 'keyboard_arrow_up';
 }
-
-
 .spacing-top {
     margin-top: 50px;
 }
@@ -680,20 +1051,7 @@ background-color: #005bb5;
     align-items: center;
     text-align: left; /* Left-align the contact info text */
 }
-@media (max-width: 768px) {
-    .btn {
-        display: block; /* Make buttons block level so they take full width */
-        margin-bottom: 10px; /* Add a gap between buttons */
-    }
-}
-@media (max-width: 768px) {
-    .mt-6 {
-        display: flex;
-        justify-content: center; /* Centers the button horizontally */
-        align-items: center; /* Centers the button vertically if needed */
-         /* Optional: Makes sure the button is centered vertically in the viewport */
-    }
-}
+
 /* Styling for the icons in contact info */
 #contact .info-icon {
     margin-right: 10px;
@@ -743,7 +1101,20 @@ background-color: #005bb5;
     border: none;
     cursor: pointer;
 }
-
+@media (max-width: 768px) {
+    .btn {
+        display: block; /* Make buttons block level so they take full width */
+        margin-bottom: 10px; /* Add a gap between buttons */
+    }
+}
+@media (max-width: 768px) {
+    .mt-6 {
+        display: flex;
+        justify-content: center; /* Centers the button horizontally */
+        align-items: center; /* Centers the button vertically if needed */
+         /* Optional: Makes sure the button is centered vertically in the viewport */
+    }
+}
 #contact .btn-main:hover {
     background-color: #0056b3;
 }
@@ -775,15 +1146,15 @@ background-color: #005bb5;
 .brand-dot {
     color: blue;
 }
-@media (max-width: 768px) {
-    .buttons {
-        background-color: #000000;
+.image-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #333;
+    border-radius: 15px;
+    width: 260px;
+    height: 240px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
     }
-}
-
-.margin-top-50 {
-    margin-top: 50px;
-}
-.margin-top-150 {
-    margin-top: 150px;
-}
