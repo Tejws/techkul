@@ -178,7 +178,7 @@ background-color: #005bb5;
             /* Adjust padding and container settings for mobile */
             .animated-text-wrapper {
                 padding: 5px 0;
-                top: -140px;
+                top: -170px;
             }
         }
 
@@ -433,7 +433,6 @@ background-color: #005bb5;
 .container {
     text-align: center;
 }
-
 
 /* Button Styling */
 .download-btn {
