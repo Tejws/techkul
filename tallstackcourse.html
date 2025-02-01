@@ -22,8 +22,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <link href="tallstackcourse.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <link href="tallstackcourse.css" rel="stylesheet">
     
     <!-- <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=5366b776df77d' async='true'></script> -->
    
@@ -41,8 +42,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <!-- <img src="assets/images/logo-c.png" alt="logo" height="20"> -->
-                    <h1 class="hnew">TechKul <span class="snew">.</span></h1>
+                    <h1 class="navbar-brand-title">TechKul <span class="blue-dot">.</span></h1>
                 </a>
                 <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,16 +52,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#about">About</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#products">Courses</a>
                         </li>
@@ -75,38 +71,35 @@
                             <a class="nav-link" href="index.html#contact">Contact</a>
                         </li>
                     </ul>
-    
                 </div>
                 <a href="#" class="btn-main">
                     Login
                 </a>
             </div>
         </nav>
-
+        
         
       <!-- Add Gap -->
-<div class="gap-100"></div>
+      <div class="mt-100"></div>
+
 
 
 
 <!-- TallStack Developer Course Card -->
 
 <div class="main-content">
-   
-
     <div class="animated-bgs"></div>
 
     <!-- Card with TallStack Development Content -->
-     
     <div class="cards d-flex flex-wrap align-items-center">
         <!-- Image Section -->
         <div class="image-sections order-0 order-md-1 ">
             <img src="assets/images/tallstack.png" alt="TallStack Development Course" class="img-fluid">
         </div>
-    
+
         <!-- Text Section -->
         <div class="text-sections order-1 order-md-0">
-            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 " >Master TallStack Development</h2>
+            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 heading-padding-top">Master TallStack Development</h2>
             <p class="mt-3 text-lg font-light leading-relaxed">
                 Master the TALL stack: build responsive web apps with Tailwind CSS, Alpine.js, Laravel, and Livewire. Create dynamic, seamless user experiences with modern development practices.
             </p>
@@ -117,81 +110,16 @@
             </div>
         </div>
     </div>
+</div>
+
     
     
 
-<!-- <div style="margin-top: 50px;"></div> -->
-
-    <!-- Animation Script
-    <script>
-        const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V108.306Z",
-            wave2 = "M0 250L50 244.048C100 238.095 200 226.19 300 226.19C400 226.19 500 238.095 600 232.143C700 226.19 800 202.381 900 196.429C1000 190.476 1100 202.381 1150 208.333L1200 214.286V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
-            wave3 = "M0 250L50 238.095C100 226.19 200 202.381 300 166.667C400 130.952 500 83.3333 600 101.19C700 119.048 800 202.381 900 214.286C1000 226.19 1100 166.667 1150 136.905L1200 107.143V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
-            wave4 = "M0 125L50 111.111C100 97.2222 200 69.4444 300 97.2222C400 125 500 208.333 600 236.111C700 263.889 800 236.111 900 229.167C1000 222.222 1100 236.111 1150 243.056L1200 250V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V125Z";
-    
-        anime({
-            targets: '.wave-top > path',
-            easing: 'linear',
-            duration: 12000,  // Slower animation speed
-            loop: true,
-            d: [
-                { value: [wave1, wave2] },
-                { value: wave3 },
-                { value: wave4 },
-                { value: wave1 },
-            ],
-        });
-    </script> -->
-    
+<div class="margin-top-50"></div>
 
 
-<!-- <div style="margin-top: 50px;">
-    <div class="course-details">
-        <h2>Course Details</h2>
-        <p style="color: rgb(157, 157, 158);">Dive into our Software Development program to master the core principles essential for building scalable, maintainable, and efficient systems.</p>
-        
-        <div style="margin-top: 50px;">
-        
-            <div class="box-wrapper">
-                <div class="box">
-                    <div class="content">
-                        <h3>Curriculum</h3>
-                        <p>Comprehensive modules covering software design patterns, algorithms, data structures, and best practices.</p>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <div class="content">
-                        <h3>Design Principles</h3>
-                        <p>Learn core design principles like SOLID, object-oriented design (OOD), and modular architecture for creating efficient systems.</p>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <div class="content">
-                        <h3>Testing & Debugging</h3>
-                        <p>Master techniques in unit testing, integration testing, and debugging to ensure your software is robust and error-free.</p>
-                    </div>
-                </div>
-        
-                <div class="box">
-                    <div class="content">
-                        <h3>Performance Optimization</h3>
-                        <p>Learn how to optimize algorithms and system performance to handle large-scale applications and ensure smooth user experiences.</p>
-                    </div>
-                </div>
+    <div class="margin-top-150"></div>
 
-                <div class="box">
-                    <div class="content">
-                        <h3>Development Methodologies</h3>
-                        <p>Understand key software development methodologies like Agile, Scrum, and DevOps to effectively manage and deliver projects.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<div class="gap-150"></div>
 <div class="animated-text-wrapper">
     <div class="animated-text">
         <span>Design with Tailwind CSS: Build beautiful and responsive UIs effortlessly!</span>
@@ -199,11 +127,11 @@
         <span>Power your apps with Laravel, the ultimate back-end framework.</span>
         <span>Seamless front-end and back-end integration with Livewire.</span>
         <span>Master the TALL stack for modern web development excellence!</span>
-        <span>Effortless component-based design with Tailwind and Alpine.js.</span>
-        <span>Streamline development with Laravel’s robust ecosystem.</span>
     </div>
     
+    
 </div>
+
 
     
 <!-- horizontal -->
@@ -273,7 +201,7 @@
         <div class="course-header">
             <h2 class="course-subtitle">Tallstack Development</h2>
             <h1>Course Details</h1>
-            <p>Master the essentials of Front-End Development, from HTML to advanced techniques.</p>
+            <p>Master the essentials of Tallstack Development, from HTML to advanced techniques.</p>
         </div>
 
         <div class="card-wrapper">
@@ -283,7 +211,7 @@
             <div class="single-card m-auto">
                 <article class="card-item">
                   <figure class="card-image-wrapper">
-                    <img src="assets/images/tailwind.png" alt="Alpine.js Essentials" class="card-image" />
+                    <img src="assets/images/tailwind.png" alt="fundamentals" class="card-image" />
                   </figure>
                   <div class="card-header-wrapper">
                     <a href="#" class="card-header-link">Tailwind CSS</a>
@@ -322,7 +250,7 @@
           <div class="single-card m-auto">
             <article class="card-item">
               <figure class="card-image-wrapper">
-                <img src="assets/images/alphine.png" alt="Alpine.js Essentials" class="card-image" />
+                <img src="assets/images/alphine.png" alt="dsa" class="card-image" />
               </figure>
               <div class="card-header-wrapper">
                 <a href="#" class="card-header-link">Alpine JS</a>
@@ -340,11 +268,11 @@
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Responsive UI with JS</span>
+                    <span>Integrating Alpine.js</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Integrating Alpine.js</span>
+                    <span>Certification</span>
                   </div>
                 </div>
                 <p><strong>Time to Complete:</strong> 4 Weeks</p>
@@ -361,7 +289,7 @@
           <div class="single-card m-auto">
             <article class="card-item">
               <figure class="card-image-wrapper">
-                <img src="assets/images/laravel_new.png" alt="Laravel & Livewire" class="card-image" />
+                <img src="assets/images/laravel_new.png" alt="oops" class="card-image" />
               </figure>
               <div class="card-header-wrapper">
                 <a href="#" class="card-header-link">Laravel & Livewire</a>
@@ -379,11 +307,11 @@
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Real-time data updates without JavaScript</span>
+                    <span>Real-time data updates without JavaScript<</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Mastering routing and Eloquent ORM</span>
+                    <span>Certification</span>
                   </div>
                 </div>
                 <p><strong>Time to Complete:</strong> 4 Weeks</p>
@@ -401,7 +329,6 @@
 
 
 
-
     <!-- Start Download -->
     <section id="download">
         <div class="container">
@@ -412,10 +339,10 @@
                         Explore the power of Tallstack to build dynamic, full-stack web applications.
                     </p>
     
-                    <!-- Buttons -->
+                    
                     <a href="#" class="btn btn-outline-primary" id="mernbtn">Tall Stack Details</a>
                     <a href="#" class="btn btn-outline-danger">Tallstack Stack Syllabus</a>
-                        <!-- Modal for Course Syllabus -->
+                       
                         <div id="courseModal" class="modal">
                             <div class="modal-content">
                                 <span id="closeBtn" class="close-btn"><span class="material-icons">close</span></span>
@@ -507,8 +434,7 @@
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
                 <div class="section-head-tag">FAQs</div>
                 <h2 class="section-head-title">Frequently Asked Questions</h2>
-                <p class="section-head-body">Find answers to common questions about HTML, structuring web pages, and building semantic, accessible, and responsive websites.</p>
-
+                <p class="section-head-body">Find answers to common questions about core software development courses, programming, and building robust applications.</p>
             </div>
         </div>
         <div class="row">
@@ -521,7 +447,7 @@
                     </div>
                     <div class="collapse show" id="faq1">
                         <div class="faq-body">
-                            <p>During the TALL Stack course, you'll build several real-world projects, including a content management system (CMS) and a dynamic blog, both using Tailwind CSS for styling, Alpine.js for interactivity, and Livewire for reactive features. </p>
+                            <p>During the TALL Stack course, you'll build several real-world projects, including a content management system (CMS) and a dynamic blog, both using Tailwind CSS for styling, Alpine.js for interactivity, and Livewire for reactive features.</p>
                         </div>
                     </div>
                 </div>
@@ -567,12 +493,8 @@
 </section>
 
 
-
    
-    
-    <!-- End FAQs -->
-    
-    <div class="spacing-top"></div>
+<div class="spacing-top"></div>
 
     <section id="contact">
         <div class="container">
@@ -614,13 +536,13 @@
                         <div class="form-group">
                             <select id="course" class="form-control">
                                 <option value="frontend">Frontend Development</option>
-                                <option value="backend">Backend Development</option>
+                                <option value="backend" >CORE Development</option>
                                 <option value="fullstack">Full-Stack Development</option>
                                 
                                 <!-- Grouping MERN / MEAN Stack options -->
                                 <optgroup label="MERN / MEAN Stack">
-                                    <option value="mern" selected>MERN Stack</option>
-                                    <option value="mean" selected>MEAN Stack</option>
+                                    <option value="mern">MERN Stack</option>
+                                    <option value="mean">MEAN Stack</option>
                                 </optgroup>
                                 
                                 <!-- Grouping TALL, RILT, & VILT Stacks -->
@@ -704,14 +626,13 @@
         <!-- End Footer -->
 
     <!-- JavaScript Files -->
-     <script src="tallstackcourse.js"></script>
     <script src="assets/script/jquery-3.4.1.min.js"></script>
     <!-- <script src="assets/script/popper.min.js"></script> -->
     <script src="assets/script/bootstrap.min.js"></script>
     <script src="assets/script/owl.carousel.min.js"></script>
     <!-- Main JS -->
     <script src="assets/script/main.js"></script>
-
+    <script src="tallstackcourse.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,116 @@
+ <section id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
+                    <h2 class="section-head-title">Downloads</h2>
+                    <p class="section-head-body">
+                        Explore the power of Tallstack to build dynamic, full-stack web applications.
+                    </p>
+    
+                    
+                    <a href="#" class="btn btn-outline-primary" id="mernbtn">Tall Stack Details</a>
+                    <a href="#" class="btn btn-outline-danger">Tallstack Stack Syllabus</a>
+                       
+                        <div id="courseModal" class="modal">
+                            <div class="modal-content">
+                                <span id="closeBtn" class="close-btn"><span class="material-icons">close</span></span>
+                                <h2 class="course-title">TallStack Development</h2>
+                                <p class="course-description">
+                                    Advance tallstack course
+                                </p>
+                                    <div class="syllabus">
+                                        <h3><span class="material-icons">laptop_chromebook</span> Week 1: Introduction to TALL Stack</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Overview of Web Development and TALL Stack</li>
+                                            <li><span class="material-icons">check_circle</span> Installing VSCode, Tailwind CSS, Alpine.js, Laravel, and Livewire</li>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Laravel: MVC architecture, routing, controllers</li>
+                                            <li><span class="material-icons">check_circle</span> Project 1: "Simple Blog" (Basic HTML-based blog layout with Tailwind CSS)</li>
+                                        </ul>
+                                        
+                                        <h3><span class="material-icons">code</span> Week 2: Tailwind CSS Basics</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Tailwind CSS: Utility-first CSS framework</li>
+        <li><span class="material-icons">check_circle</span> Styling basics with Tailwind: Layout, colors, typography, and spacing</li>
+        <li><span class="material-icons">check_circle</span> Responsive design with Tailwind's breakpoints</li>
+        <li><span class="material-icons">check_circle</span> Exercise: Create a responsive landing page with Tailwind CSS</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">brush</span> Week 3: Alpine.js Basics</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Alpine.js: Reactive JavaScript framework</li>
+        <li><span class="material-icons">check_circle</span> Using Alpine.js for interactivity: Data binding, events, and conditional rendering</li>
+        <li><span class="material-icons">check_circle</span> Practical: Add interactivity to the "Simple Blog" using Alpine.js</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">settings</span> Week 4: Laravel Basics</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Laravel: MVC architecture, routing, controllers, views</li>
+        <li><span class="material-icons">check_circle</span> Database integration with Laravel: Migrations, Eloquent ORM</li>
+        <li><span class="material-icons">check_circle</span> Exercise: Build a CRUD application with Laravel</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">phone_iphone</span> Week 5: Livewire for Dynamic Interfaces</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Livewire: Creating reactive components in Laravel</li>
+                                            <li><span class="material-icons">check_circle</span> Using Livewire for server-side rendering</li>
+                                            <li><span class="material-icons">check_circle</span> Project: Build a dynamic contact form with Livewire</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">settings_input_component</span> Week 6: Laravel Advanced Features</h3>
+                    <ul>
+                        <li><span class="material-icons">check_circle</span> Authentication in Laravel: Passport, JWT, and user roles</li>
+        <li><span class="material-icons">check_circle</span> File uploads, email notifications, and API integration</li>
+                    </ul>
+                    
+                    
+                                        <h3><span class="material-icons">code</span> Weeks 7-8: Full-Stack Development with TALL Stack</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Building full-stack applications with Tailwind, Alpine.js, Laravel, and Livewire</li>
+        <li><span class="material-icons">check_circle</span> Project 2: Develop a Task Management App using the TALL Stack</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">settings_input_component</span> Week 9: Advanced TALL Stack Techniques</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Using Laravel APIs with Alpine.js for real-time updates</li>
+                                            <li><span class="material-icons">check_circle</span> Optimizing the TALL Stack for performance and scalability</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">storage</span> Week 10: Deployment</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Deploying TALL Stack applications on Heroku, DigitalOcean, and other platforms</li>
+                                        </ul>
+                                        </ul>
+                    
+                                        
+                    
+                                    <button class="enroll-btn"><span class="material-icons">school</span> Enroll Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+    
+    
+                       
+                        </div>
+                        </div>
+                    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    changed CSS :
+
+
+                    

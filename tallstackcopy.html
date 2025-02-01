@@ -22,7 +22,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    <link href="frontendcourse.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link href="tallstackcourse.css" rel="stylesheet">
     
     <!-- <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=5366b776df77d' async='true'></script> -->
    
@@ -40,7 +41,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <h1 class="navbar-brand-title">TechKul <span class="blue-dot">.</span></h1>
+                    <!-- <img src="assets/images/logo-c.png" alt="logo" height="20"> -->
+                    <h1 class="hnew">TechKul <span class="snew">.</span></h1>
                 </a>
                 <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,12 +52,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#about">About</a>
                         </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#products">Courses</a>
                         </li>
@@ -69,39 +75,41 @@
                             <a class="nav-link" href="index.html#contact">Contact</a>
                         </li>
                     </ul>
+    
                 </div>
                 <a href="#" class="btn-main">
                     Login
                 </a>
             </div>
         </nav>
-        
+
         
       <!-- Add Gap -->
-      <div class="mt-100"></div>
-
+<div class="gap-100"></div>
 
 
 
 <!-- TallStack Developer Course Card -->
 
 <div class="main-content">
-<div class="animated-bgs"></div>
+   
+
+    <div class="animated-bgs"></div>
 
     <!-- Card with TallStack Development Content -->
+     
     <div class="cards d-flex flex-wrap align-items-center">
         <!-- Image Section -->
         <div class="image-sections order-0 order-md-1 ">
-            <img src="assets/images/front_end2.png" alt="Frontend Development Course" class="img-fluid">
+            <img src="assets/images/tallstack.png" alt="TallStack Development Course" class="img-fluid">
         </div>
-
+    
         <!-- Text Section -->
         <div class="text-sections order-1 order-md-0">
-            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 heading-padding-top">Master CORE Software Development</h2>
+            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 " >Master TallStack Development</h2>
             <p class="mt-3 text-lg font-light leading-relaxed">
-                Master the fundamentals of Frontend Development by learning key concepts like HTML, CSS, JavaScript, responsive design, and building interactive user interfaces using frameworks like React.
+                Master the TALL stack: build responsive web apps with Tailwind CSS, Alpine.js, Laravel, and Livewire. Create dynamic, seamless user experiences with modern development practices.
             </p>
-            
             <div class="mt-6">
                 <button class="buttons btn btn-primary btn-lg">
                     Start Learning Now
@@ -109,40 +117,163 @@
             </div>
         </div>
     </div>
-</div>
-
     
     
 
-<div class="margin-top-50"></div>
+<!-- <div style="margin-top: 50px;"></div> -->
+
+    <!-- Animation Script
+    <script>
+        const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V108.306Z",
+            wave2 = "M0 250L50 244.048C100 238.095 200 226.19 300 226.19C400 226.19 500 238.095 600 232.143C700 226.19 800 202.381 900 196.429C1000 190.476 1100 202.381 1150 208.333L1200 214.286V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
+            wave3 = "M0 250L50 238.095C100 226.19 200 202.381 300 166.667C400 130.952 500 83.3333 600 101.19C700 119.048 800 202.381 900 214.286C1000 226.19 1100 166.667 1150 136.905L1200 107.143V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
+            wave4 = "M0 125L50 111.111C100 97.2222 200 69.4444 300 97.2222C400 125 500 208.333 600 236.111C700 263.889 800 236.111 900 229.167C1000 222.222 1100 236.111 1150 243.056L1200 250V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V125Z";
+    
+        anime({
+            targets: '.wave-top > path',
+            easing: 'linear',
+            duration: 12000,  // Slower animation speed
+            loop: true,
+            d: [
+                { value: [wave1, wave2] },
+                { value: wave3 },
+                { value: wave4 },
+                { value: wave1 },
+            ],
+        });
+    </script> -->
+    
 
 
-<div class="margin-top-150"></div>
+<!-- <div style="margin-top: 50px;">
+    <div class="course-details">
+        <h2>Course Details</h2>
+        <p style="color: rgb(157, 157, 158);">Dive into our Software Development program to master the core principles essential for building scalable, maintainable, and efficient systems.</p>
+        
+        <div style="margin-top: 50px;">
+        
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="content">
+                        <h3>Curriculum</h3>
+                        <p>Comprehensive modules covering software design patterns, algorithms, data structures, and best practices.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="content">
+                        <h3>Design Principles</h3>
+                        <p>Learn core design principles like SOLID, object-oriented design (OOD), and modular architecture for creating efficient systems.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="content">
+                        <h3>Testing & Debugging</h3>
+                        <p>Master techniques in unit testing, integration testing, and debugging to ensure your software is robust and error-free.</p>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="content">
+                        <h3>Performance Optimization</h3>
+                        <p>Learn how to optimize algorithms and system performance to handle large-scale applications and ensure smooth user experiences.</p>
+                    </div>
+                </div>
 
+                <div class="box">
+                    <div class="content">
+                        <h3>Development Methodologies</h3>
+                        <p>Understand key software development methodologies like Agile, Scrum, and DevOps to effectively manage and deliver projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="gap-150"></div>
 <div class="animated-text-wrapper">
-<div class="animated-text">
-<span>Master the fundamentals of frontend development using HTML, CSS, and JavaScript.</span>
-<span>Build responsive, mobile-friendly websites with modern design principles.</span>
-<span>Understand how to create dynamic, interactive user interfaces using JavaScript and frameworks like React.</span>
-<span>Utilize version control systems like Git to collaborate and manage code efficiently.</span>
-<span>Design and implement user interfaces with tools like Bootstrap and CSS frameworks.</span>
-<span>Optimize websites for performance and cross-browser compatibility.</span>
-<span>Deploy websites and web applications using modern hosting platforms like Netlify, Vercel, and GitHub Pages.</span>
-
+    <div class="animated-text">
+        <span>Design with Tailwind CSS: Build beautiful and responsive UIs effortlessly!</span>
+        <span>Enhance interactivity using Alpine.js for lightweight, reactive components.</span>
+        <span>Power your apps with Laravel, the ultimate back-end framework.</span>
+        <span>Seamless front-end and back-end integration with Livewire.</span>
+        <span>Master the TALL stack for modern web development excellence!</span>
+        <span>Effortless component-based design with Tailwind and Alpine.js.</span>
+        <span>Streamline development with Laravel’s robust ecosystem.</span>
     </div>
     
+</div>
+
     
+<!-- horizontal -->
+<!-- <br>
+<h2 style="color: white; margin-bottom: 1.5em;">TallStack Mastery Course</h2>
+<div style="margin-top: 50px;"></div>
+<div class="flip">
+  <div class="front" style="background-image: url('assets/images/tailwind.png');">
+    <h1 class="text-shadow">Responsive Design</h1>
+  </div>
+  <div class="back">
+    <h2>Master Tailwind CSS</h2>
+    <p>Learn utility-first CSS to build responsive, modern, and visually stunning UIs.</p>
+    <p><strong>Duration:</strong> 6 weeks</p>
+    <p><strong>Prerequisite:</strong> Basic HTML & CSS knowledge</p>
+    <button onclick="alert('Enroll in Tailwind CSS Mastery')">Enroll Now</button>
+  </div>
 </div>
 
 
+<div class="flip">
+  <div class="front" style="background-image: url('assets/images/coding1.jpg');">
+    <h1 class="text-shadow">Dynamic</h1>
+  </div>
+  <div class="back">
+    <h2>Alpine.js Essentials</h2>
+<p>Create lightweight, interactive components with minimal JavaScript.</p>
+<p><strong>Duration:</strong> 8 weeks</p>
+<p><strong>Prerequisite:</strong> Basic HTML & JavaScript knowledge</p>
+<button onclick="alert('Enroll in Data Structures')">Enroll Now</button>
+  </div>
+</div>
+<div class="flip">
+  <div class="front" style="background-image: url('assets/images/coding3.jpg');">
+    <h1 class="text-shadow">Powerful Back-End</h1>
+  </div>
+  <div class="back">
+    <h2>Laravel Framework</h2>
+<p>Master building dynamic web applications with Laravel’s robust features.</p>
+<p><strong>Duration:</strong> 8 weeks</p>
+<p><strong>Prerequisite:</strong> Basic PHP knowledge</p>
+<button onclick="alert('Enroll in Algorithm Design')">Enroll Now</button>
+  </div>
+</div>
+<div class="flip">
+  <div class="front" style="background-image: url('assets/images/coding4.jpg');">
+    <h1 class="text-shadow">Interactive Components</h1>
+  </div>
+  <div class="back">
+    <h2>Livewire Framework</h2>
+<p>Build modern, dynamic web applications without writing JavaScript.</p>
+<p><strong>Duration:</strong> 6 weeks</p>
+<p><strong>Prerequisite:</strong> Basic programming knowledge </p>
+<button onclick="alert('Enroll in Problem-Solving')">Enroll Now</button>
+  </div>
+</div>
+
+
+</div>
+
+
+<br> -->
 
 <section class="carrer-path">
     <div class="content-wrapper">
         <!-- Course Header -->
         <div class="course-header">
-            <h2 class="course-subtitle">Frontend Development Fundamentals</h2>
+            <h2 class="course-subtitle">Tallstack Development</h2>
             <h1>Course Details</h1>
-            <p>Master the essentials of Frontend Development, building interactive and user-friendly websites using HTML, CSS, JavaScript.</p>
+            <p>Master the essentials of Front-End Development, from HTML to advanced techniques.</p>
         </div>
 
         <div class="card-wrapper">
@@ -152,25 +283,25 @@
             <div class="single-card m-auto">
                 <article class="card-item">
                   <figure class="card-image-wrapper">
-                    <img src="assets/images/html.png" alt="fundamentals" class="card-image" />
+                    <img src="assets/images/tailwind.png" alt="Alpine.js Essentials" class="card-image" />
                   </figure>
                   <div class="card-header-wrapper">
-                    <a href="#" class="card-header-link">HTML Essentials</a>
+                    <a href="#" class="card-header-link">Tailwind CSS</a>
                   </div>
                   <div class="card-content-wrapper">
                     <h3>What You Will Learn:</h3>
                     <div class="card-content-list">
                       <div class="card-content-item">
                         <span class="checkmark">&#10004;</span>
-                        <span>Master HTML structure and elements</span>
+                        <span>Interactive components</span>
                       </div>
                       <div class="card-content-item">
                         <span class="checkmark">&#10004;</span>
-                        <span>Forms, tables, and multimedia embedding</span>
+                        <span>Tailwind CSS directives</span>
                       </div>
                       <div class="card-content-item">
                         <span class="checkmark">&#10004;</span>
-                        <span>HTML and accessibility best practices</span>
+                        <span>Responsive UI</span>
                       </div>
                       <div class="card-content-item">
                         <span class="checkmark">&#10004;</span>
@@ -191,29 +322,29 @@
           <div class="single-card m-auto">
             <article class="card-item">
               <figure class="card-image-wrapper">
-                <img src="assets/images/css_new.png" alt="css" class="card-image" />
+                <img src="assets/images/alphine.png" alt="Alpine.js Essentials" class="card-image" />
               </figure>
               <div class="card-header-wrapper">
-                <a href="#" class="card-header-link">CSS Mastery</a>
+                <a href="#" class="card-header-link">Alpine JS</a>
               </div>
               <div class="card-content-wrapper">
                 <h3>What You Will Learn:</h3>
                 <div class="card-content-list">
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>fundamentals:Selectors, Properties and Units</span>
+                    <span>Interactive components</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Flexbox and Grid Layout</span>
+                    <span>Alpine.js directives</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Animations, Transitions, and Effects</span>
+                    <span>Responsive UI with JS</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Certification</span>
+                    <span>Integrating Alpine.js</span>
                   </div>
                 </div>
                 <p><strong>Time to Complete:</strong> 4 Weeks</p>
@@ -230,29 +361,29 @@
           <div class="single-card m-auto">
             <article class="card-item">
               <figure class="card-image-wrapper">
-                <img src="assets/images/js.png" alt="oops" class="card-image" />
+                <img src="assets/images/laravel_new.png" alt="Laravel & Livewire" class="card-image" />
               </figure>
               <div class="card-header-wrapper">
-                <a href="#" class="card-header-link">JavaScript Development</a>
+                <a href="#" class="card-header-link">Laravel & Livewire</a>
               </div>
               <div class="card-content-wrapper">
                 <h3>What You Will Learn:</h3>
                 <div class="card-content-list">
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>JavaScript fundamentals and ES6+ features</span>
+                    <span>Building dynamic web apps with Laravel</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>DOM manipulation and event handling</span>
+                    <span>Creating components with Livewire</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Asynchronous programming</span>
+                    <span>Real-time data updates without JavaScript</span>
                   </div>
                   <div class="card-content-item">
                     <span class="checkmark">&#10004;</span>
-                    <span>Certification</span>
+                    <span>Mastering routing and Eloquent ORM</span>
                   </div>
                 </div>
                 <p><strong>Time to Complete:</strong> 4 Weeks</p>
@@ -270,20 +401,105 @@
 
 
 
+
     <!-- Start Download -->
     <section id="download">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
                     <h2 class="section-head-title">Downloads</h2>
-                    <p class="section-head-body">Master the Frontend Development, including programming fundamentals, HTML, CSS, and Javascript to build efficiently.</p>
-
-                    <a href="#" class="btn btn-outline-primary">Frontend Development Syllabus</a>
-                    <a href="#" class="btn btn-outline-danger">Frontend Syllabus</a>
-                </div>
-            </div>
-    </section>
-
+                    <p class="section-head-body">
+                        Explore the power of Tallstack to build dynamic, full-stack web applications.
+                    </p>
+    
+                    
+                    <a href="#" class="btn btn-outline-primary" id="mernbtn">Tall Stack Details</a>
+                    <a href="#" class="btn btn-outline-danger">Tallstack Stack Syllabus</a>
+                       
+                        <div id="courseModal" class="modal">
+                            <div class="modal-content">
+                                <span id="closeBtn" class="close-btn"><span class="material-icons">close</span></span>
+                                <h2 class="course-title">TallStack Development</h2>
+                                <p class="course-description">
+                                    Advance tallstack course
+                                </p>
+                                    <div class="syllabus">
+                                        <h3><span class="material-icons">laptop_chromebook</span> Week 1: Introduction to TALL Stack</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Overview of Web Development and TALL Stack</li>
+                                            <li><span class="material-icons">check_circle</span> Installing VSCode, Tailwind CSS, Alpine.js, Laravel, and Livewire</li>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Laravel: MVC architecture, routing, controllers</li>
+                                            <li><span class="material-icons">check_circle</span> Project 1: "Simple Blog" (Basic HTML-based blog layout with Tailwind CSS)</li>
+                                        </ul>
+                                        
+                                        <h3><span class="material-icons">code</span> Week 2: Tailwind CSS Basics</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Tailwind CSS: Utility-first CSS framework</li>
+        <li><span class="material-icons">check_circle</span> Styling basics with Tailwind: Layout, colors, typography, and spacing</li>
+        <li><span class="material-icons">check_circle</span> Responsive design with Tailwind's breakpoints</li>
+        <li><span class="material-icons">check_circle</span> Exercise: Create a responsive landing page with Tailwind CSS</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">brush</span> Week 3: Alpine.js Basics</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Alpine.js: Reactive JavaScript framework</li>
+        <li><span class="material-icons">check_circle</span> Using Alpine.js for interactivity: Data binding, events, and conditional rendering</li>
+        <li><span class="material-icons">check_circle</span> Practical: Add interactivity to the "Simple Blog" using Alpine.js</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">settings</span> Week 4: Laravel Basics</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Laravel: MVC architecture, routing, controllers, views</li>
+        <li><span class="material-icons">check_circle</span> Database integration with Laravel: Migrations, Eloquent ORM</li>
+        <li><span class="material-icons">check_circle</span> Exercise: Build a CRUD application with Laravel</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">phone_iphone</span> Week 5: Livewire for Dynamic Interfaces</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Introduction to Livewire: Creating reactive components in Laravel</li>
+                                            <li><span class="material-icons">check_circle</span> Using Livewire for server-side rendering</li>
+                                            <li><span class="material-icons">check_circle</span> Project: Build a dynamic contact form with Livewire</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">settings_input_component</span> Week 6: Laravel Advanced Features</h3>
+                    <ul>
+                        <li><span class="material-icons">check_circle</span> Authentication in Laravel: Passport, JWT, and user roles</li>
+        <li><span class="material-icons">check_circle</span> File uploads, email notifications, and API integration</li>
+                    </ul>
+                    
+                    
+                                        <h3><span class="material-icons">code</span> Weeks 7-8: Full-Stack Development with TALL Stack</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Building full-stack applications with Tailwind, Alpine.js, Laravel, and Livewire</li>
+        <li><span class="material-icons">check_circle</span> Project 2: Develop a Task Management App using the TALL Stack</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">settings_input_component</span> Week 9: Advanced TALL Stack Techniques</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Using Laravel APIs with Alpine.js for real-time updates</li>
+                                            <li><span class="material-icons">check_circle</span> Optimizing the TALL Stack for performance and scalability</li>
+                                        </ul>
+                    
+                                        <h3><span class="material-icons">storage</span> Week 10: Deployment</h3>
+                                        <ul>
+                                            <li><span class="material-icons">check_circle</span> Deploying TALL Stack applications on Heroku, DigitalOcean, and other platforms</li>
+                                        </ul>
+                                        </ul>
+                    
+                                        
+                    
+                                    <button class="enroll-btn"><span class="material-icons">school</span> Enroll Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+    
+    
+                       
+                        </div>
+                        </div>
+                    </section>
     <!-- End Download -->
 <section id="faqs">
     <div class="container">
@@ -291,7 +507,8 @@
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
                 <div class="section-head-tag">FAQs</div>
                 <h2 class="section-head-title">Frequently Asked Questions</h2>
-                <p class="section-head-body">Find answers to common questions about core software development courses, programming, and building robust applications.</p>
+                <p class="section-head-body">Find answers to common questions about HTML, structuring web pages, and building semantic, accessible, and responsive websites.</p>
+
             </div>
         </div>
         <div class="row">
@@ -299,48 +516,48 @@
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq1" aria-expanded="true">
-                            What is Frontend Development?
+                            What kind of projects will I build during the TALL Stack course?
                         </h5>
                     </div>
                     <div class="collapse show" id="faq1">
                         <div class="faq-body">
-                            <p>Frontend Development focuses on building the user interface and experience of a website or web application.</p>
+                            <p>During the TALL Stack course, you'll build several real-world projects, including a content management system (CMS) and a dynamic blog, both using Tailwind CSS for styling, Alpine.js for interactivity, and Livewire for reactive features. </p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq2">
-                            Do I need prior knowledge before learning Frontend Development?
+                            What is Livewire, and how does it fit into the TALL Stack?
                         </h5>
                     </div>
                     <div class="collapse" id="faq2">
                         <div class="faq-body">
-                            <p>No prior experience is required to start learning Frontend Development. </p>
+                            <p>Livewire is a full-stack framework for Laravel that allows you to build dynamic, reactive interfaces without writing much JavaScript.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq3">
-                            What technologies will I learn in this Frontend Development course?
+                            How can I access the courses on Tech2Kul?
                         </h5>
                     </div>
                     <div class="collapse" id="faq3">
                         <div class="faq-body">
-                            <p>You will learn core frontend technologies like HTML, CSS, and JavaScript. Additionally, you’ll explore CSS frameworks like Bootstrap or Tailwind, and JavaScript frameworks such as React or Vue.js</p>
+                            <p>You can access all our courses directly from our website. Simply sign up or log in, browse the course catalog, and enroll in the ones you wish to take. Courses are available on-demand, allowing you to learn at your own pace.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-head">
                         <h5 class="mb-0" data-toggle="collapse" data-target="#faq4">
-                            What resources can help me improve my software development skills?
+                            How do I contact customer support?
                         </h5>
                     </div>
                     <div class="collapse" id="faq4">
                         <div class="faq-body">
-                            <p>In addition to our courses, you can enhance your skills by practicing coding regularly on platforms like LeetCode, HackerRank, or CodeWars. Joining developer communities, reading books, and contributing to open-source projects can also provide valuable hands-on experience.</p>
+                            <p>You can contact our customer support team via email at support@tech2kul.com or by visiting our Help Center for FAQs, guides, and live chat assistance.</p>
                         </div>
                     </div>
                 </div>
@@ -350,8 +567,12 @@
 </section>
 
 
+
    
-<div class="spacing-top"></div>
+    
+    <!-- End FAQs -->
+    
+    <div class="spacing-top"></div>
 
     <section id="contact">
         <div class="container">
@@ -392,19 +613,19 @@
                         <!-- Dropdown for Course Selection -->
                         <div class="form-group">
                             <select id="course" class="form-control">
-                                <option value="frontend" selected>Frontend Development</option>
-                                <option value="backend" >CORE Development</option>
+                                <option value="frontend">Frontend Development</option>
+                                <option value="backend">Backend Development</option>
                                 <option value="fullstack">Full-Stack Development</option>
                                 
                                 <!-- Grouping MERN / MEAN Stack options -->
                                 <optgroup label="MERN / MEAN Stack">
-                                    <option value="mern">MERN Stack</option>
-                                    <option value="mean">MEAN Stack</option>
+                                    <option value="mern" selected>MERN Stack</option>
+                                    <option value="mean" selected>MEAN Stack</option>
                                 </optgroup>
                                 
                                 <!-- Grouping TALL, RILT, & VILT Stacks -->
                                 <optgroup label="TALL, RILT, & VILT Stacks">
-                                    <option value="tall">TALL Stack</option>
+                                    <option value="tall" selected>TALL Stack</option>
                                     <option value="rilt">RILT Stack</option>
                                     <option value="vilt">VILT Stack</option>
                                 </optgroup>
@@ -483,6 +704,7 @@
         <!-- End Footer -->
 
     <!-- JavaScript Files -->
+     <script src="tallstackcourse.js"></script>
     <script src="assets/script/jquery-3.4.1.min.js"></script>
     <!-- <script src="assets/script/popper.min.js"></script> -->
     <script src="assets/script/bootstrap.min.js"></script>
