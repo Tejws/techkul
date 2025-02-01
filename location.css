@@ -1,0 +1,772 @@
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Styling for the card */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.text-sections {
+max-width: 50%;
+color: white;
+text-align: left; /* Ensure text aligns to the left on larger screens */
+}
+
+.image-sections {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1.5rem;
+background-color: #333;
+border-radius: 15px;
+width: 180px;
+height: 180px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease-in-out;
+}
+
+.image-sections img {
+max-width: 100%;
+height: auto;
+border-radius: 20%;
+object-fit: cover;
+}
+
+.image-sections:hover {
+transform: scale(1.1);
+box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+background-color: #0066cc;
+color: white;
+padding: 0.8rem 1.5rem;
+border-radius: 8px;
+text-transform: uppercase;
+font-size: 1rem;
+font-weight: normal; /* Make button text normal */
+transition: background-color 0.3s ease;
+}
+
+.buttons:hover {
+background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+.cards {
+flex-direction: column;
+align-items: center;
+border-radius: 0px;
+background-color: transparent; 
+box-shadow: none;
+}
+.animated-bgs {
+height: 125%;
+}
+.text-sections {
+max-width: 100%;
+margin-bottom: 1.5rem;
+text-align: center; /* Center text on smaller screens */
+}
+
+.image-sections {
+margin-bottom: 1.5rem; /* Add spacing between image and text */
+}
+.buttons{
+background-color: #000000;
+}
+}
+.modal-content {
+    background-color: #1d1f20; /* Dark background for modal */
+    color: #f0f0f0; /* Light text color */
+    border-radius: 15px; /* Increased border radius for smooth corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    border: none; /* Remove any default border */
+    text-align: left;
+}
+
+/* Modal Header Styles */
+.modal-header {
+    background-color: #333; /* Dark gray header */
+    color: #fff;
+    border-bottom: 1px solid #444; /* Subtle separator */
+    padding: 15px;
+    text-align: center; /* Centered text */
+}
+
+/* Modal Title Styling */
+.modal-title {
+    font-size: 1.75rem; /* Larger title for prominence */
+    font-weight: bold;
+}
+
+/* Close Button Styling */
+.close {
+    color: #aaa; /* Subtle close icon color */
+    font-size: 1.8rem; /* Slightly larger for better accessibility */
+    cursor: pointer; /* Indicate that it is clickable */
+}
+
+.close:hover {
+    color: #fff; /* Change color on hover for better contrast */
+}
+
+/* Modal Body Styles */
+.modal-body {
+    padding: 25px 30px; /* Adjust padding for better spacing */
+}
+
+/* Form Group Label Styling */
+.form-group label {
+    font-size: 1.1rem;
+    color: #ccc; /* Light gray for labels */
+    margin-bottom: 5px; /* Added space between label and input */
+}
+
+/* Input Field Styling */
+.form-control {
+    width: 100%;
+    padding: 12px; /* Increased padding for a more spacious feel */
+    margin-top: 10px; /* Increased space above the input field */
+    background-color: #444; /* Dark background for input fields */
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove the default outline */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 12px; /* Larger button for better usability */
+    border: none;
+    border-radius: 30px; /* Rounded corners for the button */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Modal Background Overlay */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker backdrop */
+}
+
+/* Ensuring modal is centered */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the modal is vertically centered on the screen */
+}
+
+.modal-content {
+    margin: auto; /* Centering the modal content */
+    width: 100%;
+    max-width: 500px; /* Optional: Max width for the modal */
+}
+ /* Wrapper styling */
+ .animated-text-wrapper {
+    width: 100%;
+background-color: #222;
+overflow: hidden;
+white-space: nowrap;
+position: relative;
+border: 1px solid #000;
+/* border-radius: 5px; */
+padding: 8px 2px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+font-size: 0.4rem;
+line-height: 1;
+margin-top: 20px; /* Pushes the component a little down */
+top: 10px;
+}
+
+
+/* Text container */
+.animated-text {
+display: flex;
+animation: scroll 30s linear infinite; /* Slower scrolling animation */
+font-family: 'Courier New', Courier, monospace; /* Coding-style font */
+font-size: 0.8rem;
+color: #ffffff;
+letter-spacing: 1px;
+}
+
+/* Duplicated text to ensure smooth looping */
+.animated-text span {
+padding-right: 3rem;
+}
+
+/* Keyframe animation for scrolling */
+@keyframes scroll {
+0% {
+    transform: translateX(100%);
+}
+100% {
+    transform: translateX(-100%);
+}
+}
+@media (max-width: 768px) {
+    /* Make the font smaller on mobile */
+    .animated-text {
+        font-size: 1rem;
+    }
+
+    /* Adjust padding and container settings for mobile */
+    .animated-text-wrapper {
+        padding: 5px 0;
+        top: -90px;
+    }
+}
+.address-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center; /* Center align the cards horizontally */
+    justify-content: center; /* Center align the content vertically */
+  }
+
+  .address-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: rgb(29, 29, 31);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 10px 20px; /* Reduced margin for a smaller card */
+    max-width: 1000px; /* Limit width of the card */
+    width: 100%; /* Ensure the card takes full width */
+  }
+
+  .address-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .address-content {
+    flex: 1;
+    padding: 20px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap between sections */
+    background: rgb(29, 29, 31);
+    color: white;
+    text-align: left;
+  }
+
+  .address-icon {
+    font-size: 2.5rem; /* Slightly smaller icon */
+    color: #007bff;
+    align-self: flex-start;
+  }
+
+  .address-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduced gap between title, paragraph, and contact info */
+  }
+
+  .address-details h3 {
+    margin: 0;
+    font-size: 1.6rem; /* Reduced font size */
+    font-weight: bold;
+    color: white;
+  }
+
+  .address-details p {
+    margin: 0;
+    font-size: 1rem; /* Reduced font size */
+    line-height: 1.5;
+    color: white;
+  }
+
+  .address-details .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced space between contact details */
+    color: white;
+  }
+
+  .map-wrapper {
+    flex: 1;
+    min-width: 45%; /* Reduced width of the map */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+  }
+
+  .map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 12px 12px 0;
+  }
+
+  @media (max-width: 768px) {
+    .address-card {
+      flex-direction: column;
+      margin: 0 10px 20px;
+    }
+
+    .map-wrapper {
+      min-width: 100%;
+      height: 180px; /* Reduced height of the map */
+    }
+
+    .map-wrapper iframe {
+      border-radius: 0 0 12px 12px;
+    }
+  }
+  /* Align FAQ text to the left */
+  .faq-body {
+    text-align: left;
+}
+
+/* Adjusting alignment of the FAQ header if needed */
+.faq-head h5 {
+    text-align: left;
+    color: white; /* Set the color of the h5 text to white */
+}
+#faqs
+{
+    padding: 20px 0;
+}
+#faqs .faqs-container .faq
+{
+    border-top: 1px solid var(--color-border);
+    padding: 15px;
+}
+#faqs .faqs-container .faq .faq-head
+{
+    padding: 15px 0px;
+    position: relative;
+}
+#faqs .faqs-container .faq .faq-head h5
+{
+    width: 90%;
+    cursor: pointer;
+}
+#faqs .faqs-container .faq .faq-head h5::before
+{
+    content: 'keyboard_arrow_down';
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Material Icons Round';
+    height: 25px;
+    width: 25px;
+    color: #fefefe;
+    background: var(--color-sec);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#faqs .faqs-container .faq .faq-head h5[aria-expanded=true]::before
+{
+    content: 'keyboard_arrow_up';
+}
+.mt-150{
+    margin-top: 150px;
+}
+.borderzero{
+    border:0;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+body, html {
+    overflow-x: hidden; /*To Ensure horizontal scroll is hidden */
+    background-color: (23, 23, 23);
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0; /* Ensure no extra margin on the row */
+}
+
+.col-md-4 {
+    padding-left: 10px; /* Adjust padding to prevent overflow */
+    padding-right: 10px;
+}
+
+.card {
+    box-sizing: border-box; /* Prevent overflow */
+}
+* {
+box-sizing: border-box;
+font-weight: normal;
+}
+body {
+color: #555;
+background-color: (23, 23, 23);
+text-align: center;
+font-family: 'Roboto Mono';
+
+}
+.carrer-path {
+    
+}
+
+.carrer-path .card-title {
+    font-size: 1.2rem;
+}
+
+.carrer-path .card-body .float-right.small {
+    background-color: var(--color-sec);
+padding: 0px;
+    border: 1px solid var(--color-sec);
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:600px) {
+    .carrer-path {
+       
+    }
+}
+
+
+.flip-container {
+display: flex;
+justify-content: space-around; /* Horizontally space out the items */
+align-items: stretch; /* Ensure all flip elements align equally */
+}
+
+.flip {
+position: relative;
+display: inline-block;
+margin-right: 20px;
+margin-bottom: 2em;
+width: 450px; /* Increased width */
+height: 280px; /* Increased height */
+cursor: pointer;
+}
+
+.flip > .front,
+.flip > .back {
+display: block;
+transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+transition-duration: 2s;
+transition-property: transform, opacity;
+color: white;
+width: 100%;
+height: 100%;
+padding: 1.5em 2em;
+border-radius: 12px;
+background-size: cover !important;
+background-position: center !important;
+}
+
+.flip > .front {
+transform: rotateY(0deg);
+}
+
+.flip > .back {
+position: absolute;
+opacity: 0;
+top: 0px;
+left: 0px;
+background: #313131;
+text-align: left;
+transform: rotateY(-180deg);
+padding: 1.5em 2em;
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Align content and button */
+height: 100%;
+}
+.flip:hover > .front {
+transform: rotateY(180deg);
+}
+
+.flip:hover > .back {
+opacity: 1;
+transform: rotateY(0deg);
+}
+
+.flip.flip-vertical > .back {
+transform: rotateX(-180deg);
+}
+
+.flip.flip-vertical:hover > .front {
+transform: rotateX(180deg);
+}
+
+.flip.flip-vertical:hover > .back {
+transform: rotateX(0deg);
+}
+
+.flip h1,
+.flip h2 {
+margin: 0;
+}
+
+.flip p {
+font-size: 0.95rem;
+line-height: 1.6;
+margin: 0.5em 0;
+color: #ddd;
+}
+
+.flip button {
+margin-top: auto; /* Push the button to the bottom */
+padding: 0.5em 1em;
+font-size: 0.9rem;
+color: white;
+background-color: #ff5722;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.flip button:hover {
+background-color: #e64a19;
+}
+
+.text-shadow {
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
+3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
+0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
+7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
+9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
+11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
+13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
+0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
+17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
+19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+/* Ensure all .flip items align in a row without misalignment */
+.flip-container {
+display: flex;
+gap: 20px; /* Adds space between each flip */
+}
+.card-title, .card-text, .small {
+color: white;
+}
+
+/* Course Details Section */
+.course-details {
+text-align: center;
+margin-bottom: 30px;
+padding: 20px;
+color: white; /* Sets the text color to white */
+}
+
+.course-details h2 {
+font-size: 32px;
+font-weight: bold;
+color: white; /* Ensures the heading is white */
+margin-bottom: 10px;
+}
+
+.course-details p {
+font-size: 18px;
+color: white; /* Ensures the paragraph text is white */
+margin: 0 auto;
+max-width: 600px;
+line-height: 1.5;
+}
+
+
+
+/* Box Wrapper and Cards */
+/* Wrapper for all boxes */
+.box-wrapper {
+display: flex;
+flex-direction: row;
+gap: 30px; /* Increased spacing between the boxes */
+justify-content: center;
+align-items: center;
+margin: 40px auto; /* Center the wrapper */
+flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual box styling */
+.box {
+position: relative;
+width: 283px; /* Slightly wider for better aesthetics */
+height: 350px; /* Adjust height for balance */
+background: #222;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 22px;
+font-weight: 600; /* Slightly lighter weight for better readability */
+color: white;
+border-radius: 20px; /* Increased border radius for rounded corners */
+cursor: pointer;
+text-align: center;
+padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+background-image: rgb(29, 29, 31) ;/* Gradient background */
+background-size: 100% 100%;
+}
+
+/* Box content styling */
+.content {
+padding: 15px;
+font-family: 'Arial', sans-serif; /* Set a clean font for better readability */
+}
+
+/* Heading Styling */
+.content h3 {
+font-size: 24px; /* Increase heading size */
+font-weight: 700; /* Make headings bold */
+margin-bottom: 10px; /* Add space below the heading */
+text-transform: uppercase; /* Capitalize the heading for impact */
+letter-spacing: 1px; /* Space out letters slightly */
+color: #f0f0f0; /* Slightly lighter color for the heading */
+}
+
+/* Paragraph styling */
+.content p {
+font-size: 16px; /* Smaller font size for description */
+line-height: 1.5; /* Increase line-height for readability */
+color: rgba(255, 255, 255, 0.9); /* Light color for paragraphs */
+text-align: center;
+margin: 0; /* Remove margin */
+}
+
+/* Hover effect */
+.box:hover {
+background: rgb(0, 102, 204); /* Change background color on hover */
+transform: translateY(-5px); /* Slight lift effect */
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+background-image: linear-gradient(135deg, #1e3c72, #2a5298); /* Darker gradient on hover */
+}
+
+/* Optional: Add a focus effect for better accessibility */
+.box:focus {
+outline: none; /* Remove default focus outline */
+box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.6); /* Blue outline for focus */
+}
+
+/* Add a little more space between the boxes */
+.box-wrapper > .box {
+transition: transform 0.3s ease; /* Add transition on box hover */
+}
+
+.box-wrapper > .box:hover {
+transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Text Shadow for readability */
+.box p,
+.box h3 {
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Subtle shadow to help text pop */
+}
+
+
+
+
+.clr-blue{
+    color:blue
+}
+.fnt{
+    font-size: 30px;font-weight: 800;
+}
+.fnt2{
+    font-size: 20px; font-weight: 800; margin: 0;
+}
+.marginnew{
+    padding-bottom: 10px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased space between each entry */
+}
+
+.contact-info p {
+    display: flex;
+    /* align-items: center; Align items in the center */
+    gap: 10px; /* Increased space between icon and text */
+    margin: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+.address-details {
+    width: 100%;
+}
+
+.header-info {
+    display: flex;
+    /* justify-content: space-between; Aligns the header on the left and right */
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-icon {
+    font-size: 1.2rem; /* Adjust icon size */
+    padding: 6px; /* Reduced padding */
+    background: rgb(48, 79, 255); /* Blue background */
+    color: white; /* White icon color */
+    border-radius: 50%; /* Circular icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 25px; /* Slightly adjusted width to avoid stretching */
+    height: 28px; /* Slightly adjusted height */
+}

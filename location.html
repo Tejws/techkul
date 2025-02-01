@@ -24,296 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <style>
-        body, html {
-            overflow-x: hidden; /*To Ensure horizontal scroll is hidden */
-            background-color: (23, 23, 23);
-        }
-    
-        .row {
-            margin-right: 0;
-            margin-left: 0; /* Ensure no extra margin on the row */
-        }
-    
-        .col-md-4 {
-            padding-left: 10px; /* Adjust padding to prevent overflow */
-            padding-right: 10px;
-        }
-    
-        .card {
-            box-sizing: border-box; /* Prevent overflow */
-        }
-        * {
-  box-sizing: border-box;
-  font-weight: normal;
-}
-body {
-  color: #555;
-   background-color: (23, 23, 23);
-  text-align: center;
-  font-family: 'Roboto Mono';
-
-}
-.carrer-path {
-            
-        }
-
-        .carrer-path .card-title {
-            font-size: 1.2rem;
-        }
-
-        .carrer-path .card-body .float-right.small {
-            background-color: var(--color-sec);
-        padding: 0px;
-            border: 1px solid var(--color-sec);
-            border-radius: 7px;
-        }
-
-        @media only screen and (max-width:600px) {
-            .carrer-path {
-               
-            }
-        }
-
-
-.flip-container {
-  display: flex;
-  justify-content: space-around; /* Horizontally space out the items */
-  align-items: stretch; /* Ensure all flip elements align equally */
-}
-
-.flip {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 2em;
-  width: 450px; /* Increased width */
-  height: 280px; /* Increased height */
-  cursor: pointer;
-}
-
-.flip > .front,
-.flip > .back {
-  display: block;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 2s;
-  transition-property: transform, opacity;
-  color: white;
-  width: 100%;
-  height: 100%;
-  padding: 1.5em 2em;
-  border-radius: 12px;
-  background-size: cover !important;
-  background-position: center !important;
-}
-
-.flip > .front {
-  transform: rotateY(0deg);
-}
-
-.flip > .back {
-  position: absolute;
-  opacity: 0;
-  top: 0px;
-  left: 0px;
-  background: #313131;
-  text-align: left;
-  transform: rotateY(-180deg);
-  padding: 1.5em 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Align content and button */
-  height: 100%;
-}
-.flip:hover > .front {
-  transform: rotateY(180deg);
-}
-
-.flip:hover > .back {
-  opacity: 1;
-  transform: rotateY(0deg);
-}
-
-.flip.flip-vertical > .back {
-  transform: rotateX(-180deg);
-}
-
-.flip.flip-vertical:hover > .front {
-  transform: rotateX(180deg);
-}
-
-.flip.flip-vertical:hover > .back {
-  transform: rotateX(0deg);
-}
-
-.flip h1,
-.flip h2 {
-  margin: 0;
-}
-
-.flip p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0.5em 0;
-  color: #ddd;
-}
-
-.flip button {
-  margin-top: auto; /* Push the button to the bottom */
-  padding: 0.5em 1em;
-  font-size: 0.9rem;
-  color: white;
-  background-color: #ff5722;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.flip button:hover {
-  background-color: #e64a19;
-}
-
-.text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
-    3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
-    0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
-    7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
-    9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
-    11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
-    13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
-    0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
-    17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
-    19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
-}
-
-/* Ensure all .flip items align in a row without misalignment */
-.flip-container {
-  display: flex;
-  gap: 20px; /* Adds space between each flip */
-}
-.card-title, .card-text, .small {
-    color: white;
-  }
-
-/* Course Details Section */
-.course-details {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 20px;
-  color: white; /* Sets the text color to white */
-}
-
-.course-details h2 {
-  font-size: 32px;
-  font-weight: bold;
-  color: white; /* Ensures the heading is white */
-  margin-bottom: 10px;
-}
-
-.course-details p {
-  font-size: 18px;
-  color: white; /* Ensures the paragraph text is white */
-  margin: 0 auto;
-  max-width: 600px;
-  line-height: 1.5;
-}
-
-
-
-/* Box Wrapper and Cards */
-/* Wrapper for all boxes */
-.box-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 30px; /* Increased spacing between the boxes */
-  justify-content: center;
-  align-items: center;
-  margin: 40px auto; /* Center the wrapper */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-/* Individual box styling */
-.box {
-  position: relative;
-  width: 283px; /* Slightly wider for better aesthetics */
-  height: 350px; /* Adjust height for balance */
-  background: #222;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: 600; /* Slightly lighter weight for better readability */
-  color: white;
-  border-radius: 20px; /* Increased border radius for rounded corners */
-  cursor: pointer;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover */
-  background-image: rgb(29, 29, 31) ;/* Gradient background */
-  background-size: 100% 100%;
-}
-
-/* Box content styling */
-.content {
-  padding: 15px;
-  font-family: 'Arial', sans-serif; /* Set a clean font for better readability */
-}
-
-/* Heading Styling */
-.content h3 {
-  font-size: 24px; /* Increase heading size */
-  font-weight: 700; /* Make headings bold */
-  margin-bottom: 10px; /* Add space below the heading */
-  text-transform: uppercase; /* Capitalize the heading for impact */
-  letter-spacing: 1px; /* Space out letters slightly */
-  color: #f0f0f0; /* Slightly lighter color for the heading */
-}
-
-/* Paragraph styling */
-.content p {
-  font-size: 16px; /* Smaller font size for description */
-  line-height: 1.5; /* Increase line-height for readability */
-  color: rgba(255, 255, 255, 0.9); /* Light color for paragraphs */
-  text-align: center;
-  margin: 0; /* Remove margin */
-}
-
-/* Hover effect */
-.box:hover {
-  background: rgb(0, 102, 204); /* Change background color on hover */
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-  background-image: linear-gradient(135deg, #1e3c72, #2a5298); /* Darker gradient on hover */
-}
-
-/* Optional: Add a focus effect for better accessibility */
-.box:focus {
-  outline: none; /* Remove default focus outline */
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.6); /* Blue outline for focus */
-}
-
-/* Add a little more space between the boxes */
-.box-wrapper > .box {
-  transition: transform 0.3s ease; /* Add transition on box hover */
-}
-
-.box-wrapper > .box:hover {
-  transform: scale(1.05); /* Slight zoom-in effect on hover */
-}
-
-/* Text Shadow for readability */
-.box p,
-.box h3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Subtle shadow to help text pop */
-}
-
-
-
-  
-
-    </style>
+    <link href="location.css" rel="stylesheet">
+   
     <!-- <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=5366b776df77d' async='true'></script> -->
    
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -331,7 +43,7 @@ body {
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <!-- <img src="assets/images/logo-c.png" alt="logo" height="20"> -->
-                    <h1 style="font-size: 30px;font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                    <h1 class="fnt">TechKul <span class="clr-blue">.</span></h1>
                 </a>
                 <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -403,578 +115,37 @@ body {
               </div>
           </div>
       </div>
-  <style>
-  /* Modal Styles */
-  .modal-content {
-      background-color: #1d1f20; /* Dark background for modal */
-      color: #f0f0f0; /* Light text color */
-      border-radius: 15px; /* Increased border radius for smooth corners */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-      border: none; /* Remove any default border */
-      text-align: left;
-  }
-  
-  /* Modal Header Styles */
-  .modal-header {
-      background-color: #333; /* Dark gray header */
-      color: #fff;
-      border-bottom: 1px solid #444; /* Subtle separator */
-      padding: 15px;
-      text-align: center; /* Centered text */
-  }
-  
-  /* Modal Title Styling */
-  .modal-title {
-      font-size: 1.75rem; /* Larger title for prominence */
-      font-weight: bold;
-  }
-  
-  /* Close Button Styling */
-  .close {
-      color: #aaa; /* Subtle close icon color */
-      font-size: 1.8rem; /* Slightly larger for better accessibility */
-      cursor: pointer; /* Indicate that it is clickable */
-  }
-  
-  .close:hover {
-      color: #fff; /* Change color on hover for better contrast */
-  }
-  
-  /* Modal Body Styles */
-  .modal-body {
-      padding: 25px 30px; /* Adjust padding for better spacing */
-  }
-  
-  /* Form Group Label Styling */
-  .form-group label {
-      font-size: 1.1rem;
-      color: #ccc; /* Light gray for labels */
-      margin-bottom: 5px; /* Added space between label and input */
-  }
-  
-  /* Input Field Styling */
-  .form-control {
-      width: 100%;
-      padding: 12px; /* Increased padding for a more spacious feel */
-      margin-top: 10px; /* Increased space above the input field */
-      background-color: #444; /* Dark background for input fields */
-      border: 1px solid #555;
-      color: #fff;
-      border-radius: 5px;
-      transition: border-color 0.3s; /* Smooth transition for focus effect */
-  }
-  
-  .form-control:focus {
-      border-color: #007bff; /* Blue border on focus */
-      outline: none; /* Remove the default outline */
-  }
-  
-  /* Button Styling */
-  .btn-primary {
-      background-color: #007bff;
-      color: white;
-      width: 100%;
-      padding: 12px; /* Larger button for better usability */
-      border: none;
-      border-radius: 30px; /* Rounded corners for the button */
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-  }
-  
-  .btn-primary:hover {
-      background-color: #0056b3; /* Darker blue on hover */
-  }
-  
-  /* Forgot Password Link */
-  .forgot-password {
-      color: #007bff;
-      font-size: 0.9rem;
-      text-decoration: none;
-  }
-  
-  .forgot-password:hover {
-      text-decoration: underline;
-  }
-  
-  /* Modal Background Overlay */
-  .modal-backdrop {
-      background-color: rgba(0, 0, 0, 0.7); /* Darker backdrop */
-  }
-  
-  /* Ensuring modal is centered */
-  .modal-dialog {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh; /* Ensure the modal is vertically centered on the screen */
-  }
-  
-  .modal-content {
-      margin: auto; /* Centering the modal content */
-      width: 100%;
-      max-width: 500px; /* Optional: Max width for the modal */
-  }
-  
-  </style>
+ 
 
         
       <!-- Add Gap -->
-<div style="margin-top: 100px;"></div>
+<div class="mt-100"></div>
 
 
 
 <!-- TallStack Developer Course Card -->
 
 <div class="main-content">
-    <style>
-       
-
-
-        @keyframes gradient-animation {
-            0% {
-                background-position: 0% 0%;
-            }
-            50% {
-                background-position: 100% 100%;
-            }
-            100% {
-                background-position: 0% 0%;
-            }
-        }
-
-        /* Styling for the card */
-        .cards {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem;
-            background-color: #222;
-            border-radius: 15px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            max-width: 900px;
-            width: 100%;
-            margin: auto;
-        }
-
-        .cards:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .text-sections {
-    max-width: 50%;
-    color: white;
-    text-align: left; /* Ensure text aligns to the left on larger screens */
-}
-
-.image-sections {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    background-color: #333;
-    border-radius: 15px;
-    width: 180px;
-    height: 180px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-}
-
-.image-sections img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20%;
-    object-fit: cover;
-}
-
-.image-sections:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.buttons {
-    background-color: #0066cc;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: normal; /* Make button text normal */
-    transition: background-color 0.3s ease;
-}
-
-.buttons:hover {
-    background-color: #005bb5;
-}
-
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-        border-radius: 0px;
-        background-color: transparent; 
-        box-shadow: none;
-    }
-    .animated-bgs {
-        height: 125%;
-    }
-    .text-sections {
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-        text-align: center; /* Center text on smaller screens */
-    }
-
-    .image-sections {
-        margin-bottom: 1.5rem; /* Add spacing between image and text */
-    }
-    .buttons{
-        background-color: #000000;
-    }
-}
-</style>
+   
 
     <div class="animated-bgs"></div>
 
-    <!-- Card with TallStack Development Content -->
-     
-    <!-- <div class="cards d-flex flex-wrap align-items-center"> -->
-        <!-- Image Section -->
-        <!-- <div class="image-sections order-0 order-md-1 ">
-            <img src="assets/images/core.png" alt="TallStack Development Course" class="img-fluid">
-        </div> -->
-    
-        <!-- Text Section -->
-        <!-- <div class="text-sections order-1 order-md-0">
-            <h2 class="font-semibold text-3xl lg:text-4xl mb-4 " style="padding-top: 10px;">Master CORE Software Development</h2>
-            <p class="mt-3 text-lg font-light leading-relaxed">
-                Master the fundamentals of Core Software Development by learning key concepts like object-oriented programming, data structures, algorithms, and software design principles.
-            </p>
-            <div class="mt-6">
-                <button class="buttons btn btn-primary btn-lg">
-                    Start Learning Now
-                </button>
-            </div>
-        </div>
-    </div> -->
     
     
 
-<div style="margin-top: 50px;"></div>
+<div class="mt-50"></div>
 
-    <!-- Animation Script
-    <script>
-        const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V108.306Z",
-            wave2 = "M0 250L50 244.048C100 238.095 200 226.19 300 226.19C400 226.19 500 238.095 600 232.143C700 226.19 800 202.381 900 196.429C1000 190.476 1100 202.381 1150 208.333L1200 214.286V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
-            wave3 = "M0 250L50 238.095C100 226.19 200 202.381 300 166.667C400 130.952 500 83.3333 600 101.19C700 119.048 800 202.381 900 214.286C1000 226.19 1100 166.667 1150 136.905L1200 107.143V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
-            wave4 = "M0 125L50 111.111C100 97.2222 200 69.4444 300 97.2222C400 125 500 208.333 600 236.111C700 263.889 800 236.111 900 229.167C1000 222.222 1100 236.111 1150 243.056L1200 250V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V125Z";
-    
-        anime({
-            targets: '.wave-top > path',
-            easing: 'linear',
-            duration: 12000,  // Slower animation speed
-            loop: true,
-            d: [
-                { value: [wave1, wave2] },
-                { value: wave3 },
-                { value: wave4 },
-                { value: wave1 },
-            ],
-        });
-    </script> -->
-    
+  <div class="mt-150"></div>
 
-
-<!-- <div style="margin-top: 50px;">
-    <div class="course-details">
-        <h2>Course Details</h2>
-        <p style="color: rgb(157, 157, 158);">Dive into our Software Development program to master the core principles essential for building scalable, maintainable, and efficient systems.</p>
-        
-        <div style="margin-top: 50px;">
-        
-            <div class="box-wrapper">
-                <div class="box">
-                    <div class="content">
-                        <h3>Curriculum</h3>
-                        <p>Comprehensive modules covering software design patterns, algorithms, data structures, and best practices.</p>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <div class="content">
-                        <h3>Design Principles</h3>
-                        <p>Learn core design principles like SOLID, object-oriented design (OOD), and modular architecture for creating efficient systems.</p>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <div class="content">
-                        <h3>Testing & Debugging</h3>
-                        <p>Master techniques in unit testing, integration testing, and debugging to ensure your software is robust and error-free.</p>
-                    </div>
-                </div>
-        
-                <div class="box">
-                    <div class="content">
-                        <h3>Performance Optimization</h3>
-                        <p>Learn how to optimize algorithms and system performance to handle large-scale applications and ensure smooth user experiences.</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="content">
-                        <h3>Development Methodologies</h3>
-                        <p>Understand key software development methodologies like Agile, Scrum, and DevOps to effectively manage and deliver projects.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --><div style="margin-top: 150px;"></div>
-<!-- <div class="animated-text-wrapper">
-    <div class="animated-text">
-        <span>Master the fundamentals of programming with languages like Python, Java, and C++.</span>
-        <span>Understand data structures and algorithms to solve complex problems efficiently.</span>
-        <span>Design scalable software using Object-Oriented Programming (OOP) principles.</span>
-        <span>Collaborate effectively using version control systems like Git for code management.</span>
-        <span>Build robust back-end systems with databases like MySQL, PostgreSQL, and MongoDB.</span>
-        <span>Write high-quality code with thorough testing and debugging techniques.</span>
-        <span>Deploy applications using cloud platforms like AWS, Azure, and Google Cloud.</span>
-    </div> -->
     
     
 </div>
-<style>
-    /* Wrapper styling */
-    .animated-text-wrapper {
-        width: 100%;
-background-color: #222;
-overflow: hidden;
-white-space: nowrap;
-position: relative;
-border: 1px solid #000;
-/* border-radius: 5px; */
-padding: 8px 2px;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-font-size: 0.4rem;
-line-height: 1;
-margin-top: 20px; /* Pushes the component a little down */
-top: 10px;
-}
 
-
-/* Text container */
-.animated-text {
-    display: flex;
-    animation: scroll 30s linear infinite; /* Slower scrolling animation */
-    font-family: 'Courier New', Courier, monospace; /* Coding-style font */
-    font-size: 0.8rem;
-    color: #ffffff;
-    letter-spacing: 1px;
-}
-
-/* Duplicated text to ensure smooth looping */
-.animated-text span {
-    padding-right: 3rem;
-}
-
-/* Keyframe animation for scrolling */
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-@media (max-width: 768px) {
-        /* Make the font smaller on mobile */
-        .animated-text {
-            font-size: 1rem;
-        }
-
-        /* Adjust padding and container settings for mobile */
-        .animated-text-wrapper {
-            padding: 5px 0;
-            top: -90px;
-        }
-    }
-
-</style>
-
-    
-<!-- horizontal -->
-<!-- <br>
-<h2 style="color: white; margin-bottom: 1.5em;">TallStack Mastery Course</h2>
-<div style="margin-top: 50px;"></div>
-<div class="flip">
-  <div class="front" style="background-image: url('assets/images/tailwind.png');">
-    <h1 class="text-shadow">Responsive Design</h1>
-  </div>
-  <div class="back">
-    <h2>Master Tailwind CSS</h2>
-    <p>Learn utility-first CSS to build responsive, modern, and visually stunning UIs.</p>
-    <p><strong>Duration:</strong> 6 weeks</p>
-    <p><strong>Prerequisite:</strong> Basic HTML & CSS knowledge</p>
-    <button onclick="alert('Enroll in Tailwind CSS Mastery')">Enroll Now</button>
-  </div>
-</div>
-
-
-<div class="flip">
-  <div class="front" style="background-image: url('assets/images/coding1.jpg');">
-    <h1 class="text-shadow">Dynamic</h1>
-  </div>
-  <div class="back">
-    <h2>Alpine.js Essentials</h2>
-<p>Create lightweight, interactive components with minimal JavaScript.</p>
-<p><strong>Duration:</strong> 8 weeks</p>
-<p><strong>Prerequisite:</strong> Basic HTML & JavaScript knowledge</p>
-<button onclick="alert('Enroll in Data Structures')">Enroll Now</button>
-  </div>
-</div>
-<div class="flip">
-  <div class="front" style="background-image: url('assets/images/coding3.jpg');">
-    <h1 class="text-shadow">Powerful Back-End</h1>
-  </div>
-  <div class="back">
-    <h2>Laravel Framework</h2>
-<p>Master building dynamic web applications with Laravel’s robust features.</p>
-<p><strong>Duration:</strong> 8 weeks</p>
-<p><strong>Prerequisite:</strong> Basic PHP knowledge</p>
-<button onclick="alert('Enroll in Algorithm Design')">Enroll Now</button>
-  </div>
-</div>
-<div class="flip">
-  <div class="front" style="background-image: url('assets/images/coding4.jpg');">
-    <h1 class="text-shadow">Interactive Components</h1>
-  </div>
-  <div class="back">
-    <h2>Livewire Framework</h2>
-<p>Build modern, dynamic web applications without writing JavaScript.</p>
-<p><strong>Duration:</strong> 6 weeks</p>
-<p><strong>Prerequisite:</strong> Basic programming knowledge </p>
-<button onclick="alert('Enroll in Problem-Solving')">Enroll Now</button>
-  </div>
-</div>
-
-
-</div>
-
-
-<br> -->
+ 
 
      
 
-<style>
-  
-  .address-section {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    align-items: center; /* Center align the cards horizontally */
-    justify-content: center; /* Center align the content vertically */
-  }
 
-  .address-card {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background: rgb(29, 29, 31);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 0 10px 20px; /* Reduced margin for a smaller card */
-    max-width: 1000px; /* Limit width of the card */
-    width: 100%; /* Ensure the card takes full width */
-  }
-
-  .address-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  }
-
-  .address-content {
-    flex: 1;
-    padding: 20px; /* Reduced padding */
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Reduced gap between sections */
-    background: rgb(29, 29, 31);
-    color: white;
-    text-align: left;
-  }
-
-  .address-icon {
-    font-size: 2.5rem; /* Slightly smaller icon */
-    color: #007bff;
-    align-self: flex-start;
-  }
-
-  .address-details {
-    display: flex;
-    flex-direction: column;
-    gap: 12px; /* Reduced gap between title, paragraph, and contact info */
-  }
-
-  .address-details h3 {
-    margin: 0;
-    font-size: 1.6rem; /* Reduced font size */
-    font-weight: bold;
-    color: white;
-  }
-
-  .address-details p {
-    margin: 0;
-    font-size: 1rem; /* Reduced font size */
-    line-height: 1.5;
-    color: white;
-  }
-
-  .address-details .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px; /* Reduced space between contact details */
-    color: white;
-  }
-
-  .map-wrapper {
-    flex: 1;
-    min-width: 45%; /* Reduced width of the map */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #222;
-  }
-
-  .map-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 0 12px 12px 0;
-  }
-
-  @media (max-width: 768px) {
-    .address-card {
-      flex-direction: column;
-      margin: 0 10px 20px;
-    }
-
-    .map-wrapper {
-      min-width: 100%;
-      height: 180px; /* Reduced height of the map */
-    }
-
-    .map-wrapper iframe {
-      border-radius: 0 0 12px 12px;
-    }
-  }
-</style>
 
 
   
@@ -990,48 +161,52 @@ top: 10px;
     <!-- First Address Card -->
     <div class="address-card">
       <div class="address-content">
-        <div>
-          <span class="material-icons address-icon">location_on</span>
-        </div>
         <div class="address-details">
-          <h3>Gautam Kumar</h3>
-          <p>Located in Bihar our headquarters provides the perfect workspace for innovation and collaboration.</p>
-          <div class="contact-info">
-            <p><strong>Address:</strong> Maranpur near brahmachari baba gali post chand chaura PS Vishnu pad, Gaya Bihar.</p>
-            <p><strong>Phone:</strong> +91 98765 43210</p>
-            <p><strong>Pincode:</strong> 823001</p>
-            <p><strong>Email:</strong> gautamkumar@company.com</p>
-          </div>
+            <div class="header-info">
+                <span class="material-icons address-icon">location_on</span>
+                <h3>Gautam Kumar</h3>
+            </div>
+            <p>Located in Bihar, our headquarters provides the perfect workspace for innovation and collaboration.</p>
+            <div class="contact-info">
+                <p><span class="material-icons contact-icon">call</span><strong> Phone:</strong> <span class="contact-text">+91 98765 43210</span></p>
+                <p><span class="material-icons contact-icon">markunread_mailbox</span><strong> Pincode:</strong> <span class="contact-text">823001</span></p>
+                <p><span class="material-icons contact-icon">email</span><strong> Email:</strong> <span class="contact-text">gautamkumar@company.com</span></p>
+                <p><span class="material-icons contact-icon">place</span><strong> Address:</strong> <span class="contact-text">Maranpur near Brahmachari Baba Gali, Post Chand Chaura, PS Vishnu Pad, Gaya Bihar.</span></p>
+            </div>
         </div>
+        
       </div>
       <div class="map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.810444749964!2d85.00848004616354!3d24.801943521331935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a19ddc9060b%3A0xe89c5ecc41b3d241!2sBaba%20Gali%2C%20Murarpur%2C%20Gaya%2C%20Bihar%20823001!5e0!3m2!1sen!2sin!4v1737628691501!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.810444749964!2d85.00848004616354!3d24.801943521331935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a19ddc9060b%3A0xe89c5ecc41b3d241!2sBaba%20Gali%2C%20Murarpur%2C%20Gaya%2C%20Bihar%20823001!5e0!3m2!1sen!2sin!4v1737628691501!5m2!1sen!2sin" width="600" height="450" class="borderzero" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
     <!-- Second Address Card -->
+
     <div class="address-card">
-      <div class="address-content">
-        <div>
-          <span class="material-icons address-icon">business</span>
-        </div>
-        <div class="address-details">
-            <h3>Tech2Edge Corporate Office</h3>
-            <p>Our corporate office at Tech2Edge is equipped with cutting-edge technology and infrastructure to foster innovation and provide exceptional training for aspiring developers.</p>
-            <div class="contact-info">
-              <p><strong>Address:</strong> Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai</p>
-              <p><strong>Phone:</strong> +91 87654 32109</p>
-              <p><strong>Pincode:</strong> 400703</p>
-              <p><strong>Email:</strong> support@tech2edge.com</p>
-            </div>
+        <div class="address-content">
+          <div class="address-details">
+              <div class="header-info">
+                  <span class="material-icons address-icon">business</span>
+                  <h3>Tech2Edge Corporate Office</h3>
+              </div>
+              <p>Tech2Edge's corporate office is equipped with advanced technology and provide top-notch training for aspiring developers.</p>
+              <div class="contact-info">
+                  <p><span class="material-icons contact-icon">call</span><strong> Phone:</strong> <span class="contact-text">+91 87654 32109</span></p>
+                  <p><span class="material-icons contact-icon">markunread_mailbox</span><strong> Pincode:</strong> <span class="contact-text">400703</span></p>
+                  <p><span class="material-icons contact-icon">email</span><strong> Email:</strong> <span class="contact-text">support@tech2edge.com</span></p>
+                  <p><span class="material-icons contact-icon">place</span><strong> Address:</strong> <span class="contact-text">Office 1902, 19th Floor, Arihant Aura, Turbhe, Navi Mumbai</span></p>
+              </div>
           </div>
           
+        </div>
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.810444749964!2d85.00848004616354!3d24.801943521331935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a19ddc9060b%3A0xe89c5ecc41b3d241!2sBaba%20Gali%2C%20Murarpur%2C%20Gaya%2C%20Bihar%20823001!5e0!3m2!1sen!2sin!4v1737628691501!5m2!1sen!2sin" width="600" height="450" class="borderzero" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-      <div class="map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7375595107133!2d73.01668551078411!3d19.075272982054607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c12f427655eb%3A0x1072db9bdb944df!2sTech2Edge%20Technology%20Solutions%20LLP!5e0!3m2!1sen!2sin!4v1737628768567!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
+
+
+   
   
   <section id="faqs">
     <div class="container">
@@ -1098,64 +273,11 @@ top: 10px;
 </section>
 
 
-<style>
-    /* Align FAQ text to the left */
-    .faq-body {
-        text-align: left;
-    }
-    
-    /* Adjusting alignment of the FAQ header if needed */
-    .faq-head h5 {
-        text-align: left;
-        color: white; /* Set the color of the h5 text to white */
-    }
-</style>
+
 
    
     
     <!-- End FAQs -->
-     <style>#faqs
-{
-    padding: 20px 0;
-}
-#faqs .faqs-container .faq
-{
-    border-top: 1px solid var(--color-border);
-    padding: 15px;
-}
-#faqs .faqs-container .faq .faq-head
-{
-    padding: 15px 0px;
-    position: relative;
-}
-#faqs .faqs-container .faq .faq-head h5
-{
-    width: 90%;
-    cursor: pointer;
-}
-#faqs .faqs-container .faq .faq-head h5::before
-{
-    content: 'keyboard_arrow_down';
-    text-align: center;
-    font-size: 20px;
-    line-height: 27px;
-    font-family: 'Material Icons Round';
-    height: 25px;
-    width: 25px;
-    color: #fefefe;
-    background: var(--color-sec);
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    transition: 0.5s;
-}
-#faqs .faqs-container .faq .faq-head h5[aria-expanded=true]::before
-{
-    content: 'keyboard_arrow_up';
-}
-</style>
 
 
          <!-- Start Footer -->
@@ -1164,7 +286,7 @@ top: 10px;
                 <div class="row justify-content-center align-items-center footer-main" >
                     <div class="col-lg-6 col-md-8 text-center">
                         <a class="footer-brand" href="#">
-                            <h1 style="font-size: 25px; font-weight: 800;">TechKul <span style="color:blue">.</span></h1>
+                            <h1 class="fnt">TechKul <span class="clr-blue">.</span></h1>
                         </a>
                         <p class="footer-text mt-4">Unlock your potential with TechKul! Learn cutting-edge technologies, from web development to full-stack expertise.</p>
                         <div class="footer-social-links mt-4">
@@ -1198,9 +320,9 @@ top: 10px;
                 </div>
                 <div class="row footer-rights d-flex justify-content-center align-items-center">
                     <div class="col-12 text-center ">
-                        <p style="padding-bottom: 10px;" class="d-flex justify-content-center align-items-center">Copyright © 2025
-                            <h1 style="font-size: 20px; font-weight: 800; margin: 0; ">
-                                TechKul <span style="color:blue">.</span>
+                        <p class="marginnew" class="d-flex justify-content-center align-items-center">Copyright © 2025
+                            <h1 class="fnt2">
+                                TechKul <span class="clr-blue">.</span>
                             </h1>
                             All rights reserved. Proudly Powered by
                             <a href="https://tech2edge.co/">Tech2Edge</a>
@@ -1213,11 +335,13 @@ top: 10px;
         <!-- End Footer -->
 
     <!-- JavaScript Files -->
+ 
     <script src="assets/script/jquery-3.4.1.min.js"></script>
-    <!-- <script src="assets/script/popper.min.js"></script> -->
+    <script src="assets/script/popper.min.js"></script>
     <script src="assets/script/bootstrap.min.js"></script>
     <script src="assets/script/owl.carousel.min.js"></script>
     <!-- Main JS -->
+
     <script src="assets/script/main.js"></script>
 
 </body>
